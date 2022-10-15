@@ -1,6 +1,6 @@
 import { ApiProperty, ApiPropertyOptional } from '@nestjs/swagger';
 import { Transform, Type } from 'class-transformer';
-import { IsString, IsOptional, IsNumber, ValidateNested,  IsArray, ArrayMinSize } from 'class-validator';
+import { IsString, IsOptional, IsNumber, ValidateNested, IsArray, ArrayMinSize } from 'class-validator';
 import _ from 'lodash';
 
 export class ChatMemberDto {
@@ -19,6 +19,21 @@ export class ChatMemberDto {
   pictureUrl?: string;
 }
 
+export class ProductDto {
+  @ApiProperty()
+  @IsNumber()
+  productId!: number;
+
+  @ApiPropertyOptional()
+  @IsNumber()
+  userId!: number;
+
+  @ApiPropertyOptional()
+  @IsString()
+  @IsOptional()
+  image?: string;
+}
+
 export class CreateChatRequestDto {
   @ApiProperty()
   @IsArray()
@@ -27,4 +42,10 @@ export class CreateChatRequestDto {
   @ValidateNested()
   @Type(() => ChatMemberDto)
   members!: ChatMemberDto[];
+
+  @ApiPropertyOptional()
+  @IsOptional()
+  @ValidateNested()
+  @Type(() => ProductDto)
+  product?: ProductDto;
 }

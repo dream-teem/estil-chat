@@ -39,7 +39,8 @@ export enum AppEnv {
 
 export type AppEnvVars = {
   NODE_ENV: AppEnv;
-  PORT: number | string;
+  PORT: string;
+  WS_PORT: string;
   DB_HOST: string;
   DB_PORT: number | string;
   DB_USER: string;
@@ -48,6 +49,9 @@ export type AppEnvVars = {
   MONGO_DB_URL: string;
   MONGO_DB_NAME?: string;
   REDIS_URL: string;
+  SENTRY_DSN: string;
   JWT_SECRET: string;
   JWT_REFRESH_SECRET: string;
+  THROTTLE_TTL: string;
+  THROTTLE_LIMIT: string;
 };

@@ -10,6 +10,9 @@ class EnvironmentVariables implements AppEnvVars {
   @IsNumberString()
   PORT!: string;
 
+  @IsNumberString()
+  WS_PORT!: string;
+
   @IsString()
   @IsNotEmpty()
   DB_HOST!: string;
@@ -39,11 +42,23 @@ class EnvironmentVariables implements AppEnvVars {
 
   @IsString()
   @IsNotEmpty()
+  SENTRY_DSN!: string;
+
+  @IsString()
+  @IsNotEmpty()
   JWT_SECRET!: string;
 
   @IsString()
   @IsNotEmpty()
   JWT_REFRESH_SECRET!: string;
+
+  @IsNumberString()
+  @IsNotEmpty()
+  THROTTLE_LIMIT!: string;
+
+  @IsNumberString()
+  @IsNotEmpty()
+  THROTTLE_TTL!: string;
 }
 
 export function validateEnv(config: Record<string, unknown>) {

@@ -77,6 +77,10 @@ export class AuthService {
     });
   }
 
+  public jwtVerify(token: string): any {
+    return this.jwt.verify(token);
+  }
+
   public removeAuthCookie(res: Response): void {
     res.cookie('access_token', '', { maxAge: 0 });
     res.cookie('refresh_token', '', { maxAge: 0 });

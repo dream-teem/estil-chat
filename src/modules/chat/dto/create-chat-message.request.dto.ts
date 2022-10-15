@@ -1,5 +1,5 @@
 import { ApiProperty } from '@nestjs/swagger';
-import { IsNumber, IsString } from 'class-validator';
+import { IsNumber, IsString, MaxLength } from 'class-validator';
 
 export class CreateChatMessageRequestDto {
   @ApiProperty()
@@ -8,5 +8,6 @@ export class CreateChatMessageRequestDto {
 
   @ApiProperty()
   @IsString()
-  text?: string;
+  @MaxLength(1000)
+  text!: string;
 }

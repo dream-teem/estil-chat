@@ -10,10 +10,12 @@ import {
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { APP_PIPE, RouterModule } from '@nestjs/core';
 import { MongooseModule } from '@nestjs/mongoose';
+import { ThrottlerModule } from '@nestjs/throttler';
 import { TypeOrmModule } from '@nestjs/typeorm';
+import { SentryModule } from '@ntegral/nestjs-sentry';
 import * as redisStore from 'cache-manager-redis-store';
 import type { ValidationError } from 'class-validator';
-import type { ClientOpts } from 'redis';
+import type { RedisClientOptions } from 'redis';
 
 import { CommonModule, LoggerMiddleware } from './common';
 import { configuration, validateEnv } from './config';
@@ -29,6 +31,16 @@ import { ChatModule } from './modules/chat/chat.module';
       load: [configuration],
       validate: validateEnv,
     }),
+    SentryModule.forRoot({
+      dsn: process.env.SENTRY_DSN,
+      debug: false,
+      environment: process.env.NODE_ENV,
+      logLevels: ['debug'], // based on sentry.io loglevel //
+    }),
+    ThrottlerModule.forRoot({
+      ttl: parseInt(process.env.THROTTLE_TTL, 10),
+      limit: parseInt(process.env.THROTTLE_LIMIT, 10),
+    }),
     // Database
     // https://docs.nestjs.com/techniques/database
     TypeOrmModule.forRootAsync({
@@ -43,7 +55,7 @@ import { ChatModule } from './modules/chat/chat.module';
       }),
       inject: [ConfigService],
     }),
-    CacheModule.registerAsync<ClientOpts>({
+    CacheModule.registerAsync<RedisClientOptions>({
       isGlobal: true,
       imports: [ConfigModule],
       useFactory: async (config: ConfigService) => ({

@@ -13,6 +13,7 @@ import { PaginationQueryDto } from '@/common/dto/pagination.dto';
 import { ChatService } from './chat.service';
 import { CreateChatMessageRequestDto } from './dto/create-chat-message.request.dto';
 import { CreateChatRequestDto } from './dto/create-chat.request.dto';
+import type { ChatMember } from './schemas/chat-member.schema';
 import { ChatMessage } from './schemas/chat-message.schema';
 import { Chat } from './schemas/chat.schema';
 
@@ -64,7 +65,10 @@ export class ChatController {
   @ApiCreatedResponse({ type: ChatMessage })
   @Post(':chatId/message')
   @HttpCode(HttpStatus.CREATED)
-  public async createChatMessage(@Param('chatId') chatId: string, @Body() dto: CreateChatMessageRequestDto): Promise<void> {
+  public async createChatMessage(
+    @Param('chatId') chatId: string,
+      @Body() dto: CreateChatMessageRequestDto,
+  ): Promise<ChatMessage> {
     return this.chat.createChatMessage(chatId, dto);
   }
 
@@ -73,7 +77,7 @@ export class ChatController {
   @ApiInternalServerErrorResponse()
   @Put(':chatId/read')
   @HttpCode(HttpStatus.OK)
-  public async markChatRead(@Param('chatId') chatId: string): Promise<void> {
+  public async markChatRead(@Param('chatId') chatId: string): Promise<Pick<ChatMember, 'lastReadTimestamp'>> {
     return this.chat.markRead(chatId, 1);
   }
 }

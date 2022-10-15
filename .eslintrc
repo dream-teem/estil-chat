@@ -113,7 +113,8 @@
       { "selector": "typeProperty", "format": null },
       { "selector": "typeLike", "format": ["StrictPascalCase"] },
       { "selector": "interface", "format": ["PascalCase"] },
-      { "selector": "enumMember", "format": ["UPPER_CASE"] }
+      { "selector": "enumMember", "format": ["UPPER_CASE"] },
+      { "selector": "classMethod", "format": ["camelCase"] }
     ],
     "@typescript-eslint/no-dupe-class-members": "error",
     "@typescript-eslint/no-duplicate-imports": "error",

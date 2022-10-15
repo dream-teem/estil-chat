@@ -1,8 +1,11 @@
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
-import { Document } from 'mongoose';
+import type { Document } from 'mongoose';
+import type mongoose from 'mongoose';
+
+export type ChatMessageDocument = ChatMember & Document<mongoose.Schema.Types.ObjectId>;
 
 @Schema({ _id: false })
-export class ChatMember extends Document {
+export class ChatMember {
   @Prop({ required: true, index: true })
   userId!: number;
 
@@ -12,11 +15,11 @@ export class ChatMember extends Document {
   @Prop()
   pictureUrl?: string;
 
-  @Prop()
-  lastReadTimestamp?: Date;
+  @Prop({ type: Date, default: () => new Date() })
+  lastReadTimestamp!: Date;
 
   @Prop({ type: Number, default: 0 })
-  unreadCount?: number;
+  unreadCount!: number;
 }
 
 export const ChatMemberSchema = SchemaFactory.createForClass(ChatMember);

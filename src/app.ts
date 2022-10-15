@@ -4,9 +4,11 @@ import type { NestExpressApplication } from '@nestjs/platform-express';
 import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
 import mongoose from 'mongoose';
 
+import { Logger } from '@/common';
+import { RedisIoAdapter } from '@/common/adapters/redis.adapter';
+
 import { middleware } from './app.middleware';
 import { AppModule } from './app.module';
-import { Logger } from './common';
 
 /**
  * https://docs.nestjs.com
@@ -32,16 +34,19 @@ async function bootstrap(): Promise<string> {
   // Express Middleware
   middleware(app);
 
-  const config = new DocumentBuilder()
-    .setTitle('Mongodb project')
-    .setDescription('The Estil API')
-    .setVersion('1.0')
-    .addTag('cats')
-    .build();
+  // swagger
+  const config = new DocumentBuilder().setTitle('Mongodb project').setDescription('The Estil API').setVersion('1.0').addTag('chat').build();
 
   const document = SwaggerModule.createDocument(app, config);
   SwaggerModule.setup('docs', app, document);
 
+  // redis adapter
+  const redisIoAdapter = new RedisIoAdapter(app);
+  await redisIoAdapter.connectToRedis(process.env.REDIS_URL);
+
+  app.useWebSocketAdapter(redisIoAdapter);
+
+  // mongoose debug
   mongoose.set('debug', true);
 
   await app.listen(process.env.PORT || 3000);
