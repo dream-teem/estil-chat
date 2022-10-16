@@ -11,10 +11,8 @@ import {
 import { PaginationQueryDto } from '@/common/dto/pagination.dto';
 
 import { ChatService } from './chat.service';
-import { CreateChatMessageRequestDto } from './dto/create-chat-message.request.dto';
 import { CreateChatRequestDto } from './dto/create-chat.request.dto';
 import type { ChatMember } from './schemas/chat-member.schema';
-import { ChatMessage } from './schemas/chat-message.schema';
 import { Chat } from './schemas/chat.schema';
 
 @ApiTags('Chats')
@@ -57,19 +55,6 @@ export class ChatController {
   @HttpCode(HttpStatus.CREATED)
   public async createChat(@Body() dto: CreateChatRequestDto): Promise<Chat> {
     return this.chat.createChat(dto);
-  }
-
-  @ApiOperation({ description: 'Create Chat Message' })
-  @ApiBadRequestResponse()
-  @ApiInternalServerErrorResponse()
-  @ApiCreatedResponse({ type: ChatMessage })
-  @Post(':chatId/message')
-  @HttpCode(HttpStatus.CREATED)
-  public async createChatMessage(
-    @Param('chatId') chatId: string,
-      @Body() dto: CreateChatMessageRequestDto,
-  ): Promise<ChatMessage> {
-    return this.chat.createChatMessage(chatId, dto);
   }
 
   @ApiOperation({ description: 'Mark Chat Read' })

@@ -6,8 +6,6 @@ import {
   MessageBody,
   ConnectedSocket,
   OnGatewayConnection,
-  OnGatewayDisconnect,
-  OnGatewayInit,
 } from '@nestjs/websockets';
 import { SentryService } from '@ntegral/nestjs-sentry';
 import { parse as parseCookie } from 'cookie';
@@ -25,18 +23,19 @@ import { WsThrottlerGuard } from './guards/ws-throttler.guard';
 @WebSocketGateway({ namespace: 'chat', cookie: true })
 @UseFilters(WebsocketExceptionsFilter)
 @UsePipes(new ValidationPipe({ transform: true }))
-export class ChatGateway implements OnGatewayInit, OnGatewayConnection, OnGatewayDisconnect {
+export class ChatGateway implements OnGatewayConnection {
   constructor(private readonly auth: AuthService, private readonly chat: ChatService, private readonly sentry: SentryService) {}
 
   @Throttle(5, 1)
   @UseGuards(WsThrottlerGuard)
   @SubscribeMessage(ChatEvent.SEND_MESSAGE)
   public async handleSendMessage(
-    @MessageBody() { chatId, receiverId, ...dto }: SendChatMessageWSRequestDto,
+    @MessageBody() dto: SendChatMessageWSRequestDto,
       @ConnectedSocket() client: ChatSocket,
   ): Promise<void> {
+    const { chatId, receiverId } = dto;
     const senderId = client.user.userId;
-    const message = await this.chat.createChatMessage(chatId, { ...dto, userId: senderId });
+    const message = await this.chat.createChatMessage(senderId, dto);
 
     const newMessage: NewChatMessageWSResponseDto = {
       chatId,
@@ -81,12 +80,6 @@ export class ChatGateway implements OnGatewayInit, OnGatewayConnection, OnGatewa
 
     client.to(this.getUserRoom(receiverId)).emit(ChatEvent.TYPING_MESSAGE, data);
   }
-
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  public afterInit(_server: any): void {}
-
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  public handleDisconnect(_client: any): void {}
 
   public async handleConnection(client: ChatSocket): Promise<void> {
     try {

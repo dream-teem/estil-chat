@@ -6,8 +6,8 @@ import { FilterQuery, Model } from 'mongoose';
 
 import type { PaginationQueryDto } from '@/common/dto/pagination.dto';
 
-import type { CreateChatMessageRequestDto } from './dto/create-chat-message.request.dto';
 import type { ChatMemberDto, CreateChatRequestDto } from './dto/create-chat.request.dto';
+import type { SendChatMessageWSRequestDto } from './dto/send-chat-message.wsrequest.dto';
 import type { ChatMember } from './schemas/chat-member.schema';
 import type { ChatMessage } from './schemas/chat-message.schema';
 import { Chat, ChatDocument } from './schemas/chat.schema';
@@ -56,17 +56,21 @@ export class ChatService {
     );
   }
 
-  public async createChatMessage(chatId: string, dto: CreateChatMessageRequestDto): Promise<ChatMessage> {
+  public async createChatMessage(
+    senderId: number,
+    { chatId, receiverId, ...dto }: SendChatMessageWSRequestDto,
+  ): Promise<ChatMessage> {
     const timestamp = new Date();
 
     const newMessage = {
       ...dto,
+      userId: senderId,
       id: new ObjectId(),
       timestamp,
     };
 
     await this.chatModel.updateOne(
-      { _id: chatId, 'members.userId': dto.userId },
+      { _id: chatId, 'members.userId': receiverId },
       {
         $inc: { totalMessages: 1, 'members.$.unreadCount': 1 },
         $push: {
