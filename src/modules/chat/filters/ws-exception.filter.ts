@@ -24,6 +24,7 @@ export class WebsocketExceptionsFilter {
 
     if (!isWsException && !isHttpException && !isThrottlerException) {
       this.sentry.instance().captureException(exception, { user: { id: client.user.userId } });
+      this.sentry.log(exception)
       client.emit('exception', { status: 'error', message: 'Internal server error' });
     } else {
       client.emit('exception', { status: 'error', ...message });

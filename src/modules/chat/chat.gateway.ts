@@ -44,7 +44,7 @@ export class ChatGateway implements OnGatewayInit, OnGatewayConnection, OnGatewa
     };
 
     client.to(this.getUserRoom(receiverId)).emit(ChatEvent.NEW_MESSAGE, newMessage);
-    client.emit(ChatEvent.MESSAGE_SENT, { id: message.id });
+    client.emit(ChatEvent.MESSAGE_SENT, { id: message._id });
   }
 
   @Throttle(5, 1)

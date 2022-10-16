@@ -1,17 +1,19 @@
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import type { Document } from 'mongoose';
-import type mongoose from 'mongoose';
-import { ObjectId } from 'mongodb';
+import mongoose from 'mongoose';
+import { SchemaName } from '@/common/interfaces/schema';
+import { BaseSchema } from '@/common/base.schema';
 
-export type ChatMessageDocument = ChatMessage & Document<mongoose.Schema.Types.ObjectId>;
+export type ChatMessageDocument = ChatMessage & Document;
 
-@Schema({ _id: false })
-export class ChatMessage {
-  @Prop({ index: true, default: () => new ObjectId() })
-  id!: string;
+@Schema({ collection: SchemaName.CHAT_MESSAGE, })
+export class ChatMessage extends BaseSchema{
 
   @Prop({ required: true })
   userId!: number;
+
+  @Prop({ required: true, index: true, type: mongoose.Schema.Types.ObjectId })
+  chatId!: string;
 
   @Prop({ required: true })
   text!: string;

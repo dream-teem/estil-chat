@@ -44,7 +44,7 @@ export class ChatController {
   public async getChatsMessages(
     @Param('chatId') chatId: string,
       @Query(new ValidationPipe({ transform: true, transformOptions: { enableImplicitConversion: true } })) pagination: PaginationQueryDto,
-  ): Promise<Chat | null> {
+  ): Promise<ChatMessage[]> {
     return this.chat.getChatMessages(chatId, pagination);
   }
 

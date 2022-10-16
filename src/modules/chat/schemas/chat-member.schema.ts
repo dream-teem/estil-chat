@@ -2,7 +2,7 @@ import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import type { Document } from 'mongoose';
 import type mongoose from 'mongoose';
 
-export type ChatMessageDocument = ChatMember & Document<mongoose.Schema.Types.ObjectId>;
+export type ChatMemberDocument = ChatMember & Document<mongoose.Schema.Types.ObjectId>;
 
 @Schema({ _id: false })
 export class ChatMember {
