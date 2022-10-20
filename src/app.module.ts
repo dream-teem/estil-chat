@@ -21,6 +21,12 @@ import { CommonModule, LoggerMiddleware } from './common';
 import { configuration, validateEnv } from './config';
 import { AuthModule } from './modules';
 import { ChatModule } from './modules/chat/chat.module';
+import { CityModule } from './modules/cities/city.module';
+import { FollowingModule } from './modules/following/following.module';
+import { ProductDraftModule } from './modules/product-draft/product-draft.module';
+import { ProductLikeModule } from './modules/product-like/product-like.module';
+import { ProductRatingModule } from './modules/product-rating/product-rating.module';
+import { ProductModule } from './modules/product/product.module';
 
 @Module({
   imports: [
@@ -68,6 +74,12 @@ import { ChatModule } from './modules/chat/chat.module';
     CommonModule, // Global
     AuthModule,
     ChatModule,
+    ProductModule,
+    ProductDraftModule,
+    ProductLikeModule,
+    FollowingModule,
+    ProductRatingModule,
+    CityModule,
     // Module Router
     // https://docs.nestjs.com/recipes/router-module
     RouterModule.register([]),

@@ -77,7 +77,7 @@ export class AuthService {
     });
   }
 
-  public jwtVerify(token: string): any {
+  public jwtVerify(token: string): JwtPayload {
     return this.jwt.verify(token);
   }
 

@@ -1,4 +1,6 @@
-const config = {
+import path from 'path';
+
+const mongoConfig = {
   mongodb: {
     url: process.env['MONGO_DB_URL'] || 'mongodb://localhost:27017',
 
@@ -10,7 +12,7 @@ const config = {
     },
   },
 
-  migrationsDir: __dirname + '/migrations',
+  migrationsDir: path.join(__dirname, '../src/db/mongo-migrations'),
 
   changelogCollectionName: 'changelog',
 
@@ -21,4 +23,4 @@ const config = {
   moduleSystem: 'commonjs',
 };
 
-module.exports = config
+module.exports = mongoConfig;

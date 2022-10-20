@@ -1,0 +1,16 @@
+export enum TableName {
+  PRODUCT_CATEGORY = 'product_category',
+  PRODUCT = 'product',
+  PRODUCT_DRAFT = 'product_draft',
+  COLOR = 'color',
+  PRODUCT_COLOR = 'product_color',
+  SIZE = 'size',
+  SIZE_GROUP = 'size_group',
+  PRODUCT_VARIANT = 'product_variant',
+  PRODUCT_BRAND = 'product_brand',
+  PRODUCT_CONDITION = 'product_condition',
+  CITY = 'city',
+  FOLLOWING = 'following',
+  PRODUCT_LIKE = 'product_like',
+  PRODUCT_RATING = 'product_rating',
+}

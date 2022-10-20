@@ -9,10 +9,15 @@
     "prebuild": "rimraf dist",
     "build": "nest build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
-    "migration:run": "ts-node node_modules/.bin/migrate-mongo up -f src/mongodb/migrate-mongo-config.ts",
-    "migration:create": "sh -c 'ts-node node_modules/.bin/migrate-mongo create $0 -f src/mongodb/migrate-mongo-config.ts' ",
-    "migration:status": "ts-node node_modules/.bin/migrate-mongo status -f src/mongodb/migrate-mongo-config.ts",
-    "migration:down": "ts-node node_modules/.bin/migrate-mongo down -f src/mongodb/migrate-mongo-config.ts && yarn migration:status",
+    "typeorm:cli": "cd src/db/typeorm-migrations && ts-node --project ../../../tsconfig.json -r tsconfig-paths/register ../../../node_modules/typeorm/cli -d ../../../bin/typeorm-config.ts",
+    "migration:generate": "yarn typeorm:cli migration:generate",
+    "migration:create": "yarn typeorm:cli migration:create",
+    "migration:run": "yarn typeorm:cli migration:run",
+    "migration:down": "yarn typeorm:cli migration:revert",
+    "mongo:migration:run": "ts-node node_modules/.bin/migrate-mongo up -f bin/mongo-config.ts",
+    "mongo:migration:create": "sh -c 'ts-node node_modules/.bin/migrate-mongo create $0 -f bin/mongo-config.ts' ",
+    "mongo:migration:status": "ts-node node_modules/.bin/migrate-mongo status -f bin/mongo-config.ts",
+    "mongo:migration:down": "ts-node node_modules/.bin/migrate-mongo down -f bin/mongo-config.ts && yarn migration:status",
     "start": "nest start",
     "start:dev": "nest start --watch",
     "start:debug": "nest start --debug --watch",
@@ -68,7 +73,7 @@
     "rimraf": "^3.0.2",
     "rxjs": "^7.2.0",
     "socket.io": "^4.5.2",
-    "typeorm": "^0.3.7"
+    "typeorm": "^0.3.10"
   },
   "devDependencies": {
     "@nestjs/cli": "^9.0.0",

@@ -1,27 +1,45 @@
-import { Column, Entity, PrimaryGeneratedColumn, CreateDateColumn, UpdateDateColumn } from 'typeorm';
+import { BaseEntity } from '@/common/base.entity';
+import { Check, Column, Entity,  Unique } from 'typeorm';
 
-import { User, UserRole } from './user.interface';
+import { User, UserPicture, UserRole } from './user.interface';
 
 @Entity('user')
-export class UserEntity implements User {
-  @PrimaryGeneratedColumn({ type: 'int', name: 'id' })
-  id!: number;
-
-  @Column('varchar', { nullable: false, name: 'name' })
+@Unique(['phone', 'countryCode'])
+@Check('username = lower(username) and email = lower(email)')
+export class UserEntity extends BaseEntity implements User {
+  @Column('varchar')
   name!: string;
 
-  @Column('varchar', { nullable: false, name: 'username' })
+  @Column('varchar', { unique: true })
+  email!: string;
+
+  @Column('varchar', { unique: true })
   username!: string;
 
-  @Column({ type: 'enum', enum: UserRole, nullable: true, name: 'role' })
+  @Column('enum', { enum: UserRole, nullable: true })
   role!: UserRole | null;
 
-  @Column('varchar', { nullable: false, name: 'password' })
+  @Column('varchar')
   password!: string;
 
-  @CreateDateColumn({ type: 'timestamp', default: () => 'CURRENT_TIMESTAMP' })
-  createdAt!: Date;
+  @Column('varchar')
+  phone!: string;
 
-  @UpdateDateColumn({ type: 'timestamp', default: () => 'CURRENT_TIMESTAMP', onUpdate: 'CURRENT_TIMESTAMP' })
-  updatedAt!: Date;
+  @Column('varchar')
+  countryCode!: string;
+
+  @Column('varchar', { nullable: true })
+  description!: string | null;
+
+  @Column('varchar', { nullable: true })
+  cityId!: number | null;
+
+  @Column('varchar', { nullable: true })
+  picture!: UserPicture | null;
+
+  @Column('timestamptz', { default: () => 'CURRENT_TIMESTAMP' })
+  lastLoggedIn!: Date;
+
+  @Column('varchar', { nullable: true })
+  whatsapp!: string | null;
 }

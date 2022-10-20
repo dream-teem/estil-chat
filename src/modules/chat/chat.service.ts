@@ -1,6 +1,5 @@
 import { Injectable } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
-import _ from 'lodash';
 import { ObjectId } from 'mongodb';
 import { FilterQuery, Model } from 'mongoose';
 

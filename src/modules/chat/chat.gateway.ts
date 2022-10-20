@@ -1,12 +1,6 @@
 import { UseFilters, UseGuards, UsePipes, ValidationPipe } from '@nestjs/common';
 import { Throttle } from '@nestjs/throttler';
-import {
-  WebSocketGateway,
-  SubscribeMessage,
-  MessageBody,
-  ConnectedSocket,
-  OnGatewayConnection,
-} from '@nestjs/websockets';
+import { WebSocketGateway, SubscribeMessage, MessageBody, ConnectedSocket, OnGatewayConnection } from '@nestjs/websockets';
 import { SentryService } from '@ntegral/nestjs-sentry';
 import { parse as parseCookie } from 'cookie';
 
@@ -29,10 +23,7 @@ export class ChatGateway implements OnGatewayConnection {
   @Throttle(5, 1)
   @UseGuards(WsThrottlerGuard)
   @SubscribeMessage(ChatEvent.SEND_MESSAGE)
-  public async handleSendMessage(
-    @MessageBody() dto: SendChatMessageWSRequestDto,
-      @ConnectedSocket() client: ChatSocket,
-  ): Promise<void> {
+  public async handleSendMessage(@MessageBody() dto: SendChatMessageWSRequestDto, @ConnectedSocket() client: ChatSocket): Promise<void> {
     const { chatId, receiverId } = dto;
     const senderId = client.user.userId;
     const message = await this.chat.createChatMessage(senderId, dto);
@@ -102,7 +93,7 @@ export class ChatGateway implements OnGatewayConnection {
       };
 
       await client.join(this.getUserRoom(userId));
-    } catch (err: any) {
+    } catch (err: unknown) {
       this.sentry.error(`Error while connecting to ws: ${err}`);
       client.disconnect();
     }
