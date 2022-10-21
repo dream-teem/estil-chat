@@ -1,13 +1,13 @@
-import type { BaseEntity } from '@/common/base.entity';
+import type { BaseEntityStatic } from '@/common/base.entity';
 
-export type Color = BaseEntity & {
+export interface Color extends BaseEntityStatic {
   title: string;
   hex: string;
   order: number;
   code: string;
-};
+}
 
-export type ProductColor = {
+export interface ProductColor {
   productId: number;
   colorId: number;
-};
+}

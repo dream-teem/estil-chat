@@ -1,0 +1,642 @@
+[
+  {
+    "id": 1,
+    "createdAt": "2022-06-04 15:04:03+06",
+    "updatedAt": "2022-06-04 15:04:03+06",
+    "name": "H&M",
+    "slug": "H&M",
+    "order": 0
+  },
+  {
+    "id": 2,
+    "createdAt": "2022-06-04 15:04:03+06",
+    "updatedAt": "2022-06-04 15:04:03+06",
+    "name": "Mango",
+    "slug": "Mango",
+    "order": 2
+  },
+  {
+    "id": 3,
+    "createdAt": "2022-06-04 15:04:03+06",
+    "updatedAt": "2022-06-04 15:04:03+06",
+    "name": "Bershka",
+    "slug": "Bershka",
+    "order": 4
+  },
+  {
+    "id": 4,
+    "createdAt": "2022-06-04 15:04:03+06",
+    "updatedAt": "2022-06-04 15:04:03+06",
+    "name": "O'stin",
+    "slug": "O'stin",
+    "order": 6
+  },
+  {
+    "id": 5,
+    "createdAt": "2022-06-04 15:04:03+06",
+    "updatedAt": "2022-06-04 15:04:03+06",
+    "name": "Calvin Klein",
+    "slug": "Calvin Klein",
+    "order": 8
+  },
+  {
+    "id": 6,
+    "createdAt": "2022-06-04 15:04:03+06",
+    "updatedAt": "2022-06-04 15:04:03+06",
+    "name": "Guess",
+    "slug": "Guess",
+    "order": 10
+  },
+  {
+    "id": 7,
+    "createdAt": "2022-06-04 15:04:03+06",
+    "updatedAt": "2022-06-04 15:04:03+06",
+    "name": "Tommy Hilfiger",
+    "slug": "Tommy Hilfiger",
+    "order": 12
+  },
+  {
+    "id": 8,
+    "createdAt": "2022-06-04 15:04:03+06",
+    "updatedAt": "2022-06-04 15:04:03+06",
+    "name": "Nike",
+    "slug": "Nike",
+    "order": 14
+  },
+  {
+    "id": 9,
+    "createdAt": "2022-06-04 15:04:03+06",
+    "updatedAt": "2022-06-04 15:04:03+06",
+    "name": "Adidas",
+    "slug": "Adidas",
+    "order": 16
+  },
+  {
+    "id": 10,
+    "createdAt": "2022-06-04 15:04:03+06",
+    "updatedAt": "2022-06-04 15:04:03+06",
+    "name": "Zara",
+    "slug": "Zara",
+    "order": 18
+  },
+  {
+    "id": 11,
+    "createdAt": "2022-06-04 15:04:03+06",
+    "updatedAt": "2022-06-04 15:04:03+06",
+    "name": "Levi's",
+    "slug": "Levi's",
+    "order": 20
+  },
+  {
+    "id": 12,
+    "createdAt": "2022-06-04 15:04:03+06",
+    "updatedAt": "2022-06-04 15:04:03+06",
+    "name": "Oodji",
+    "slug": "Oodji",
+    "order": 22
+  },
+  {
+    "id": 13,
+    "createdAt": "2022-06-04 15:04:03+06",
+    "updatedAt": "2022-06-04 15:04:03+06",
+    "name": "Stradivarius",
+    "slug": "Stradivarius",
+    "order": 24
+  },
+  {
+    "id": 14,
+    "createdAt": "2022-06-04 15:04:03+06",
+    "updatedAt": "2022-06-04 15:04:03+06",
+    "name": "Next",
+    "slug": "Next",
+    "order": 26
+  },
+  {
+    "id": 15,
+    "createdAt": "2022-06-04 15:04:03+06",
+    "updatedAt": "2022-06-04 15:04:03+06",
+    "name": "Pull & Bear",
+    "slug": "Pull & Bear",
+    "order": 28
+  },
+  {
+    "id": 16,
+    "createdAt": "2022-06-04 15:04:03+06",
+    "updatedAt": "2022-06-04 15:04:03+06",
+    "name": "Reserved",
+    "slug": "Reserved",
+    "order": 30
+  },
+  {
+    "id": 17,
+    "createdAt": "2022-06-04 15:04:03+06",
+    "updatedAt": "2022-06-04 15:04:03+06",
+    "name": "Mexx",
+    "slug": "Mexx",
+    "order": 32
+  },
+  {
+    "id": 18,
+    "createdAt": "2022-06-04 15:04:03+06",
+    "updatedAt": "2022-06-04 15:04:03+06",
+    "name": "Koton",
+    "slug": "Koton",
+    "order": 34
+  },
+  {
+    "id": 19,
+    "createdAt": "2022-06-04 15:04:03+06",
+    "updatedAt": "2022-06-04 15:04:03+06",
+    "name": "Massimo Dutti",
+    "slug": "Massimo Dutti",
+    "order": 36
+  },
+  {
+    "id": 20,
+    "createdAt": "2022-06-04 15:04:03+06",
+    "updatedAt": "2022-06-04 15:04:03+06",
+    "name": "The North Face",
+    "slug": "The North Face",
+    "order": 38
+  },
+  {
+    "id": 21,
+    "createdAt": "2022-06-04 15:04:03+06",
+    "updatedAt": "2022-06-04 15:04:03+06",
+    "name": "Gloria Jeans",
+    "slug": "Gloria Jeans",
+    "order": 40
+  },
+  {
+    "id": 22,
+    "createdAt": "2022-06-04 15:04:03+06",
+    "updatedAt": "2022-06-04 15:04:03+06",
+    "name": "UNIQLO",
+    "slug": "UNIQLO",
+    "order": 42
+  },
+  {
+    "id": 23,
+    "createdAt": "2022-06-04 15:04:03+06",
+    "updatedAt": "2022-06-04 15:04:03+06",
+    "name": "TOPSHOP",
+    "slug": "TOPSHOP",
+    "order": 44
+  },
+  {
+    "id": 24,
+    "createdAt": "2022-06-04 15:04:03+06",
+    "updatedAt": "2022-06-04 15:04:03+06",
+    "name": "COS",
+    "slug": "COS",
+    "order": 46
+  },
+  {
+    "id": 25,
+    "createdAt": "2022-06-04 15:04:03+06",
+    "updatedAt": "2022-06-04 15:04:03+06",
+    "name": "& Other Stories",
+    "slug": "& Other Stories",
+    "order": 48
+  },
+  {
+    "id": 26,
+    "createdAt": "2022-06-04 15:04:03+06",
+    "updatedAt": "2022-06-04 15:04:03+06",
+    "name": "ATMOSPHERE",
+    "slug": "ATMOSPHERE",
+    "order": 50
+  },
+  {
+    "id": 27,
+    "createdAt": "2022-06-04 15:04:03+06",
+    "updatedAt": "2022-06-04 15:04:03+06",
+    "name": "Concept Club",
+    "slug": "Concept Club",
+    "order": 52
+  },
+  {
+    "id": 28,
+    "createdAt": "2022-06-04 15:04:03+06",
+    "updatedAt": "2022-06-04 15:04:03+06",
+    "name": "CROPP",
+    "slug": "CROPP",
+    "order": 54
+  },
+  {
+    "id": 29,
+    "createdAt": "2022-06-04 15:04:03+06",
+    "updatedAt": "2022-06-04 15:04:03+06",
+    "name": "OGGI",
+    "slug": "OGGI",
+    "order": 56
+  },
+  {
+    "id": 30,
+    "createdAt": "2022-06-04 15:04:03+06",
+    "updatedAt": "2022-06-04 15:04:03+06",
+    "name": "COLIN'S",
+    "slug": "COLIN'S",
+    "order": 58
+  },
+  {
+    "id": 31,
+    "createdAt": "2022-06-04 15:04:03+06",
+    "updatedAt": "2022-06-04 15:04:03+06",
+    "name": "Gant",
+    "slug": "Gant",
+    "order": 60
+  },
+  {
+    "id": 32,
+    "createdAt": "2022-06-04 15:04:03+06",
+    "updatedAt": "2022-06-04 15:04:03+06",
+    "name": "Qazaq Republic",
+    "slug": "Qazaq Republic",
+    "order": 62
+  },
+  {
+    "id": 33,
+    "createdAt": "2022-06-04 15:04:03+06",
+    "updatedAt": "2022-06-04 15:04:03+06",
+    "name": "Ralph Lauren",
+    "slug": "Ralph Lauren",
+    "order": 64
+  },
+  {
+    "id": 34,
+    "createdAt": "2022-06-04 15:04:03+06",
+    "updatedAt": "2022-06-04 15:04:03+06",
+    "name": "Converse",
+    "slug": "Converse",
+    "order": 66
+  },
+  {
+    "id": 35,
+    "createdAt": "2022-06-04 15:04:03+06",
+    "updatedAt": "2022-06-04 15:04:03+06",
+    "name": "New Balance",
+    "slug": "New Balance",
+    "order": 68
+  },
+  {
+    "id": 36,
+    "createdAt": "2022-06-04 15:04:03+06",
+    "updatedAt": "2022-06-04 15:04:03+06",
+    "name": "New Look",
+    "slug": "New Look",
+    "order": 70
+  },
+  {
+    "id": 37,
+    "createdAt": "2022-06-04 15:04:03+06",
+    "updatedAt": "2022-06-04 15:04:03+06",
+    "name": "Timberland",
+    "slug": "Timberland",
+    "order": 72
+  },
+  {
+    "id": 38,
+    "createdAt": "2022-06-04 15:04:03+06",
+    "updatedAt": "2022-06-04 15:04:03+06",
+    "name": "Gap",
+    "slug": "Gap",
+    "order": 74
+  },
+  {
+    "id": 39,
+    "createdAt": "2022-06-04 15:04:03+06",
+    "updatedAt": "2022-06-04 15:04:03+06",
+    "name": "Ray Ban",
+    "slug": "Ray Ban",
+    "order": 76
+  },
+  {
+    "id": 40,
+    "createdAt": "2022-06-04 15:04:03+06",
+    "updatedAt": "2022-06-04 15:04:03+06",
+    "name": "Diesel",
+    "slug": "Diesel",
+    "order": 78
+  },
+  {
+    "id": 41,
+    "createdAt": "2022-06-04 15:04:03+06",
+    "updatedAt": "2022-06-04 15:04:03+06",
+    "name": "Marc O'Polo",
+    "slug": "Marc O'Polo",
+    "order": 80
+  },
+  {
+    "id": 42,
+    "createdAt": "2022-06-04 15:04:03+06",
+    "updatedAt": "2022-06-04 15:04:03+06",
+    "name": "Reebok",
+    "slug": "Reebok",
+    "order": 82
+  },
+  {
+    "id": 43,
+    "createdAt": "2022-06-04 15:04:03+06",
+    "updatedAt": "2022-06-04 15:04:03+06",
+    "name": "Boss",
+    "slug": "Boss",
+    "order": 84
+  },
+  {
+    "id": 44,
+    "createdAt": "2022-06-04 15:04:03+06",
+    "updatedAt": "2022-06-04 15:04:03+06",
+    "name": "Geox",
+    "slug": "Geox",
+    "order": 86
+  },
+  {
+    "id": 45,
+    "createdAt": "2022-06-04 15:04:03+06",
+    "updatedAt": "2022-06-04 15:04:03+06",
+    "name": "s.Oliver",
+    "slug": "s.Oliver",
+    "order": 88
+  },
+  {
+    "id": 46,
+    "createdAt": "2022-06-04 15:04:03+06",
+    "updatedAt": "2022-06-04 15:04:03+06",
+    "name": "Lacoste",
+    "slug": "Lacoste",
+    "order": 90
+  },
+  {
+    "id": 47,
+    "createdAt": "2022-06-04 15:04:03+06",
+    "updatedAt": "2022-06-04 15:04:03+06",
+    "name": "Fila",
+    "slug": "Fila",
+    "order": 92
+  },
+  {
+    "id": 48,
+    "createdAt": "2022-06-04 15:04:03+06",
+    "updatedAt": "2022-06-04 15:04:03+06",
+    "name": "Umbro",
+    "slug": "Umbro",
+    "order": 94
+  },
+  {
+    "id": 49,
+    "createdAt": "2022-06-04 15:04:03+06",
+    "updatedAt": "2022-06-04 15:04:03+06",
+    "name": "Under Armour",
+    "slug": "Under Armour",
+    "order": 96
+  },
+  {
+    "id": 50,
+    "createdAt": "2022-06-04 15:04:03+06",
+    "updatedAt": "2022-06-04 15:04:03+06",
+    "name": "FOSSIL",
+    "slug": "FOSSIL",
+    "order": 98
+  },
+  {
+    "id": 51,
+    "createdAt": "2022-06-04 15:04:03+06",
+    "updatedAt": "2022-06-04 15:04:03+06",
+    "name": "Ellesse",
+    "slug": "Ellesse",
+    "order": 100
+  },
+  {
+    "id": 52,
+    "createdAt": "2022-06-04 15:04:03+06",
+    "updatedAt": "2022-06-04 15:04:03+06",
+    "name": "Asics",
+    "slug": "Asics",
+    "order": 102
+  },
+  {
+    "id": 53,
+    "createdAt": "2022-06-04 15:04:03+06",
+    "updatedAt": "2022-06-04 15:04:03+06",
+    "name": "Puma",
+    "slug": "Puma",
+    "order": 104
+  },
+  {
+    "id": 54,
+    "createdAt": "2022-06-04 15:04:03+06",
+    "updatedAt": "2022-06-04 15:04:03+06",
+    "name": "Mizuno",
+    "slug": "Mizuno",
+    "order": 106
+  },
+  {
+    "id": 55,
+    "createdAt": "2022-06-04 15:04:03+06",
+    "updatedAt": "2022-06-04 15:04:03+06",
+    "name": "Kappa",
+    "slug": "Kappa",
+    "order": 108
+  },
+  {
+    "id": 56,
+    "createdAt": "2022-06-04 15:04:03+06",
+    "updatedAt": "2022-06-04 15:04:03+06",
+    "name": "Columbia",
+    "slug": "Columbia",
+    "order": 110
+  },
+  {
+    "id": 57,
+    "createdAt": "2022-06-04 15:04:03+06",
+    "updatedAt": "2022-06-04 15:04:03+06",
+    "name": "ТВОЕ",
+    "slug": "ТВОЕ",
+    "order": 112
+  },
+  {
+    "id": 58,
+    "createdAt": "2022-06-04 15:04:03+06",
+    "updatedAt": "2022-06-04 15:04:03+06",
+    "name": "River Island",
+    "slug": "River Island",
+    "order": 114
+  },
+  {
+    "id": 59,
+    "createdAt": "2022-06-04 15:04:03+06",
+    "updatedAt": "2022-06-04 15:04:03+06",
+    "name": "Moncler",
+    "slug": "Moncler",
+    "order": 116
+  },
+  {
+    "id": 60,
+    "createdAt": "2022-06-04 15:04:03+06",
+    "updatedAt": "2022-06-04 15:04:03+06",
+    "name": "Carhartt",
+    "slug": "Carhartt",
+    "order": 118
+  },
+  {
+    "id": 61,
+    "createdAt": "2022-06-04 15:04:03+06",
+    "updatedAt": "2022-06-04 15:04:03+06",
+    "name": "LC Waikiki",
+    "slug": "LC Waikiki",
+    "order": 120
+  },
+  {
+    "id": 62,
+    "createdAt": "2022-06-04 15:04:03+06",
+    "updatedAt": "2022-06-04 15:04:03+06",
+    "name": "KAbyl pi2ror",
+    "slug": "KAbyl pi2ror",
+    "order": 122
+  },
+  {
+    "id": 63,
+    "createdAt": "2022-06-04 15:04:03+06",
+    "updatedAt": "2022-06-04 15:04:03+06",
+    "name": "Off-White",
+    "slug": "Off-White",
+    "order": 124
+  },
+  {
+    "id": 64,
+    "createdAt": "2022-06-04 15:04:03+06",
+    "updatedAt": "2022-06-04 15:04:03+06",
+    "name": "Balenciaga",
+    "slug": "Balenciaga",
+    "order": 126
+  },
+  {
+    "id": 65,
+    "createdAt": "2022-06-04 15:04:03+06",
+    "updatedAt": "2022-06-04 15:04:03+06",
+    "name": "Gucci",
+    "slug": "Gucci",
+    "order": 128
+  },
+  {
+    "id": 66,
+    "createdAt": "2022-06-04 15:04:03+06",
+    "updatedAt": "2022-06-04 15:04:03+06",
+    "name": "Prada",
+    "slug": "Prada",
+    "order": 130
+  },
+  {
+    "id": 67,
+    "createdAt": "2022-06-04 15:04:03+06",
+    "updatedAt": "2022-06-04 15:04:03+06",
+    "name": "Fendi",
+    "slug": "Fendi",
+    "order": 132
+  },
+  {
+    "id": 68,
+    "createdAt": "2022-06-04 15:04:03+06",
+    "updatedAt": "2022-06-04 15:04:03+06",
+    "name": "Valentino",
+    "slug": "Valentino",
+    "order": 134
+  },
+  {
+    "id": 69,
+    "createdAt": "2022-06-04 15:04:03+06",
+    "updatedAt": "2022-06-04 15:04:03+06",
+    "name": "Saint Laurent",
+    "slug": "Saint Laurent",
+    "order": 136
+  },
+  {
+    "id": 70,
+    "createdAt": "2022-06-04 15:04:03+06",
+    "updatedAt": "2022-06-04 15:04:03+06",
+    "name": "Versace",
+    "slug": "Versace",
+    "order": 138
+  },
+  {
+    "id": 71,
+    "createdAt": "2022-06-04 15:04:03+06",
+    "updatedAt": "2022-06-04 15:04:03+06",
+    "name": "Armani",
+    "slug": "Armani",
+    "order": 140
+  },
+  {
+    "id": 72,
+    "createdAt": "2022-06-04 15:04:03+06",
+    "updatedAt": "2022-06-04 15:04:03+06",
+    "name": "Armani Exchange",
+    "slug": "Armani Exchange",
+    "order": 142
+  },
+  {
+    "id": 73,
+    "createdAt": "2022-06-04 15:04:03+06",
+    "updatedAt": "2022-06-04 15:04:03+06",
+    "name": "Michael Kors",
+    "slug": "Michael Kors",
+    "order": 144
+  },
+  {
+    "id": 74,
+    "createdAt": "2022-06-04 15:04:03+06",
+    "updatedAt": "2022-06-04 15:04:03+06",
+    "name": "Chanel",
+    "slug": "Chanel",
+    "order": 146
+  },
+  {
+    "id": 75,
+    "createdAt": "2022-06-04 15:04:03+06",
+    "updatedAt": "2022-06-04 15:04:03+06",
+    "name": "Dior",
+    "slug": "Dior",
+    "order": 148
+  },
+  {
+    "id": 76,
+    "createdAt": "2022-06-04 15:04:03+06",
+    "updatedAt": "2022-06-04 15:04:03+06",
+    "name": "Hermes",
+    "slug": "Hermes",
+    "order": 150
+  },
+  {
+    "id": 77,
+    "createdAt": "2022-06-04 15:04:03+06",
+    "updatedAt": "2022-06-04 15:04:03+06",
+    "name": "Vans",
+    "slug": "Vans",
+    "order": 152
+  },
+  {
+    "id": 78,
+    "createdAt": "2022-06-04 15:04:03+06",
+    "updatedAt": "2022-06-04 15:04:03+06",
+    "name": "Forever 21",
+    "slug": "Forever 21",
+    "order": 154
+  },
+  {
+    "id": 79,
+    "createdAt": "2022-06-04 15:04:03+06",
+    "updatedAt": "2022-06-04 15:04:03+06",
+    "name": "Champion",
+    "slug": "Champion",
+    "order": 156
+  },
+  {
+    "id": 80,
+    "createdAt": "2022-06-04 15:04:03+06",
+    "updatedAt": "2022-06-04 15:04:03+06",
+    "name": "Brandy Melville",
+    "slug": "Brandy Melville",
+    "order": 158
+  }
+]

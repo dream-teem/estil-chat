@@ -1,17 +1,15 @@
-import { BaseEntity } from '@/common/base.entity';
 import { TableName } from '@/common/interfaces/table';
-import { Column, Entity, JoinColumn, ManyToOne, Unique } from 'typeorm';
+import { Entity, JoinColumn, ManyToOne, PrimaryColumn } from 'typeorm';
 import { ProductEntity } from '../product/entities/product.entity';
 import { UserEntity } from '../user';
 import type { ProductLike } from './product-like.interface';
 
 @Entity(TableName.PRODUCT_LIKE)
-@Unique(['userId', 'productId'])
-export class ProductLikeEntity extends BaseEntity implements ProductLike {
-  @Column('int')
+export class ProductLikeEntity implements ProductLike {
+  @PrimaryColumn('int')
   userId!: number;
 
-  @Column('int')
+  @PrimaryColumn('int')
   productId!: number;
 
   @ManyToOne(() => UserEntity, {

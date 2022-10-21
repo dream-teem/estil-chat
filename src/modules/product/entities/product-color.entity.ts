@@ -1,17 +1,15 @@
-import { BaseEntity } from '@/common/base.entity';
 import { TableName } from '@/common/interfaces/table';
-import { Column, Entity, JoinColumn, ManyToOne, Unique } from 'typeorm';
+import {  Entity, JoinColumn, ManyToOne, PrimaryColumn } from 'typeorm';
 import type { ProductColor } from '../interfaces/product-color.interface';
 import { ColorEntity } from './color.entity';
 import { ProductEntity } from './product.entity';
 
 @Entity(TableName.PRODUCT_COLOR)
-@Unique(['productId', 'colorId'])
-export class ProductColorEntity extends BaseEntity implements ProductColor {
-  @Column('int')
+export class ProductColorEntity implements ProductColor {
+  @PrimaryColumn('int')
   productId!: number;
 
-  @Column('int')
+  @PrimaryColumn('int')
   colorId!: number;
 
   @ManyToOne(() => ProductEntity, {

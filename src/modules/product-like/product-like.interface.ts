@@ -1,6 +1,4 @@
-import type { BaseEntity } from '@/common/base.entity';
-
-export interface ProductLike extends BaseEntity {
+export interface ProductLike {
   userId: number;
   productId: number;
 }

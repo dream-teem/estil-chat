@@ -1,0 +1,1802 @@
+[
+    {
+      "id": 1,
+      "title": "One size",
+      "sizeGroupId": 1,
+      "order": 0
+    },
+    {
+      "id": 2,
+      "title": "32/XXS",
+      "sizeGroupId": 1,
+      "order": 2
+    },
+    {
+      "id": 3,
+      "title": "34/XS",
+      "sizeGroupId": 1,
+      "order": 4
+    },
+    {
+      "id": 4,
+      "title": "36/S",
+      "sizeGroupId": 1,
+      "order": 6
+    },
+    {
+      "id": 5,
+      "title": "38/M",
+      "sizeGroupId": 1,
+      "order": 8
+    },
+    {
+      "id": 6,
+      "title": "40/L",
+      "sizeGroupId": 1,
+      "order": 10
+    },
+    {
+      "id": 7,
+      "title": "42/XL",
+      "sizeGroupId": 1,
+      "order": 12
+    },
+    {
+      "id": 8,
+      "title": "44/XXL",
+      "sizeGroupId": 1,
+      "order": 14
+    },
+    {
+      "id": 9,
+      "title": "46/3XL",
+      "sizeGroupId": 1,
+      "order": 16
+    },
+    {
+      "id": 10,
+      "title": "48/4XL",
+      "sizeGroupId": 1,
+      "order": 18
+    },
+    {
+      "id": 11,
+      "title": "50/5XL",
+      "sizeGroupId": 1,
+      "order": 20
+    },
+    {
+      "id": 12,
+      "title": "52/6XL",
+      "sizeGroupId": 1,
+      "order": 22
+    },
+    {
+      "id": 13,
+      "title": "54/7XL",
+      "sizeGroupId": 1,
+      "order": 24
+    },
+    {
+      "id": 14,
+      "title": "Другой размер",
+      "sizeGroupId": 1,
+      "order": 26
+    },
+    {
+      "id": 15,
+      "title": "One size",
+      "sizeGroupId": 2,
+      "order": 0
+    },
+    {
+      "id": 16,
+      "title": "26/XXS",
+      "sizeGroupId": 2,
+      "order": 2
+    },
+    {
+      "id": 17,
+      "title": "28/XS",
+      "sizeGroupId": 2,
+      "order": 4
+    },
+    {
+      "id": 18,
+      "title": "29/S",
+      "sizeGroupId": 2,
+      "order": 6
+    },
+    {
+      "id": 19,
+      "title": "30/S",
+      "sizeGroupId": 2,
+      "order": 8
+    },
+    {
+      "id": 20,
+      "title": "31/M",
+      "sizeGroupId": 2,
+      "order": 10
+    },
+    {
+      "id": 21,
+      "title": "32/M",
+      "sizeGroupId": 2,
+      "order": 12
+    },
+    {
+      "id": 22,
+      "title": "33/L",
+      "sizeGroupId": 2,
+      "order": 14
+    },
+    {
+      "id": 23,
+      "title": "34/L",
+      "sizeGroupId": 2,
+      "order": 16
+    },
+    {
+      "id": 24,
+      "title": "36/XL",
+      "sizeGroupId": 2,
+      "order": 18
+    },
+    {
+      "id": 25,
+      "title": "38/XL",
+      "sizeGroupId": 2,
+      "order": 20
+    },
+    {
+      "id": 26,
+      "title": "40/XXL",
+      "sizeGroupId": 2,
+      "order": 22
+    },
+    {
+      "id": 27,
+      "title": "42/3XL",
+      "sizeGroupId": 2,
+      "order": 24
+    },
+    {
+      "id": 28,
+      "title": "44/4XL",
+      "sizeGroupId": 2,
+      "order": 26
+    },
+    {
+      "id": 29,
+      "title": "46/5XL",
+      "sizeGroupId": 2,
+      "order": 28
+    },
+    {
+      "id": 30,
+      "title": "48/6XL",
+      "sizeGroupId": 2,
+      "order": 30
+    },
+    {
+      "id": 31,
+      "title": "50/7XL",
+      "sizeGroupId": 2,
+      "order": 32
+    },
+    {
+      "id": 32,
+      "title": "Другой размер",
+      "sizeGroupId": 2,
+      "order": 34
+    },
+    {
+      "id": 33,
+      "title": "One size",
+      "sizeGroupId": 3,
+      "order": 0
+    },
+    {
+      "id": 34,
+      "title": "34",
+      "sizeGroupId": 3,
+      "order": 2
+    },
+    {
+      "id": 35,
+      "title": "34.5",
+      "sizeGroupId": 3,
+      "order": 4
+    },
+    {
+      "id": 36,
+      "title": "35",
+      "sizeGroupId": 3,
+      "order": 6
+    },
+    {
+      "id": 37,
+      "title": "35.5",
+      "sizeGroupId": 3,
+      "order": 8
+    },
+    {
+      "id": 38,
+      "title": "36",
+      "sizeGroupId": 3,
+      "order": 10
+    },
+    {
+      "id": 39,
+      "title": "36.5",
+      "sizeGroupId": 3,
+      "order": 12
+    },
+    {
+      "id": 40,
+      "title": "37",
+      "sizeGroupId": 3,
+      "order": 14
+    },
+    {
+      "id": 41,
+      "title": "37.5",
+      "sizeGroupId": 3,
+      "order": 16
+    },
+    {
+      "id": 42,
+      "title": "38",
+      "sizeGroupId": 3,
+      "order": 18
+    },
+    {
+      "id": 43,
+      "title": "38.5",
+      "sizeGroupId": 3,
+      "order": 20
+    },
+    {
+      "id": 44,
+      "title": "39",
+      "sizeGroupId": 3,
+      "order": 22
+    },
+    {
+      "id": 45,
+      "title": "39.5",
+      "sizeGroupId": 3,
+      "order": 24
+    },
+    {
+      "id": 46,
+      "title": "40",
+      "sizeGroupId": 3,
+      "order": 26
+    },
+    {
+      "id": 47,
+      "title": "40.5",
+      "sizeGroupId": 3,
+      "order": 28
+    },
+    {
+      "id": 48,
+      "title": "41",
+      "sizeGroupId": 3,
+      "order": 30
+    },
+    {
+      "id": 49,
+      "title": "41.5",
+      "sizeGroupId": 3,
+      "order": 32
+    },
+    {
+      "id": 50,
+      "title": "42",
+      "sizeGroupId": 3,
+      "order": 34
+    },
+    {
+      "id": 51,
+      "title": "42.5",
+      "sizeGroupId": 3,
+      "order": 36
+    },
+    {
+      "id": 52,
+      "title": "43",
+      "sizeGroupId": 3,
+      "order": 38
+    },
+    {
+      "id": 53,
+      "title": "43.5",
+      "sizeGroupId": 3,
+      "order": 40
+    },
+    {
+      "id": 54,
+      "title": "44",
+      "sizeGroupId": 3,
+      "order": 42
+    },
+    {
+      "id": 55,
+      "title": "44.5",
+      "sizeGroupId": 3,
+      "order": 44
+    },
+    {
+      "id": 56,
+      "title": "45",
+      "sizeGroupId": 3,
+      "order": 46
+    },
+    {
+      "id": 57,
+      "title": "45.5",
+      "sizeGroupId": 3,
+      "order": 48
+    },
+    {
+      "id": 58,
+      "title": "46",
+      "sizeGroupId": 3,
+      "order": 50
+    },
+    {
+      "id": 59,
+      "title": "46.5",
+      "sizeGroupId": 3,
+      "order": 52
+    },
+    {
+      "id": 60,
+      "title": "47.5",
+      "sizeGroupId": 3,
+      "order": 54
+    },
+    {
+      "id": 61,
+      "title": "48",
+      "sizeGroupId": 3,
+      "order": 56
+    },
+    {
+      "id": 62,
+      "title": "48.5",
+      "sizeGroupId": 3,
+      "order": 58
+    },
+    {
+      "id": 63,
+      "title": "49",
+      "sizeGroupId": 3,
+      "order": 60
+    },
+    {
+      "id": 64,
+      "title": "49.5",
+      "sizeGroupId": 3,
+      "order": 62
+    },
+    {
+      "id": 65,
+      "title": "50",
+      "sizeGroupId": 3,
+      "order": 64
+    },
+    {
+      "id": 66,
+      "title": "50.5",
+      "sizeGroupId": 3,
+      "order": 66
+    },
+    {
+      "id": 67,
+      "title": "51",
+      "sizeGroupId": 3,
+      "order": 68
+    },
+    {
+      "id": 68,
+      "title": "51.5",
+      "sizeGroupId": 3,
+      "order": 70
+    },
+    {
+      "id": 69,
+      "title": "52",
+      "sizeGroupId": 3,
+      "order": 72
+    },
+    {
+      "id": 70,
+      "title": "Другой размер",
+      "sizeGroupId": 3,
+      "order": 74
+    },
+    {
+      "id": 71,
+      "title": "One size",
+      "sizeGroupId": 4,
+      "order": 0
+    },
+    {
+      "id": 72,
+      "title": "30/3XS",
+      "sizeGroupId": 4,
+      "order": 2
+    },
+    {
+      "id": 73,
+      "title": "32/XXS",
+      "sizeGroupId": 4,
+      "order": 4
+    },
+    {
+      "id": 74,
+      "title": "34/XS",
+      "sizeGroupId": 4,
+      "order": 6
+    },
+    {
+      "id": 75,
+      "title": "36/S",
+      "sizeGroupId": 4,
+      "order": 8
+    },
+    {
+      "id": 76,
+      "title": "38/M",
+      "sizeGroupId": 4,
+      "order": 10
+    },
+    {
+      "id": 77,
+      "title": "40/L",
+      "sizeGroupId": 4,
+      "order": 12
+    },
+    {
+      "id": 78,
+      "title": "42/XL",
+      "sizeGroupId": 4,
+      "order": 14
+    },
+    {
+      "id": 79,
+      "title": "44/XXL",
+      "sizeGroupId": 4,
+      "order": 16
+    },
+    {
+      "id": 80,
+      "title": "46/3XL",
+      "sizeGroupId": 4,
+      "order": 18
+    },
+    {
+      "id": 81,
+      "title": "48/4XL",
+      "sizeGroupId": 4,
+      "order": 20
+    },
+    {
+      "id": 82,
+      "title": "50/5XL",
+      "sizeGroupId": 4,
+      "order": 22
+    },
+    {
+      "id": 83,
+      "title": "52/6XL",
+      "sizeGroupId": 4,
+      "order": 24
+    },
+    {
+      "id": 84,
+      "title": "54/7XL",
+      "sizeGroupId": 4,
+      "order": 26
+    },
+    {
+      "id": 85,
+      "title": "Другой размер",
+      "sizeGroupId": 4,
+      "order": 28
+    },
+    {
+      "id": 86,
+      "title": "One size",
+      "sizeGroupId": 5,
+      "order": 0
+    },
+    {
+      "id": 87,
+      "title": "24/XXS",
+      "sizeGroupId": 5,
+      "order": 2
+    },
+    {
+      "id": 88,
+      "title": "25/XS",
+      "sizeGroupId": 5,
+      "order": 4
+    },
+    {
+      "id": 89,
+      "title": "26/S",
+      "sizeGroupId": 5,
+      "order": 6
+    },
+    {
+      "id": 90,
+      "title": "27/S",
+      "sizeGroupId": 5,
+      "order": 8
+    },
+    {
+      "id": 91,
+      "title": "28/M",
+      "sizeGroupId": 5,
+      "order": 10
+    },
+    {
+      "id": 92,
+      "title": "29/M",
+      "sizeGroupId": 5,
+      "order": 12
+    },
+    {
+      "id": 93,
+      "title": "30/L",
+      "sizeGroupId": 5,
+      "order": 14
+    },
+    {
+      "id": 94,
+      "title": "31/L",
+      "sizeGroupId": 5,
+      "order": 16
+    },
+    {
+      "id": 95,
+      "title": "32/XL",
+      "sizeGroupId": 5,
+      "order": 18
+    },
+    {
+      "id": 96,
+      "title": "33/XL",
+      "sizeGroupId": 5,
+      "order": 20
+    },
+    {
+      "id": 97,
+      "title": "34/XXL",
+      "sizeGroupId": 5,
+      "order": 22
+    },
+    {
+      "id": 98,
+      "title": "36/3XL",
+      "sizeGroupId": 5,
+      "order": 24
+    },
+    {
+      "id": 99,
+      "title": "38/4XL",
+      "sizeGroupId": 5,
+      "order": 26
+    },
+    {
+      "id": 100,
+      "title": "40/5XL",
+      "sizeGroupId": 5,
+      "order": 28
+    },
+    {
+      "id": 101,
+      "title": "42/6XL",
+      "sizeGroupId": 5,
+      "order": 30
+    },
+    {
+      "id": 102,
+      "title": "44/7XL",
+      "sizeGroupId": 5,
+      "order": 32
+    },
+    {
+      "id": 103,
+      "title": "Другой размер",
+      "sizeGroupId": 5,
+      "order": 34
+    },
+    {
+      "id": 104,
+      "title": "One size",
+      "sizeGroupId": 6,
+      "order": 0
+    },
+    {
+      "id": 105,
+      "title": "32",
+      "sizeGroupId": 6,
+      "order": 2
+    },
+    {
+      "id": 106,
+      "title": "32.5",
+      "sizeGroupId": 6,
+      "order": 4
+    },
+    {
+      "id": 107,
+      "title": "33",
+      "sizeGroupId": 6,
+      "order": 6
+    },
+    {
+      "id": 108,
+      "title": "33.5",
+      "sizeGroupId": 6,
+      "order": 8
+    },
+    {
+      "id": 109,
+      "title": "34",
+      "sizeGroupId": 6,
+      "order": 10
+    },
+    {
+      "id": 110,
+      "title": "34.5",
+      "sizeGroupId": 6,
+      "order": 12
+    },
+    {
+      "id": 111,
+      "title": "35",
+      "sizeGroupId": 6,
+      "order": 14
+    },
+    {
+      "id": 112,
+      "title": "35.5",
+      "sizeGroupId": 6,
+      "order": 16
+    },
+    {
+      "id": 113,
+      "title": "36",
+      "sizeGroupId": 6,
+      "order": 18
+    },
+    {
+      "id": 114,
+      "title": "36.5",
+      "sizeGroupId": 6,
+      "order": 20
+    },
+    {
+      "id": 115,
+      "title": "37",
+      "sizeGroupId": 6,
+      "order": 22
+    },
+    {
+      "id": 116,
+      "title": "37.5",
+      "sizeGroupId": 6,
+      "order": 24
+    },
+    {
+      "id": 117,
+      "title": "38",
+      "sizeGroupId": 6,
+      "order": 26
+    },
+    {
+      "id": 118,
+      "title": "38.5",
+      "sizeGroupId": 6,
+      "order": 28
+    },
+    {
+      "id": 119,
+      "title": "39",
+      "sizeGroupId": 6,
+      "order": 30
+    },
+    {
+      "id": 120,
+      "title": "39.5",
+      "sizeGroupId": 6,
+      "order": 32
+    },
+    {
+      "id": 121,
+      "title": "40",
+      "sizeGroupId": 6,
+      "order": 34
+    },
+    {
+      "id": 122,
+      "title": "40.5",
+      "sizeGroupId": 6,
+      "order": 36
+    },
+    {
+      "id": 123,
+      "title": "41",
+      "sizeGroupId": 6,
+      "order": 38
+    },
+    {
+      "id": 124,
+      "title": "41.5",
+      "sizeGroupId": 6,
+      "order": 40
+    },
+    {
+      "id": 125,
+      "title": "42",
+      "sizeGroupId": 6,
+      "order": 42
+    },
+    {
+      "id": 126,
+      "title": "42.5",
+      "sizeGroupId": 6,
+      "order": 44
+    },
+    {
+      "id": 127,
+      "title": "43",
+      "sizeGroupId": 6,
+      "order": 46
+    },
+    {
+      "id": 128,
+      "title": "43.5",
+      "sizeGroupId": 6,
+      "order": 48
+    },
+    {
+      "id": 129,
+      "title": "44",
+      "sizeGroupId": 6,
+      "order": 50
+    },
+    {
+      "id": 130,
+      "title": "44.5",
+      "sizeGroupId": 6,
+      "order": 52
+    },
+    {
+      "id": 131,
+      "title": "45",
+      "sizeGroupId": 6,
+      "order": 54
+    },
+    {
+      "id": 132,
+      "title": "45.5",
+      "sizeGroupId": 6,
+      "order": 56
+    },
+    {
+      "id": 133,
+      "title": "46",
+      "sizeGroupId": 6,
+      "order": 58
+    },
+    {
+      "id": 134,
+      "title": "46.5",
+      "sizeGroupId": 6,
+      "order": 60
+    },
+    {
+      "id": 135,
+      "title": "47.5",
+      "sizeGroupId": 6,
+      "order": 62
+    },
+    {
+      "id": 136,
+      "title": "48",
+      "sizeGroupId": 6,
+      "order": 64
+    },
+    {
+      "id": 137,
+      "title": "48.5",
+      "sizeGroupId": 6,
+      "order": 66
+    },
+    {
+      "id": 138,
+      "title": "49",
+      "sizeGroupId": 6,
+      "order": 68
+    },
+    {
+      "id": 139,
+      "title": "49.5",
+      "sizeGroupId": 6,
+      "order": 70
+    },
+    {
+      "id": 140,
+      "title": "50",
+      "sizeGroupId": 6,
+      "order": 72
+    },
+    {
+      "id": 141,
+      "title": "Другой размер",
+      "sizeGroupId": 6,
+      "order": 74
+    },
+    {
+      "id": 142,
+      "title": "One size",
+      "sizeGroupId": 7,
+      "order": 0
+    },
+    {
+      "id": 143,
+      "title": "65A",
+      "sizeGroupId": 7,
+      "order": 2
+    },
+    {
+      "id": 144,
+      "title": "65B",
+      "sizeGroupId": 7,
+      "order": 4
+    },
+    {
+      "id": 145,
+      "title": "65C",
+      "sizeGroupId": 7,
+      "order": 6
+    },
+    {
+      "id": 146,
+      "title": "65D",
+      "sizeGroupId": 7,
+      "order": 8
+    },
+    {
+      "id": 147,
+      "title": "65E",
+      "sizeGroupId": 7,
+      "order": 10
+    },
+    {
+      "id": 148,
+      "title": "65F",
+      "sizeGroupId": 7,
+      "order": 12
+    },
+    {
+      "id": 149,
+      "title": "65G",
+      "sizeGroupId": 7,
+      "order": 14
+    },
+    {
+      "id": 150,
+      "title": "65H",
+      "sizeGroupId": 7,
+      "order": 16
+    },
+    {
+      "id": 151,
+      "title": "65J",
+      "sizeGroupId": 7,
+      "order": 18
+    },
+    {
+      "id": 152,
+      "title": "70A",
+      "sizeGroupId": 7,
+      "order": 20
+    },
+    {
+      "id": 153,
+      "title": "70B",
+      "sizeGroupId": 7,
+      "order": 22
+    },
+    {
+      "id": 154,
+      "title": "70C",
+      "sizeGroupId": 7,
+      "order": 24
+    },
+    {
+      "id": 155,
+      "title": "70D",
+      "sizeGroupId": 7,
+      "order": 26
+    },
+    {
+      "id": 156,
+      "title": "70E",
+      "sizeGroupId": 7,
+      "order": 28
+    },
+    {
+      "id": 157,
+      "title": "70F",
+      "sizeGroupId": 7,
+      "order": 30
+    },
+    {
+      "id": 158,
+      "title": "70G",
+      "sizeGroupId": 7,
+      "order": 32
+    },
+    {
+      "id": 159,
+      "title": "70H",
+      "sizeGroupId": 7,
+      "order": 34
+    },
+    {
+      "id": 160,
+      "title": "70J",
+      "sizeGroupId": 7,
+      "order": 36
+    },
+    {
+      "id": 161,
+      "title": "75A",
+      "sizeGroupId": 7,
+      "order": 38
+    },
+    {
+      "id": 162,
+      "title": "75B",
+      "sizeGroupId": 7,
+      "order": 40
+    },
+    {
+      "id": 163,
+      "title": "75C",
+      "sizeGroupId": 7,
+      "order": 42
+    },
+    {
+      "id": 164,
+      "title": "75D",
+      "sizeGroupId": 7,
+      "order": 44
+    },
+    {
+      "id": 165,
+      "title": "75E",
+      "sizeGroupId": 7,
+      "order": 46
+    },
+    {
+      "id": 166,
+      "title": "75F",
+      "sizeGroupId": 7,
+      "order": 48
+    },
+    {
+      "id": 167,
+      "title": "75G",
+      "sizeGroupId": 7,
+      "order": 50
+    },
+    {
+      "id": 168,
+      "title": "75H",
+      "sizeGroupId": 7,
+      "order": 52
+    },
+    {
+      "id": 169,
+      "title": "75J",
+      "sizeGroupId": 7,
+      "order": 54
+    },
+    {
+      "id": 170,
+      "title": "80A",
+      "sizeGroupId": 7,
+      "order": 56
+    },
+    {
+      "id": 171,
+      "title": "80B",
+      "sizeGroupId": 7,
+      "order": 58
+    },
+    {
+      "id": 172,
+      "title": "80C",
+      "sizeGroupId": 7,
+      "order": 60
+    },
+    {
+      "id": 173,
+      "title": "80D",
+      "sizeGroupId": 7,
+      "order": 62
+    },
+    {
+      "id": 174,
+      "title": "80E",
+      "sizeGroupId": 7,
+      "order": 64
+    },
+    {
+      "id": 175,
+      "title": "80F",
+      "sizeGroupId": 7,
+      "order": 66
+    },
+    {
+      "id": 176,
+      "title": "80G",
+      "sizeGroupId": 7,
+      "order": 68
+    },
+    {
+      "id": 177,
+      "title": "80H",
+      "sizeGroupId": 7,
+      "order": 70
+    },
+    {
+      "id": 178,
+      "title": "80J",
+      "sizeGroupId": 7,
+      "order": 72
+    },
+    {
+      "id": 179,
+      "title": "85A",
+      "sizeGroupId": 7,
+      "order": 74
+    },
+    {
+      "id": 180,
+      "title": "85B",
+      "sizeGroupId": 7,
+      "order": 76
+    },
+    {
+      "id": 181,
+      "title": "85C",
+      "sizeGroupId": 7,
+      "order": 78
+    },
+    {
+      "id": 182,
+      "title": "85D",
+      "sizeGroupId": 7,
+      "order": 80
+    },
+    {
+      "id": 183,
+      "title": "85E",
+      "sizeGroupId": 7,
+      "order": 82
+    },
+    {
+      "id": 184,
+      "title": "85F",
+      "sizeGroupId": 7,
+      "order": 84
+    },
+    {
+      "id": 185,
+      "title": "85G",
+      "sizeGroupId": 7,
+      "order": 86
+    },
+    {
+      "id": 186,
+      "title": "85H",
+      "sizeGroupId": 7,
+      "order": 88
+    },
+    {
+      "id": 187,
+      "title": "85J",
+      "sizeGroupId": 7,
+      "order": 90
+    },
+    {
+      "id": 188,
+      "title": "90A",
+      "sizeGroupId": 7,
+      "order": 92
+    },
+    {
+      "id": 189,
+      "title": "90B",
+      "sizeGroupId": 7,
+      "order": 94
+    },
+    {
+      "id": 190,
+      "title": "90C",
+      "sizeGroupId": 7,
+      "order": 96
+    },
+    {
+      "id": 191,
+      "title": "90D",
+      "sizeGroupId": 7,
+      "order": 98
+    },
+    {
+      "id": 192,
+      "title": "90E",
+      "sizeGroupId": 7,
+      "order": 100
+    },
+    {
+      "id": 193,
+      "title": "90F",
+      "sizeGroupId": 7,
+      "order": 102
+    },
+    {
+      "id": 194,
+      "title": "90G",
+      "sizeGroupId": 7,
+      "order": 104
+    },
+    {
+      "id": 195,
+      "title": "90H",
+      "sizeGroupId": 7,
+      "order": 106
+    },
+    {
+      "id": 196,
+      "title": "90J",
+      "sizeGroupId": 7,
+      "order": 108
+    },
+    {
+      "id": 197,
+      "title": "95A",
+      "sizeGroupId": 7,
+      "order": 110
+    },
+    {
+      "id": 198,
+      "title": "95B",
+      "sizeGroupId": 7,
+      "order": 112
+    },
+    {
+      "id": 199,
+      "title": "95C",
+      "sizeGroupId": 7,
+      "order": 114
+    },
+    {
+      "id": 200,
+      "title": "95D",
+      "sizeGroupId": 7,
+      "order": 116
+    },
+    {
+      "id": 201,
+      "title": "95E",
+      "sizeGroupId": 7,
+      "order": 118
+    },
+    {
+      "id": 202,
+      "title": "95F",
+      "sizeGroupId": 7,
+      "order": 120
+    },
+    {
+      "id": 203,
+      "title": "95G",
+      "sizeGroupId": 7,
+      "order": 122
+    },
+    {
+      "id": 204,
+      "title": "95H",
+      "sizeGroupId": 7,
+      "order": 124
+    },
+    {
+      "id": 205,
+      "title": "95J",
+      "sizeGroupId": 7,
+      "order": 126
+    },
+    {
+      "id": 206,
+      "title": "100A",
+      "sizeGroupId": 7,
+      "order": 128
+    },
+    {
+      "id": 207,
+      "title": "100B",
+      "sizeGroupId": 7,
+      "order": 130
+    },
+    {
+      "id": 208,
+      "title": "100C",
+      "sizeGroupId": 7,
+      "order": 132
+    },
+    {
+      "id": 209,
+      "title": "100D",
+      "sizeGroupId": 7,
+      "order": 134
+    },
+    {
+      "id": 210,
+      "title": "100E",
+      "sizeGroupId": 7,
+      "order": 136
+    },
+    {
+      "id": 211,
+      "title": "100F",
+      "sizeGroupId": 7,
+      "order": 138
+    },
+    {
+      "id": 212,
+      "title": "100G",
+      "sizeGroupId": 7,
+      "order": 140
+    },
+    {
+      "id": 213,
+      "title": "100H",
+      "sizeGroupId": 7,
+      "order": 142
+    },
+    {
+      "id": 214,
+      "title": "100J",
+      "sizeGroupId": 7,
+      "order": 144
+    },
+    {
+      "id": 215,
+      "title": "Другой размер",
+      "sizeGroupId": 7,
+      "order": 146
+    },
+    {
+      "id": 216,
+      "title": "One size",
+      "sizeGroupId": 8,
+      "order": 0
+    },
+    {
+      "id": 217,
+      "title": "2 / 92",
+      "sizeGroupId": 8,
+      "order": 2
+    },
+    {
+      "id": 218,
+      "title": "3 / 98",
+      "sizeGroupId": 8,
+      "order": 4
+    },
+    {
+      "id": 219,
+      "title": "4 / 104",
+      "sizeGroupId": 8,
+      "order": 6
+    },
+    {
+      "id": 220,
+      "title": "5 / 110",
+      "sizeGroupId": 8,
+      "order": 8
+    },
+    {
+      "id": 221,
+      "title": "6 / 116",
+      "sizeGroupId": 8,
+      "order": 10
+    },
+    {
+      "id": 222,
+      "title": "7 / 122",
+      "sizeGroupId": 8,
+      "order": 12
+    },
+    {
+      "id": 223,
+      "title": "8 / 128",
+      "sizeGroupId": 8,
+      "order": 14
+    },
+    {
+      "id": 224,
+      "title": "9 / 134",
+      "sizeGroupId": 8,
+      "order": 16
+    },
+    {
+      "id": 225,
+      "title": "10 / 140",
+      "sizeGroupId": 8,
+      "order": 18
+    },
+    {
+      "id": 226,
+      "title": "11 / 146",
+      "sizeGroupId": 8,
+      "order": 20
+    },
+    {
+      "id": 227,
+      "title": "12 / 152",
+      "sizeGroupId": 8,
+      "order": 22
+    },
+    {
+      "id": 228,
+      "title": "13 / 158",
+      "sizeGroupId": 8,
+      "order": 24
+    },
+    {
+      "id": 229,
+      "title": "14 / 164",
+      "sizeGroupId": 8,
+      "order": 26
+    },
+    {
+      "id": 230,
+      "title": "15 / 170",
+      "sizeGroupId": 8,
+      "order": 28
+    },
+    {
+      "id": 231,
+      "title": "Другой размер",
+      "sizeGroupId": 8,
+      "order": 30
+    },
+    {
+      "id": 232,
+      "title": "One size",
+      "sizeGroupId": 9,
+      "order": 0
+    },
+    {
+      "id": 233,
+      "title": "20",
+      "sizeGroupId": 9,
+      "order": 2
+    },
+    {
+      "id": 234,
+      "title": "20.5",
+      "sizeGroupId": 9,
+      "order": 4
+    },
+    {
+      "id": 235,
+      "title": "21",
+      "sizeGroupId": 9,
+      "order": 6
+    },
+    {
+      "id": 236,
+      "title": "21.5",
+      "sizeGroupId": 9,
+      "order": 8
+    },
+    {
+      "id": 237,
+      "title": "22",
+      "sizeGroupId": 9,
+      "order": 10
+    },
+    {
+      "id": 238,
+      "title": "22.5",
+      "sizeGroupId": 9,
+      "order": 12
+    },
+    {
+      "id": 239,
+      "title": "23",
+      "sizeGroupId": 9,
+      "order": 14
+    },
+    {
+      "id": 240,
+      "title": "23.5",
+      "sizeGroupId": 9,
+      "order": 16
+    },
+    {
+      "id": 241,
+      "title": "24",
+      "sizeGroupId": 9,
+      "order": 18
+    },
+    {
+      "id": 242,
+      "title": "24.5",
+      "sizeGroupId": 9,
+      "order": 20
+    },
+    {
+      "id": 243,
+      "title": "25",
+      "sizeGroupId": 9,
+      "order": 22
+    },
+    {
+      "id": 244,
+      "title": "25.5",
+      "sizeGroupId": 9,
+      "order": 24
+    },
+    {
+      "id": 245,
+      "title": "26",
+      "sizeGroupId": 9,
+      "order": 26
+    },
+    {
+      "id": 246,
+      "title": "26.5",
+      "sizeGroupId": 9,
+      "order": 28
+    },
+    {
+      "id": 247,
+      "title": "27",
+      "sizeGroupId": 9,
+      "order": 30
+    },
+    {
+      "id": 248,
+      "title": "27.5",
+      "sizeGroupId": 9,
+      "order": 32
+    },
+    {
+      "id": 249,
+      "title": "28",
+      "sizeGroupId": 9,
+      "order": 34
+    },
+    {
+      "id": 250,
+      "title": "28.5",
+      "sizeGroupId": 9,
+      "order": 36
+    },
+    {
+      "id": 251,
+      "title": "29",
+      "sizeGroupId": 9,
+      "order": 38
+    },
+    {
+      "id": 252,
+      "title": "29.5",
+      "sizeGroupId": 9,
+      "order": 40
+    },
+    {
+      "id": 253,
+      "title": "30",
+      "sizeGroupId": 9,
+      "order": 42
+    },
+    {
+      "id": 254,
+      "title": "30.5",
+      "sizeGroupId": 9,
+      "order": 44
+    },
+    {
+      "id": 255,
+      "title": "31",
+      "sizeGroupId": 9,
+      "order": 46
+    },
+    {
+      "id": 256,
+      "title": "31.5",
+      "sizeGroupId": 9,
+      "order": 48
+    },
+    {
+      "id": 257,
+      "title": "32",
+      "sizeGroupId": 9,
+      "order": 50
+    },
+    {
+      "id": 258,
+      "title": "32.5",
+      "sizeGroupId": 9,
+      "order": 52
+    },
+    {
+      "id": 259,
+      "title": "33",
+      "sizeGroupId": 9,
+      "order": 54
+    },
+    {
+      "id": 260,
+      "title": "33.5",
+      "sizeGroupId": 9,
+      "order": 56
+    },
+    {
+      "id": 261,
+      "title": "34",
+      "sizeGroupId": 9,
+      "order": 58
+    },
+    {
+      "id": 262,
+      "title": "34.5",
+      "sizeGroupId": 9,
+      "order": 60
+    },
+    {
+      "id": 263,
+      "title": "35",
+      "sizeGroupId": 9,
+      "order": 62
+    },
+    {
+      "id": 264,
+      "title": "35.5",
+      "sizeGroupId": 9,
+      "order": 64
+    },
+    {
+      "id": 265,
+      "title": "36",
+      "sizeGroupId": 9,
+      "order": 66
+    },
+    {
+      "id": 266,
+      "title": "36.5",
+      "sizeGroupId": 9,
+      "order": 68
+    },
+    {
+      "id": 267,
+      "title": "37",
+      "sizeGroupId": 9,
+      "order": 70
+    },
+    {
+      "id": 268,
+      "title": "37.5",
+      "sizeGroupId": 9,
+      "order": 72
+    },
+    {
+      "id": 269,
+      "title": "38",
+      "sizeGroupId": 9,
+      "order": 74
+    },
+    {
+      "id": 270,
+      "title": "Другой размер",
+      "sizeGroupId": 9,
+      "order": 76
+    },
+    {
+      "id": 271,
+      "title": "One size",
+      "sizeGroupId": 10,
+      "order": 0
+    },
+    {
+      "id": 272,
+      "title": "0-1мес",
+      "sizeGroupId": 10,
+      "order": 2
+    },
+    {
+      "id": 273,
+      "title": "1-3мес",
+      "sizeGroupId": 10,
+      "order": 4
+    },
+    {
+      "id": 274,
+      "title": "3-6мес",
+      "sizeGroupId": 10,
+      "order": 6
+    },
+    {
+      "id": 275,
+      "title": "6-9мес",
+      "sizeGroupId": 10,
+      "order": 8
+    },
+    {
+      "id": 276,
+      "title": "9-12мес",
+      "sizeGroupId": 10,
+      "order": 10
+    },
+    {
+      "id": 277,
+      "title": "12-18мес",
+      "sizeGroupId": 10,
+      "order": 12
+    },
+    {
+      "id": 278,
+      "title": "18-24мес",
+      "sizeGroupId": 10,
+      "order": 14
+    },
+    {
+      "id": 279,
+      "title": "Другой размер",
+      "sizeGroupId": 10,
+      "order": 16
+    },
+    {
+      "id": 280,
+      "title": "One size",
+      "sizeGroupId": 11,
+      "order": 0
+    },
+    {
+      "id": 281,
+      "title": "15",
+      "sizeGroupId": 11,
+      "order": 2
+    },
+    {
+      "id": 282,
+      "title": "15.5",
+      "sizeGroupId": 11,
+      "order": 4
+    },
+    {
+      "id": 283,
+      "title": "16",
+      "sizeGroupId": 11,
+      "order": 6
+    },
+    {
+      "id": 284,
+      "title": "16.5",
+      "sizeGroupId": 11,
+      "order": 8
+    },
+    {
+      "id": 285,
+      "title": "17",
+      "sizeGroupId": 11,
+      "order": 10
+    },
+    {
+      "id": 286,
+      "title": "17.5",
+      "sizeGroupId": 11,
+      "order": 12
+    },
+    {
+      "id": 287,
+      "title": "18",
+      "sizeGroupId": 11,
+      "order": 14
+    },
+    {
+      "id": 288,
+      "title": "18.5",
+      "sizeGroupId": 11,
+      "order": 16
+    },
+    {
+      "id": 289,
+      "title": "19",
+      "sizeGroupId": 11,
+      "order": 18
+    },
+    {
+      "id": 290,
+      "title": "19.5",
+      "sizeGroupId": 11,
+      "order": 20
+    },
+    {
+      "id": 291,
+      "title": "20",
+      "sizeGroupId": 11,
+      "order": 22
+    },
+    {
+      "id": 292,
+      "title": "20.5",
+      "sizeGroupId": 11,
+      "order": 24
+    },
+    {
+      "id": 293,
+      "title": "21",
+      "sizeGroupId": 11,
+      "order": 26
+    },
+    {
+      "id": 294,
+      "title": "21.5",
+      "sizeGroupId": 11,
+      "order": 28
+    },
+    {
+      "id": 295,
+      "title": "22",
+      "sizeGroupId": 11,
+      "order": 30
+    },
+    {
+      "id": 296,
+      "title": "22.5",
+      "sizeGroupId": 11,
+      "order": 32
+    },
+    {
+      "id": 297,
+      "title": "23",
+      "sizeGroupId": 11,
+      "order": 34
+    },
+    {
+      "id": 298,
+      "title": "23.5",
+      "sizeGroupId": 11,
+      "order": 36
+    },
+    {
+      "id": 299,
+      "title": "24",
+      "sizeGroupId": 11,
+      "order": 38
+    },
+    {
+      "id": 300,
+      "title": "Другой размер",
+      "sizeGroupId": 11,
+      "order": 40
+    }
+  ]

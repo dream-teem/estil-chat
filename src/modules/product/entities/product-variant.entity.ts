@@ -1,18 +1,16 @@
-import { BaseEntity } from '@/common/base.entity';
 import { TableName } from '@/common/interfaces/table';
-import { Check, Column, Entity,  JoinColumn,  ManyToOne,  Unique } from 'typeorm';
+import { Check, Column, Entity,  JoinColumn,  ManyToOne,  PrimaryColumn } from 'typeorm';
 import type { ProductVariant } from '../interfaces/product-size.interface';
 import { ProductEntity } from './product.entity';
 import { SizeEntity } from './size.entity';
 
 @Entity(TableName.PRODUCT_VARIANT)
-@Unique(['productId', 'sizeId'])
 @Check('quantity >= 0')
-export class ProductVariantEntity extends BaseEntity implements ProductVariant {
-  @Column('int')
+export class ProductVariantEntity implements ProductVariant {
+  @PrimaryColumn('int')
   sizeId!: number;
 
-  @Column('int')
+  @PrimaryColumn('int')
   productId!: number;
 
   @Column('int')

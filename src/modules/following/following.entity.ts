@@ -1,16 +1,14 @@
-import { BaseEntity } from '@/common/base.entity';
 import { TableName } from '@/common/interfaces/table';
-import { Column, Entity, JoinColumn, ManyToOne, Unique } from 'typeorm';
+import { Entity, JoinColumn, ManyToOne, PrimaryColumn } from 'typeorm';
 import { UserEntity } from '../user';
 import type { Following } from './following.interface';
 
 @Entity(TableName.FOLLOWING)
-@Unique(['userId', 'followerId'])
-export class FollowingEntity extends BaseEntity implements Following {
-  @Column('int')
+export class FollowingEntity implements Following {
+  @PrimaryColumn('int')
   userId!: number;
 
-  @Column('int')
+  @PrimaryColumn('int')
   followerId!: number;
 
   @ManyToOne(() => UserEntity, {

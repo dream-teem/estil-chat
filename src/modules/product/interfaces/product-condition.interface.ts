@@ -1,8 +1,8 @@
-import type { BaseEntity } from '@/common/base.entity';
+import type { BaseEntityStatic } from '@/common/base.entity';
 
-export type ProductCondition = BaseEntity & {
+export interface ProductCondition extends BaseEntityStatic {
   title: string;
   description: string;
   explanation: string;
   order: number;
-};
+}

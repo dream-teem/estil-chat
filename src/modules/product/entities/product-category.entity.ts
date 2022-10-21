@@ -1,4 +1,4 @@
-import { BaseEntity } from '@/common/base.entity';
+import { BaseEntityStatic } from '@/common/base.entity';
 import { TableName } from '@/common/interfaces/table';
 import { Column, Entity, Index, JoinColumn, ManyToOne, Unique } from 'typeorm';
 import type { ProductCategory } from '../interfaces/product-category.interface';
@@ -7,12 +7,15 @@ import { SizeGroupEntity } from './size-group.entity';
 @Entity(TableName.PRODUCT_CATEGORY)
 @Unique(['name', 'parentId'])
 @Unique(['slug', 'parentId'])
-export class ProductCategoryEntity extends BaseEntity implements ProductCategory {
+export class ProductCategoryEntity extends BaseEntityStatic implements ProductCategory {
   @Column('varchar')
   name!: string;
 
   @Column('varchar')
   slug!: string;
+
+  @Column('varchar', { unique: true })
+  path!: string;
 
   @Column('int', { nullable: true })
   parentId!: number | null;

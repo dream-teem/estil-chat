@@ -1,0 +1,68 @@
+[
+    {
+      "id": 1,
+      "title": "Мужская одежда",
+      "slug": "mens-clothes",
+      "order": 0
+    },
+    {
+      "id": 2,
+      "title": "Мужские брюки",
+      "slug": "mens-bottoms",
+      "order": 2
+    },
+    {
+      "id": 3,
+      "title": "Мужская обувь",
+      "slug": "mens-shoes",
+      "order": 4
+    },
+    {
+      "id": 4,
+      "title": "Женская одежда",
+      "slug": "womens-clothes",
+      "order": 0
+    },
+    {
+      "id": 5,
+      "title": "Женские брюки",
+      "slug": "womens-bottoms",
+      "order": 2
+    },
+    {
+      "id": 6,
+      "title": "Женская обувь",
+      "slug": "womens-shoes",
+      "order": 4
+    },
+    {
+      "id": 7,
+      "title": "Бюстгальтер",
+      "slug": "bras",
+      "order": 6
+    },
+    {
+      "id": 8,
+      "title": "Детская одежда",
+      "slug": "kids-clothes",
+      "order": 0
+    },
+    {
+      "id": 9,
+      "title": "Детская обувь",
+      "slug": "kids-shoes",
+      "order": 2
+    },
+    {
+      "id": 10,
+      "title": "Одежда для малышей",
+      "slug": "infants-clothes",
+      "order": 0
+    },
+    {
+      "id": 11,
+      "title": "Обувь для малышей",
+      "slug": "infants-shoes",
+      "order": 2
+    }
+  ]

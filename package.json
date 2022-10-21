@@ -11,7 +11,7 @@
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
     "typeorm:cli": "cd src/db/typeorm-migrations && ts-node --project ../../../tsconfig.json -r tsconfig-paths/register ../../../node_modules/typeorm/cli -d ../../../bin/typeorm-config.ts",
     "migration:generate": "yarn typeorm:cli migration:generate",
-    "migration:create": "yarn typeorm:cli migration:create",
+    "migration:create": "cd src/db/typeorm-migrations && typeorm-ts-node-commonjs migration:create",
     "migration:run": "yarn typeorm:cli migration:run",
     "migration:down": "yarn typeorm:cli migration:revert",
     "mongo:migration:run": "ts-node node_modules/.bin/migrate-mongo up -f bin/mongo-config.ts",

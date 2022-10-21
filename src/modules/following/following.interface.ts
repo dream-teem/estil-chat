@@ -1,6 +1,4 @@
-import type { BaseEntity } from '@/common/base.entity';
-
-export interface Following extends BaseEntity {
+export interface Following {
   userId: number;
   followerId: number;
 }

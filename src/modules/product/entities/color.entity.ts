@@ -1,10 +1,10 @@
-import { BaseEntity } from '@/common/base.entity';
+import { BaseEntityStatic } from '@/common/base.entity';
 import { TableName } from '@/common/interfaces/table';
 import { Column, Entity, Index } from 'typeorm';
 import type { Color } from '../interfaces/product-color.interface';
 
 @Entity(TableName.COLOR)
-export class ColorEntity extends BaseEntity implements Color {
+export class ColorEntity extends BaseEntityStatic implements Color {
   @Column('varchar')
   title!: string;
 

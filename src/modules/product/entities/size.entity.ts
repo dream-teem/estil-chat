@@ -1,11 +1,11 @@
-import { BaseEntity } from '@/common/base.entity';
+import { BaseEntityStatic } from '@/common/base.entity';
 import { TableName } from '@/common/interfaces/table';
 import { Column, Entity, Index, JoinColumn, ManyToOne } from 'typeorm';
 import type { Size } from '../interfaces/product-size.interface';
 import { SizeGroupEntity } from './size-group.entity';
 
 @Entity(TableName.SIZE)
-export class SizeEntity extends BaseEntity implements Size {
+export class SizeEntity extends BaseEntityStatic implements Size {
   @Column('int')
   sizeGroupId!: number;
 

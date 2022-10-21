@@ -1,0 +1,107 @@
+[
+  {
+    "id": 1,
+    "name": "Алматы",
+    "slug": "almaty"
+  },
+  {
+    "id": 2,
+    "name": "Нур-Султан",
+    "slug": "nur-Sultan"
+  },
+  {
+    "id": 3,
+    "name": "Шымкент",
+    "slug": "shymkent"
+  },
+  {
+    "id": 4,
+    "name": "Актау",
+    "slug": "aktau"
+  },
+  {
+    "id": 5,
+    "name": "Актобе",
+    "slug": "aktobe"
+  },
+  {
+    "id": 6,
+    "name": "Атырау",
+    "slug": "atyrau"
+  },
+  {
+    "id": 7,
+    "name": "Караганда",
+    "slug": "karaganda"
+  },
+  {
+    "id": 8,
+    "name": "Кокшетау",
+    "slug": "kokshetau"
+  },
+  {
+    "id": 9,
+    "name": "Костанай",
+    "slug": "kostanai"
+  },
+  {
+    "id": 10,
+    "name": "Кызылорда",
+    "slug": "kizilorda"
+  },
+  {
+    "id": 11,
+    "name": "Павлодар",
+    "slug": "pavlodar"
+  },
+  {
+    "id": 12,
+    "name": "Петропавлск",
+    "slug": "petropavlsk"
+  },
+  {
+    "id": 13,
+    "name": "Рудный",
+    "slug": "rudnyi"
+  },
+  {
+    "id": 14,
+    "name": "Семей",
+    "slug": "semei"
+  },
+  {
+    "id": 15,
+    "name": "Талдыкорган",
+    "slug": "taldikorgan"
+  },
+  {
+    "id": 16,
+    "name": "Тараз",
+    "slug": "taraz"
+  },
+  {
+    "id": 17,
+    "name": "Темиртау",
+    "slug": "temirtau"
+  },
+  {
+    "id": 18,
+    "name": "Туркестан",
+    "slug": "turkestan"
+  },
+  {
+    "id": 19,
+    "name": "Уральск",
+    "slug": "uralsk"
+  },
+  {
+    "id": 20,
+    "name": "Усть-Каменогорск",
+    "slug": "ust-kamenogorks"
+  },
+  {
+    "id": 21,
+    "name": "Экибастуз",
+    "slug": "ekibastuz"
+  }
+]

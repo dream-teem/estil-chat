@@ -1,19 +1,19 @@
-import type { BaseEntity } from '@/common/base.entity';
+import type { BaseEntityStatic } from '@/common/base.entity';
 
-export type SizeGroup = BaseEntity & {
+export interface SizeGroup extends BaseEntityStatic {
   title: string;
   slug: string;
   order: number;
-};
+}
 
-export type Size = BaseEntity & {
+export interface Size extends BaseEntityStatic {
   title: string;
   order: number;
   sizeGroupId: number;
-};
+}
 
-export type ProductVariant = {
+export interface ProductVariant {
   productId: number;
   sizeId: number;
   quantity: number;
-};
+}

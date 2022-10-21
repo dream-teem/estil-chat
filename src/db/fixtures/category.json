@@ -1,0 +1,4378 @@
+[
+    {
+      "id": 1,
+      "name": "Женщинам",
+      "parentId": null,
+      "sizeGroupId": null,
+      "slug": "womens",
+      "synonyms": [
+        "для женщин",
+        "женские"
+      ],
+      "order": 0,
+      "path": "/womens"
+    },
+    {
+      "id": 2,
+      "name": "Мужчинам",
+      "parentId": null,
+      "sizeGroupId": null,
+      "slug": "mens",
+      "synonyms": [
+        "для мужчин",
+        "мужские"
+      ],
+      "order": 2,
+      "path": "/mens"
+    },
+    {
+      "id": 3,
+      "name": "Детям",
+      "parentId": null,
+      "sizeGroupId": null,
+      "slug": "kids",
+      "synonyms": [
+        "для детей",
+        "детские"
+      ],
+      "order": 4,
+      "path": "/kids"
+    },
+    {
+      "id": 4,
+      "name": "Красота и здоровье",
+      "parentId": null,
+      "sizeGroupId": null,
+      "slug": "beauty-and-wellness",
+      "synonyms": [],
+      "order": 6,
+      "path": "/beauty-and-wellness"
+    },
+    {
+      "id": 5,
+      "name": "Для дома",
+      "parentId": null,
+      "sizeGroupId": null,
+      "slug": "home",
+      "synonyms": [],
+      "order": 8,
+      "path": "/home"
+    },
+    {
+      "id": 6,
+      "name": "Одежда",
+      "parentId": 1,
+      "sizeGroupId": null,
+      "slug": "clothes",
+      "synonyms": [],
+      "order": 0,
+      "path": "/womens/clothes"
+    },
+    {
+      "id": 7,
+      "name": "Обувь",
+      "parentId": 1,
+      "sizeGroupId": 6,
+      "slug": "shoes",
+      "synonyms": [],
+      "order": 2,
+      "path": "/womens/shoes"
+    },
+    {
+      "id": 8,
+      "name": "Аксессуары",
+      "parentId": 1,
+      "sizeGroupId": null,
+      "slug": "accessories",
+      "synonyms": [],
+      "order": 4,
+      "path": "/womens/accessories"
+    },
+    {
+      "id": 9,
+      "name": "Одежда",
+      "parentId": 2,
+      "sizeGroupId": null,
+      "slug": "clothes",
+      "synonyms": [],
+      "order": 0,
+      "path": "/mens/clothes"
+    },
+    {
+      "id": 10,
+      "name": "Обувь",
+      "parentId": 2,
+      "sizeGroupId": null,
+      "slug": "shoes",
+      "synonyms": [],
+      "order": 2,
+      "path": "/mens/shoes"
+    },
+    {
+      "id": 11,
+      "name": "Аксессуары",
+      "parentId": 2,
+      "sizeGroupId": null,
+      "slug": "accessories",
+      "synonyms": [],
+      "order": 4,
+      "path": "/mens/accessories"
+    },
+    {
+      "id": 12,
+      "name": "Девочкам",
+      "parentId": 3,
+      "sizeGroupId": 8,
+      "slug": "girls",
+      "synonyms": [
+        "для девочек"
+      ],
+      "order": 0,
+      "path": "/kids/girls"
+    },
+    {
+      "id": 13,
+      "name": "Мальчикам",
+      "parentId": 3,
+      "sizeGroupId": 8,
+      "slug": "boys",
+      "synonyms": [
+        "для мальчиков"
+      ],
+      "order": 2,
+      "path": "/kids/boys"
+    },
+    {
+      "id": 14,
+      "name": "Малышам",
+      "parentId": 3,
+      "sizeGroupId": 10,
+      "slug": "infants",
+      "synonyms": [
+        "для малышей",
+        "новорожденным",
+        "для новорожденных"
+      ],
+      "order": 4,
+      "path": "/kids/infants"
+    },
+    {
+      "id": 15,
+      "name": "Мужская косметика",
+      "parentId": 4,
+      "sizeGroupId": null,
+      "slug": "mens-skincare",
+      "synonyms": [],
+      "order": 0,
+      "path": "/beauty-and-wellness/mens-skincare"
+    },
+    {
+      "id": 16,
+      "name": "Парфюмерия",
+      "parentId": 4,
+      "sizeGroupId": null,
+      "slug": "perfumery",
+      "synonyms": [],
+      "order": 2,
+      "path": "/beauty-and-wellness/perfumery"
+    },
+    {
+      "id": 17,
+      "name": "Маникюр и педикюр",
+      "parentId": 4,
+      "sizeGroupId": null,
+      "slug": "manicure-and-pedicure",
+      "synonyms": [],
+      "order": 4,
+      "path": "/beauty-and-wellness/manicure-and-pedicure"
+    },
+    {
+      "id": 18,
+      "name": "Косметика для волос",
+      "parentId": 4,
+      "sizeGroupId": null,
+      "slug": "haircare",
+      "synonyms": [],
+      "order": 6,
+      "path": "/beauty-and-wellness/haircare"
+    },
+    {
+      "id": 19,
+      "name": "Косметика для лица",
+      "parentId": 4,
+      "sizeGroupId": null,
+      "slug": "skincare",
+      "synonyms": [],
+      "order": 8,
+      "path": "/beauty-and-wellness/skincare"
+    },
+    {
+      "id": 20,
+      "name": "Тело и ванна",
+      "parentId": 4,
+      "sizeGroupId": null,
+      "slug": "bath-and-tube",
+      "synonyms": [],
+      "order": 10,
+      "path": "/beauty-and-wellness/bath-and-tube"
+    },
+    {
+      "id": 21,
+      "name": "Посуда",
+      "parentId": 5,
+      "sizeGroupId": null,
+      "slug": "tableware",
+      "synonyms": [],
+      "order": 0,
+      "path": "/home/tableware"
+    },
+    {
+      "id": 22,
+      "name": "Книги",
+      "parentId": 5,
+      "sizeGroupId": null,
+      "slug": "books",
+      "synonyms": [],
+      "order": 2,
+      "path": "/home/books"
+    },
+    {
+      "id": 23,
+      "name": "Домашний текстиль",
+      "parentId": 5,
+      "sizeGroupId": null,
+      "slug": "home-textiles",
+      "synonyms": [],
+      "order": 4,
+      "path": "/home/home-textiles"
+    },
+    {
+      "id": 24,
+      "name": "Верхняя одежда",
+      "parentId": 6,
+      "sizeGroupId": null,
+      "slug": "outerwear",
+      "synonyms": [],
+      "order": 0,
+      "path": "/womens/clothes/outerwear"
+    },
+    {
+      "id": 25,
+      "name": "Платья",
+      "parentId": 6,
+      "sizeGroupId": 4,
+      "slug": "dresses-and-sundresses",
+      "synonyms": [],
+      "order": 2,
+      "path": "/womens/clothes/dresses-and-sundresses"
+    },
+    {
+      "id": 26,
+      "name": "Юбки",
+      "parentId": 6,
+      "sizeGroupId": 4,
+      "slug": "skirts",
+      "synonyms": [],
+      "order": 4,
+      "path": "/womens/clothes/skirts"
+    },
+    {
+      "id": 27,
+      "name": "Блузы и рубашки",
+      "parentId": 6,
+      "sizeGroupId": null,
+      "slug": "blouses-and-shirts",
+      "synonyms": [],
+      "order": 6,
+      "path": "/womens/clothes/blouses-and-shirts"
+    },
+    {
+      "id": 28,
+      "name": "Майки и футболки",
+      "parentId": 6,
+      "sizeGroupId": 4,
+      "slug": "t-shirts-and-tanks",
+      "synonyms": [],
+      "order": 8,
+      "path": "/womens/clothes/t-shirts-and-tanks"
+    },
+    {
+      "id": 29,
+      "name": "Брюки",
+      "parentId": 6,
+      "sizeGroupId": 5,
+      "slug": "pants",
+      "synonyms": [
+        "штаны"
+      ],
+      "order": 10,
+      "path": "/womens/clothes/pants"
+    },
+    {
+      "id": 30,
+      "name": "Шорты и бриджи",
+      "parentId": 6,
+      "sizeGroupId": 5,
+      "slug": "shorts",
+      "synonyms": [],
+      "order": 12,
+      "path": "/womens/clothes/shorts"
+    },
+    {
+      "id": 31,
+      "name": "Кофты",
+      "parentId": 6,
+      "sizeGroupId": null,
+      "slug": "kofti",
+      "synonyms": [],
+      "order": 14,
+      "path": "/womens/clothes/kofti"
+    },
+    {
+      "id": 32,
+      "name": "Нижнее белье",
+      "parentId": 6,
+      "sizeGroupId": null,
+      "slug": "lingerie",
+      "synonyms": [],
+      "order": 16,
+      "path": "/womens/clothes/lingerie"
+    },
+    {
+      "id": 33,
+      "name": "Купальники",
+      "parentId": 6,
+      "sizeGroupId": 4,
+      "slug": "swimwear",
+      "synonyms": [],
+      "order": 18,
+      "path": "/womens/clothes/swimwear"
+    },
+    {
+      "id": 34,
+      "name": "Комбинезоны",
+      "parentId": 6,
+      "sizeGroupId": 4,
+      "slug": "overalls",
+      "synonyms": [],
+      "order": 20,
+      "path": "/womens/clothes/overalls"
+    },
+    {
+      "id": 35,
+      "name": "Одежда для дома",
+      "parentId": 6,
+      "sizeGroupId": 4,
+      "slug": "home-clothes",
+      "synonyms": [],
+      "order": 22,
+      "path": "/womens/clothes/home-clothes"
+    },
+    {
+      "id": 36,
+      "name": "Пиджаки и костюмы",
+      "parentId": 6,
+      "sizeGroupId": 4,
+      "slug": "blazers-and-suits",
+      "synonyms": [],
+      "order": 24,
+      "path": "/womens/clothes/blazers-and-suits"
+    },
+    {
+      "id": 37,
+      "name": "Спортивная одежда",
+      "parentId": 6,
+      "sizeGroupId": 4,
+      "slug": "sport",
+      "synonyms": [],
+      "order": 26,
+      "path": "/womens/clothes/sport"
+    },
+    {
+      "id": 38,
+      "name": "Одежда для беременных",
+      "parentId": 6,
+      "sizeGroupId": 4,
+      "slug": "pregnancy-clothes",
+      "synonyms": [],
+      "order": 28,
+      "path": "/womens/clothes/pregnancy-clothes"
+    },
+    {
+      "id": 39,
+      "name": "Ботинки",
+      "parentId": 7,
+      "sizeGroupId": 6,
+      "slug": "boots",
+      "synonyms": [],
+      "order": 0,
+      "path": "/womens/shoes/boots"
+    },
+    {
+      "id": 40,
+      "name": "Балетки",
+      "parentId": 7,
+      "sizeGroupId": 6,
+      "slug": "ballets",
+      "synonyms": [],
+      "order": 2,
+      "path": "/womens/shoes/ballets"
+    },
+    {
+      "id": 41,
+      "name": "Ботильоны",
+      "parentId": 7,
+      "sizeGroupId": 6,
+      "slug": "ankle-boots",
+      "synonyms": [],
+      "order": 4,
+      "path": "/womens/shoes/ankle-boots"
+    },
+    {
+      "id": 42,
+      "name": "Сапоги",
+      "parentId": 7,
+      "sizeGroupId": 6,
+      "slug": "sapogi",
+      "synonyms": [],
+      "order": 6,
+      "path": "/womens/shoes/sapogi"
+    },
+    {
+      "id": 43,
+      "name": "Кроссовки и кеды",
+      "parentId": 7,
+      "sizeGroupId": 6,
+      "slug": "trainers",
+      "synonyms": [],
+      "order": 8,
+      "path": "/womens/shoes/trainers"
+    },
+    {
+      "id": 44,
+      "name": "Вечерняя обувь",
+      "parentId": 7,
+      "sizeGroupId": 6,
+      "slug": "evening-shoes",
+      "synonyms": [],
+      "order": 10,
+      "path": "/womens/shoes/evening-shoes"
+    },
+    {
+      "id": 45,
+      "name": "Домашняя обувь",
+      "parentId": 7,
+      "sizeGroupId": 6,
+      "slug": "home-shoes",
+      "synonyms": [],
+      "order": 12,
+      "path": "/womens/shoes/home-shoes"
+    },
+    {
+      "id": 46,
+      "name": "Босоножки",
+      "parentId": 7,
+      "sizeGroupId": 6,
+      "slug": "sandals",
+      "synonyms": [],
+      "order": 14,
+      "path": "/womens/shoes/sandals"
+    },
+    {
+      "id": 47,
+      "name": "Туфли",
+      "parentId": 7,
+      "sizeGroupId": 6,
+      "slug": "low-shoes",
+      "synonyms": [],
+      "order": 16,
+      "path": "/womens/shoes/low-shoes"
+    },
+    {
+      "id": 48,
+      "name": "Мокасины и топсайдеры",
+      "parentId": 7,
+      "sizeGroupId": 6,
+      "slug": "moccasins-and-topsiders",
+      "synonyms": [],
+      "order": 18,
+      "path": "/womens/shoes/moccasins-and-topsiders"
+    },
+    {
+      "id": 49,
+      "name": "Сандалии",
+      "parentId": 7,
+      "sizeGroupId": 6,
+      "slug": "sandalii",
+      "synonyms": [],
+      "order": 20,
+      "path": "/womens/shoes/sandalii"
+    },
+    {
+      "id": 50,
+      "name": "Слипоны",
+      "parentId": 7,
+      "sizeGroupId": 6,
+      "slug": "slip-ons",
+      "synonyms": [],
+      "order": 22,
+      "path": "/womens/shoes/slip-ons"
+    },
+    {
+      "id": 51,
+      "name": "Резиновая обувь",
+      "parentId": 7,
+      "sizeGroupId": 6,
+      "slug": "rubber-shoes",
+      "synonyms": [],
+      "order": 24,
+      "path": "/womens/shoes/rubber-shoes"
+    },
+    {
+      "id": 52,
+      "name": "Сабо и мюли",
+      "parentId": 7,
+      "sizeGroupId": 6,
+      "slug": "clogs-and-mules",
+      "synonyms": [],
+      "order": 26,
+      "path": "/womens/shoes/clogs-and-mules"
+    },
+    {
+      "id": 53,
+      "name": "Эспадрильи",
+      "parentId": 7,
+      "sizeGroupId": 6,
+      "slug": "espadrilles",
+      "synonyms": [],
+      "order": 28,
+      "path": "/womens/shoes/espadrilles"
+    },
+    {
+      "id": 54,
+      "name": "Ботфорты",
+      "parentId": 7,
+      "sizeGroupId": 6,
+      "slug": "treads",
+      "synonyms": [],
+      "order": 30,
+      "path": "/womens/shoes/treads"
+    },
+    {
+      "id": 55,
+      "name": "Сумки",
+      "parentId": 8,
+      "sizeGroupId": null,
+      "slug": "bags",
+      "synonyms": [],
+      "order": 0,
+      "path": "/womens/accessories/bags"
+    },
+    {
+      "id": 56,
+      "name": "Очки",
+      "parentId": 8,
+      "sizeGroupId": null,
+      "slug": "glasses",
+      "synonyms": [],
+      "order": 2,
+      "path": "/womens/accessories/glasses"
+    },
+    {
+      "id": 57,
+      "name": "Головные уборы",
+      "parentId": 8,
+      "sizeGroupId": null,
+      "slug": "hats",
+      "synonyms": [],
+      "order": 4,
+      "path": "/womens/accessories/hats"
+    },
+    {
+      "id": 58,
+      "name": "Украшения и часы",
+      "parentId": 8,
+      "sizeGroupId": null,
+      "slug": "jewellery-and-watches",
+      "synonyms": [],
+      "order": 6,
+      "path": "/womens/accessories/jewellery-and-watches"
+    },
+    {
+      "id": 59,
+      "name": "Ремни",
+      "parentId": 8,
+      "sizeGroupId": null,
+      "slug": "belts",
+      "synonyms": [],
+      "order": 8,
+      "path": "/womens/accessories/belts"
+    },
+    {
+      "id": 60,
+      "name": "Шарфы и платки",
+      "parentId": 8,
+      "sizeGroupId": null,
+      "slug": "scarves-and-shawls",
+      "synonyms": [],
+      "order": 10,
+      "path": "/womens/accessories/scarves-and-shawls"
+    },
+    {
+      "id": 61,
+      "name": "Галстуки и бабочки",
+      "parentId": 8,
+      "sizeGroupId": null,
+      "slug": "ties-and-bow-ties",
+      "synonyms": [],
+      "order": 12,
+      "path": "/womens/accessories/ties-and-bow-ties"
+    },
+    {
+      "id": 62,
+      "name": "Перчатки и варежки",
+      "parentId": 8,
+      "sizeGroupId": null,
+      "slug": "gloves",
+      "synonyms": [],
+      "order": 14,
+      "path": "/womens/accessories/gloves"
+    },
+    {
+      "id": 63,
+      "name": "Зонты",
+      "parentId": 8,
+      "sizeGroupId": null,
+      "slug": "umbrellas",
+      "synonyms": [],
+      "order": 16,
+      "path": "/womens/accessories/umbrellas"
+    },
+    {
+      "id": 64,
+      "name": "Другие аксессуары",
+      "parentId": 8,
+      "sizeGroupId": null,
+      "slug": "other",
+      "synonyms": [],
+      "order": 18,
+      "path": "/womens/accessories/other"
+    },
+    {
+      "id": 65,
+      "name": "Верхняя одежда",
+      "parentId": 9,
+      "sizeGroupId": null,
+      "slug": "outerwear",
+      "synonyms": [],
+      "order": 0,
+      "path": "/mens/clothes/outerwear"
+    },
+    {
+      "id": 66,
+      "name": "Рубашки",
+      "parentId": 9,
+      "sizeGroupId": 1,
+      "slug": "shirts",
+      "synonyms": [],
+      "order": 2,
+      "path": "/mens/clothes/shirts"
+    },
+    {
+      "id": 67,
+      "name": "Майки и футболки",
+      "parentId": 9,
+      "sizeGroupId": 1,
+      "slug": "t-shirts-and-tanks",
+      "synonyms": [],
+      "order": 4,
+      "path": "/mens/clothes/t-shirts-and-tanks"
+    },
+    {
+      "id": 68,
+      "name": "Брюки",
+      "parentId": 9,
+      "sizeGroupId": 2,
+      "slug": "pants",
+      "synonyms": [
+        "штаны"
+      ],
+      "order": 6,
+      "path": "/mens/clothes/pants"
+    },
+    {
+      "id": 69,
+      "name": "Шорты и бриджи",
+      "parentId": 9,
+      "sizeGroupId": 2,
+      "slug": "shorts",
+      "synonyms": [],
+      "order": 8,
+      "path": "/mens/clothes/shorts"
+    },
+    {
+      "id": 70,
+      "name": "Кофты и свитера",
+      "parentId": 9,
+      "sizeGroupId": null,
+      "slug": "kofti-and-sweaters",
+      "synonyms": [],
+      "order": 10,
+      "path": "/mens/clothes/kofti-and-sweaters"
+    },
+    {
+      "id": 71,
+      "name": "Нижнее белье",
+      "parentId": 9,
+      "sizeGroupId": null,
+      "slug": "lingerie",
+      "synonyms": [],
+      "order": 12,
+      "path": "/mens/clothes/lingerie"
+    },
+    {
+      "id": 72,
+      "name": "Плавки",
+      "parentId": 9,
+      "sizeGroupId": 1,
+      "slug": "swimwear",
+      "synonyms": [],
+      "order": 14,
+      "path": "/mens/clothes/swimwear"
+    },
+    {
+      "id": 73,
+      "name": "Комбинезоны",
+      "parentId": 9,
+      "sizeGroupId": 1,
+      "slug": "overalls",
+      "synonyms": [],
+      "order": 16,
+      "path": "/mens/clothes/overalls"
+    },
+    {
+      "id": 74,
+      "name": "Одежда для дома",
+      "parentId": 9,
+      "sizeGroupId": 1,
+      "slug": "home-clothes",
+      "synonyms": [],
+      "order": 18,
+      "path": "/mens/clothes/home-clothes"
+    },
+    {
+      "id": 75,
+      "name": "Пиджаки и костюмы",
+      "parentId": 9,
+      "sizeGroupId": null,
+      "slug": "blazers-and-suits",
+      "synonyms": [],
+      "order": 20,
+      "path": "/mens/clothes/blazers-and-suits"
+    },
+    {
+      "id": 76,
+      "name": "Спортивная одежда",
+      "parentId": 9,
+      "sizeGroupId": 1,
+      "slug": "sport",
+      "synonyms": [],
+      "order": 22,
+      "path": "/mens/clothes/sport"
+    },
+    {
+      "id": 77,
+      "name": "Ботинки",
+      "parentId": 10,
+      "sizeGroupId": 3,
+      "slug": "boots",
+      "synonyms": [],
+      "order": 0,
+      "path": "/mens/shoes/boots"
+    },
+    {
+      "id": 78,
+      "name": "Сапоги",
+      "parentId": 10,
+      "sizeGroupId": 3,
+      "slug": "sapogi",
+      "synonyms": [],
+      "order": 2,
+      "path": "/mens/shoes/sapogi"
+    },
+    {
+      "id": 79,
+      "name": "Кроссовки",
+      "parentId": 10,
+      "sizeGroupId": 3,
+      "slug": "trainers",
+      "synonyms": [],
+      "order": 4,
+      "path": "/mens/shoes/trainers"
+    },
+    {
+      "id": 80,
+      "name": "Кеды",
+      "parentId": 10,
+      "sizeGroupId": 3,
+      "slug": "sneakers",
+      "synonyms": [],
+      "order": 6,
+      "path": "/mens/shoes/sneakers"
+    },
+    {
+      "id": 81,
+      "name": "Домашняя обувь",
+      "parentId": 10,
+      "sizeGroupId": 3,
+      "slug": "home-shoes",
+      "synonyms": [],
+      "order": 8,
+      "path": "/mens/shoes/home-shoes"
+    },
+    {
+      "id": 82,
+      "name": "Туфли",
+      "parentId": 10,
+      "sizeGroupId": 3,
+      "slug": "low-shoes",
+      "synonyms": [],
+      "order": 10,
+      "path": "/mens/shoes/low-shoes"
+    },
+    {
+      "id": 83,
+      "name": "Мокасины",
+      "parentId": 10,
+      "sizeGroupId": 3,
+      "slug": "moccasins",
+      "synonyms": [],
+      "order": 12,
+      "path": "/mens/shoes/moccasins"
+    },
+    {
+      "id": 84,
+      "name": "Сандалии",
+      "parentId": 10,
+      "sizeGroupId": 3,
+      "slug": "sandalii",
+      "synonyms": [],
+      "order": 14,
+      "path": "/mens/shoes/sandalii"
+    },
+    {
+      "id": 85,
+      "name": "Резиновая обувь",
+      "parentId": 10,
+      "sizeGroupId": 3,
+      "slug": "rubber-shoes",
+      "synonyms": [],
+      "order": 16,
+      "path": "/mens/shoes/rubber-shoes"
+    },
+    {
+      "id": 86,
+      "name": "Слипоны и эспадрильи",
+      "parentId": 10,
+      "sizeGroupId": 3,
+      "slug": "espadrilles",
+      "synonyms": [],
+      "order": 18,
+      "path": "/mens/shoes/espadrilles"
+    },
+    {
+      "id": 87,
+      "name": "Сумки и рюкзаки",
+      "parentId": 11,
+      "sizeGroupId": null,
+      "slug": "bags -and-backpacks",
+      "synonyms": [],
+      "order": 0,
+      "path": "/mens/accessories/bags -and-backpacks"
+    },
+    {
+      "id": 88,
+      "name": "Очки",
+      "parentId": 11,
+      "sizeGroupId": null,
+      "slug": "glasses",
+      "synonyms": [],
+      "order": 2,
+      "path": "/mens/accessories/glasses"
+    },
+    {
+      "id": 89,
+      "name": "Головные уборы",
+      "parentId": 11,
+      "sizeGroupId": null,
+      "slug": "hats",
+      "synonyms": [],
+      "order": 4,
+      "path": "/mens/accessories/hats"
+    },
+    {
+      "id": 90,
+      "name": "Украшения",
+      "parentId": 11,
+      "sizeGroupId": null,
+      "slug": "jewellery",
+      "synonyms": [],
+      "order": 6,
+      "path": "/mens/accessories/jewellery"
+    },
+    {
+      "id": 91,
+      "name": "Ремни",
+      "parentId": 11,
+      "sizeGroupId": null,
+      "slug": "belts",
+      "synonyms": [],
+      "order": 8,
+      "path": "/mens/accessories/belts"
+    },
+    {
+      "id": 92,
+      "name": "Часы",
+      "parentId": 11,
+      "sizeGroupId": null,
+      "slug": "watches",
+      "synonyms": [],
+      "order": 10,
+      "path": "/mens/accessories/watches"
+    },
+    {
+      "id": 93,
+      "name": "Шарфы",
+      "parentId": 11,
+      "sizeGroupId": null,
+      "slug": "scarves",
+      "synonyms": [],
+      "order": 12,
+      "path": "/mens/accessories/scarves"
+    },
+    {
+      "id": 94,
+      "name": "Галстуки и бабочки",
+      "parentId": 11,
+      "sizeGroupId": null,
+      "slug": "ties-and-bow-ties",
+      "synonyms": [],
+      "order": 14,
+      "path": "/mens/accessories/ties-and-bow-ties"
+    },
+    {
+      "id": 95,
+      "name": "Перчатки",
+      "parentId": 11,
+      "sizeGroupId": null,
+      "slug": "gloves",
+      "synonyms": [],
+      "order": 16,
+      "path": "/mens/accessories/gloves"
+    },
+    {
+      "id": 96,
+      "name": "Другие аксессуары",
+      "parentId": 11,
+      "sizeGroupId": null,
+      "slug": "other",
+      "synonyms": [],
+      "order": 18,
+      "path": "/mens/accessories/other"
+    },
+    {
+      "id": 97,
+      "name": "Одежда",
+      "parentId": 12,
+      "sizeGroupId": 8,
+      "slug": "clothes",
+      "synonyms": [],
+      "order": 0,
+      "path": "/kids/girls/clothes"
+    },
+    {
+      "id": 98,
+      "name": "Обувь",
+      "parentId": 12,
+      "sizeGroupId": 9,
+      "slug": "shoes",
+      "synonyms": [],
+      "order": 2,
+      "path": "/kids/girls/shoes"
+    },
+    {
+      "id": 99,
+      "name": "Аксессуары",
+      "parentId": 12,
+      "sizeGroupId": null,
+      "slug": "accessories",
+      "synonyms": [],
+      "order": 4,
+      "path": "/kids/girls/accessories"
+    },
+    {
+      "id": 100,
+      "name": "Одежда",
+      "parentId": 13,
+      "sizeGroupId": 8,
+      "slug": "clothes",
+      "synonyms": [],
+      "order": 0,
+      "path": "/kids/boys/clothes"
+    },
+    {
+      "id": 101,
+      "name": "Обувь",
+      "parentId": 13,
+      "sizeGroupId": 9,
+      "slug": "shoes",
+      "synonyms": [],
+      "order": 2,
+      "path": "/kids/boys/shoes"
+    },
+    {
+      "id": 102,
+      "name": "Аксессуары",
+      "parentId": 13,
+      "sizeGroupId": null,
+      "slug": "accessories",
+      "synonyms": [],
+      "order": 4,
+      "path": "/kids/boys/accessories"
+    },
+    {
+      "id": 103,
+      "name": "Одежды",
+      "parentId": 14,
+      "sizeGroupId": 10,
+      "slug": "clothes",
+      "synonyms": [],
+      "order": 0,
+      "path": "/kids/infants/clothes"
+    },
+    {
+      "id": 104,
+      "name": "Обувь",
+      "parentId": 14,
+      "sizeGroupId": 11,
+      "slug": "shoes",
+      "synonyms": [],
+      "order": 2,
+      "path": "/kids/infants/shoes"
+    },
+    {
+      "id": 105,
+      "name": "Анораки",
+      "parentId": 24,
+      "sizeGroupId": 4,
+      "slug": "anoraks",
+      "synonyms": [],
+      "order": 0,
+      "path": "/womens/clothes/outerwear/anoraks"
+    },
+    {
+      "id": 106,
+      "name": "Бомберы",
+      "parentId": 24,
+      "sizeGroupId": 4,
+      "slug": "bomber-jackets",
+      "synonyms": [],
+      "order": 2,
+      "path": "/womens/clothes/outerwear/bomber-jackets"
+    },
+    {
+      "id": 107,
+      "name": "Джинсовые куртки",
+      "parentId": 24,
+      "sizeGroupId": 4,
+      "slug": "denim-jackets",
+      "synonyms": [],
+      "order": 4,
+      "path": "/womens/clothes/outerwear/denim-jackets"
+    },
+    {
+      "id": 108,
+      "name": "Кожаные куртки",
+      "parentId": 24,
+      "sizeGroupId": 4,
+      "slug": "leather-jackets",
+      "synonyms": [],
+      "order": 6,
+      "path": "/womens/clothes/outerwear/leather-jackets"
+    },
+    {
+      "id": 109,
+      "name": "Жилеты",
+      "parentId": 24,
+      "sizeGroupId": 4,
+      "slug": "vests",
+      "synonyms": [],
+      "order": 8,
+      "path": "/womens/clothes/outerwear/vests"
+    },
+    {
+      "id": 110,
+      "name": "Ветровки и легкие куртки",
+      "parentId": 24,
+      "sizeGroupId": 4,
+      "slug": "windbreaker",
+      "synonyms": [],
+      "order": 10,
+      "path": "/womens/clothes/outerwear/windbreaker"
+    },
+    {
+      "id": 111,
+      "name": "Пальто",
+      "parentId": 24,
+      "sizeGroupId": 4,
+      "slug": "coat",
+      "synonyms": [],
+      "order": 12,
+      "path": "/womens/clothes/outerwear/coat"
+    },
+    {
+      "id": 112,
+      "name": "Парки",
+      "parentId": 24,
+      "sizeGroupId": 4,
+      "slug": "parkas",
+      "synonyms": [],
+      "order": 14,
+      "path": "/womens/clothes/outerwear/parkas"
+    },
+    {
+      "id": 113,
+      "name": "Плащи и тренчи",
+      "parentId": 24,
+      "sizeGroupId": 4,
+      "slug": "trench-coats-raincoats",
+      "synonyms": [],
+      "order": 16,
+      "path": "/womens/clothes/outerwear/trench-coats-raincoats"
+    },
+    {
+      "id": 114,
+      "name": "Пончо и кейпы",
+      "parentId": 24,
+      "sizeGroupId": 4,
+      "slug": "ponchos-and-capes",
+      "synonyms": [
+        "пончо",
+        "кейпы"
+      ],
+      "order": 18,
+      "path": "/womens/clothes/outerwear/ponchos-and-capes"
+    },
+    {
+      "id": 115,
+      "name": "Пуховики",
+      "parentId": 24,
+      "sizeGroupId": 4,
+      "slug": "puffer-jackets",
+      "synonyms": [],
+      "order": 20,
+      "path": "/womens/clothes/outerwear/puffer-jackets"
+    },
+    {
+      "id": 116,
+      "name": "Зимние куртки",
+      "parentId": 24,
+      "sizeGroupId": 4,
+      "slug": "snowsuits",
+      "synonyms": [],
+      "order": 22,
+      "path": "/womens/clothes/outerwear/snowsuits"
+    },
+    {
+      "id": 117,
+      "name": "Шубы и дубленки",
+      "parentId": 24,
+      "sizeGroupId": 4,
+      "slug": "fur-coats",
+      "synonyms": [
+        "шубы",
+        "дубленки"
+      ],
+      "order": 24,
+      "path": "/womens/clothes/outerwear/fur-coats"
+    },
+    {
+      "id": 118,
+      "name": "Короткие платья",
+      "parentId": 25,
+      "sizeGroupId": 4,
+      "slug": "short-dresses",
+      "synonyms": [],
+      "order": 0,
+      "path": "/womens/clothes/dresses-and-sundresses/short-dresses"
+    },
+    {
+      "id": 119,
+      "name": "Длинные платья",
+      "parentId": 25,
+      "sizeGroupId": 4,
+      "slug": "long-dresses",
+      "synonyms": [],
+      "order": 2,
+      "path": "/womens/clothes/dresses-and-sundresses/long-dresses"
+    },
+    {
+      "id": 120,
+      "name": "Платья миди",
+      "parentId": 25,
+      "sizeGroupId": 4,
+      "slug": "mini-dresses",
+      "synonyms": [],
+      "order": 4,
+      "path": "/womens/clothes/dresses-and-sundresses/mini-dresses"
+    },
+    {
+      "id": 121,
+      "name": "Вечерние платья",
+      "parentId": 25,
+      "sizeGroupId": 4,
+      "slug": "evening-dresses",
+      "synonyms": [],
+      "order": 6,
+      "path": "/womens/clothes/dresses-and-sundresses/evening-dresses"
+    },
+    {
+      "id": 122,
+      "name": "Свадебные платья",
+      "parentId": 25,
+      "sizeGroupId": 4,
+      "slug": "wedding-dresses",
+      "synonyms": [],
+      "order": 8,
+      "path": "/womens/clothes/dresses-and-sundresses/wedding-dresses"
+    },
+    {
+      "id": 123,
+      "name": "Сарафаны",
+      "parentId": 25,
+      "sizeGroupId": 4,
+      "slug": "sundresses",
+      "synonyms": [],
+      "order": 10,
+      "path": "/womens/clothes/dresses-and-sundresses/sundresses"
+    },
+    {
+      "id": 124,
+      "name": "Туники",
+      "parentId": 25,
+      "sizeGroupId": 4,
+      "slug": "tunics",
+      "synonyms": [],
+      "order": 12,
+      "path": "/womens/clothes/dresses-and-sundresses/tunics"
+    },
+    {
+      "id": 125,
+      "name": "Мини юбки",
+      "parentId": 26,
+      "sizeGroupId": 4,
+      "slug": "mini-skirts",
+      "synonyms": [],
+      "order": 0,
+      "path": "/womens/clothes/skirts/mini-skirts"
+    },
+    {
+      "id": 126,
+      "name": "Миди юбки",
+      "parentId": 26,
+      "sizeGroupId": 4,
+      "slug": "midi-skirts",
+      "synonyms": [],
+      "order": 2,
+      "path": "/womens/clothes/skirts/midi-skirts"
+    },
+    {
+      "id": 127,
+      "name": "Длинные юбки",
+      "parentId": 26,
+      "sizeGroupId": 4,
+      "slug": "long-skirts",
+      "synonyms": [],
+      "order": 4,
+      "path": "/womens/clothes/skirts/long-skirts"
+    },
+    {
+      "id": 128,
+      "name": "Блузы",
+      "parentId": 27,
+      "sizeGroupId": 4,
+      "slug": "blouses",
+      "synonyms": [],
+      "order": 0,
+      "path": "/womens/clothes/blouses-and-shirts/blouses"
+    },
+    {
+      "id": 129,
+      "name": "Рубашки",
+      "parentId": 27,
+      "sizeGroupId": 4,
+      "slug": "shirts",
+      "synonyms": [],
+      "order": 2,
+      "path": "/womens/clothes/blouses-and-shirts/shirts"
+    },
+    {
+      "id": 130,
+      "name": "Боди",
+      "parentId": 27,
+      "sizeGroupId": 4,
+      "slug": "body",
+      "synonyms": [],
+      "order": 4,
+      "path": "/womens/clothes/blouses-and-shirts/body"
+    },
+    {
+      "id": 131,
+      "name": "Футболки",
+      "parentId": 28,
+      "sizeGroupId": 4,
+      "slug": "t-shirts",
+      "synonyms": [],
+      "order": 0,
+      "path": "/womens/clothes/t-shirts-and-tanks/t-shirts"
+    },
+    {
+      "id": 132,
+      "name": "Майки",
+      "parentId": 28,
+      "sizeGroupId": 4,
+      "slug": "tanks",
+      "synonyms": [],
+      "order": 2,
+      "path": "/womens/clothes/t-shirts-and-tanks/tanks"
+    },
+    {
+      "id": 133,
+      "name": "Поло",
+      "parentId": 28,
+      "sizeGroupId": 4,
+      "slug": "Polo",
+      "synonyms": [],
+      "order": 4,
+      "path": "/womens/clothes/t-shirts-and-tanks/Polo"
+    },
+    {
+      "id": 134,
+      "name": "Топы",
+      "parentId": 28,
+      "sizeGroupId": 4,
+      "slug": "tops",
+      "synonyms": [],
+      "order": 6,
+      "path": "/womens/clothes/t-shirts-and-tanks/tops"
+    },
+    {
+      "id": 135,
+      "name": "Джинсы",
+      "parentId": 29,
+      "sizeGroupId": 5,
+      "slug": "jeans",
+      "synonyms": [],
+      "order": 0,
+      "path": "/womens/clothes/pants/jeans"
+    },
+    {
+      "id": 136,
+      "name": "Классические брюки",
+      "parentId": 29,
+      "sizeGroupId": 5,
+      "slug": "classic-pants",
+      "synonyms": [],
+      "order": 2,
+      "path": "/womens/clothes/pants/classic-pants"
+    },
+    {
+      "id": 137,
+      "name": "Повседневные брюки",
+      "parentId": 29,
+      "sizeGroupId": 5,
+      "slug": "casual-pants",
+      "synonyms": [],
+      "order": 4,
+      "path": "/womens/clothes/pants/casual-pants"
+    },
+    {
+      "id": 138,
+      "name": "Леггинсы",
+      "parentId": 29,
+      "sizeGroupId": 5,
+      "slug": "leggings",
+      "synonyms": [],
+      "order": 6,
+      "path": "/womens/clothes/pants/leggings"
+    },
+    {
+      "id": 139,
+      "name": "Шорты",
+      "parentId": 30,
+      "sizeGroupId": 5,
+      "slug": "casual-shorts",
+      "synonyms": [],
+      "order": 0,
+      "path": "/womens/clothes/shorts/casual-shorts"
+    },
+    {
+      "id": 140,
+      "name": "Бриджи",
+      "parentId": 30,
+      "sizeGroupId": 5,
+      "slug": "bridges",
+      "synonyms": [],
+      "order": 2,
+      "path": "/womens/clothes/shorts/bridges"
+    },
+    {
+      "id": 141,
+      "name": "Джемперы",
+      "parentId": 31,
+      "sizeGroupId": 4,
+      "slug": "jumpers",
+      "synonyms": [],
+      "order": 0,
+      "path": "/womens/clothes/kofti/jumpers"
+    },
+    {
+      "id": 142,
+      "name": "Свитеры",
+      "parentId": 31,
+      "sizeGroupId": 4,
+      "slug": "sweaters",
+      "synonyms": [],
+      "order": 2,
+      "path": "/womens/clothes/kofti/sweaters"
+    },
+    {
+      "id": 143,
+      "name": "Кардиганы",
+      "parentId": 31,
+      "sizeGroupId": 4,
+      "slug": "cardigans",
+      "synonyms": [],
+      "order": 4,
+      "path": "/womens/clothes/kofti/cardigans"
+    },
+    {
+      "id": 144,
+      "name": "Водолазки",
+      "parentId": 31,
+      "sizeGroupId": 4,
+      "slug": "turtlenecks",
+      "synonyms": [],
+      "order": 6,
+      "path": "/womens/clothes/kofti/turtlenecks"
+    },
+    {
+      "id": 145,
+      "name": "Свитшоты",
+      "parentId": 31,
+      "sizeGroupId": 4,
+      "slug": "sweatshirts",
+      "synonyms": [],
+      "order": 8,
+      "path": "/womens/clothes/kofti/sweatshirts"
+    },
+    {
+      "id": 146,
+      "name": "Худи",
+      "parentId": 31,
+      "sizeGroupId": 4,
+      "slug": "hoodie",
+      "synonyms": [],
+      "order": 10,
+      "path": "/womens/clothes/kofti/hoodie"
+    },
+    {
+      "id": 147,
+      "name": "Пуловеры",
+      "parentId": 31,
+      "sizeGroupId": 4,
+      "slug": "pullovers",
+      "synonyms": [],
+      "order": 12,
+      "path": "/womens/clothes/kofti/pullovers"
+    },
+    {
+      "id": 148,
+      "name": "Толстовки",
+      "parentId": 31,
+      "sizeGroupId": 4,
+      "slug": "tolstovki",
+      "synonyms": [],
+      "order": 14,
+      "path": "/womens/clothes/kofti/tolstovki"
+    },
+    {
+      "id": 149,
+      "name": "Лонгсливы",
+      "parentId": 31,
+      "sizeGroupId": 4,
+      "slug": "longsleeves",
+      "synonyms": [],
+      "order": 16,
+      "path": "/womens/clothes/kofti/longsleeves"
+    },
+    {
+      "id": 150,
+      "name": "Бюстальтеры",
+      "parentId": 32,
+      "sizeGroupId": 7,
+      "slug": "bras",
+      "synonyms": [],
+      "order": 0,
+      "path": "/womens/clothes/lingerie/bras"
+    },
+    {
+      "id": 151,
+      "name": "Комплекты",
+      "parentId": 32,
+      "sizeGroupId": 4,
+      "slug": "sets",
+      "synonyms": [],
+      "order": 2,
+      "path": "/womens/clothes/lingerie/sets"
+    },
+    {
+      "id": 152,
+      "name": "Трусы",
+      "parentId": 32,
+      "sizeGroupId": 4,
+      "slug": "underwear",
+      "synonyms": [],
+      "order": 4,
+      "path": "/womens/clothes/lingerie/underwear"
+    },
+    {
+      "id": 153,
+      "name": "Носки",
+      "parentId": 32,
+      "sizeGroupId": 6,
+      "slug": "socks",
+      "synonyms": [],
+      "order": 6,
+      "path": "/womens/clothes/lingerie/socks"
+    },
+    {
+      "id": 154,
+      "name": "Колготки",
+      "parentId": 32,
+      "sizeGroupId": 4,
+      "slug": "tights",
+      "synonyms": [],
+      "order": 8,
+      "path": "/womens/clothes/lingerie/tights"
+    },
+    {
+      "id": 155,
+      "name": "Чулки",
+      "parentId": 32,
+      "sizeGroupId": 4,
+      "slug": "chulki",
+      "synonyms": [],
+      "order": 10,
+      "path": "/womens/clothes/lingerie/chulki"
+    },
+    {
+      "id": 156,
+      "name": "Лифы",
+      "parentId": 33,
+      "sizeGroupId": 7,
+      "slug": "bras",
+      "synonyms": [],
+      "order": 0,
+      "path": "/womens/clothes/swimwear/bras"
+    },
+    {
+      "id": 157,
+      "name": "Плавки",
+      "parentId": 33,
+      "sizeGroupId": 4,
+      "slug": "swimming-trunks",
+      "synonyms": [],
+      "order": 2,
+      "path": "/womens/clothes/swimwear/swimming-trunks"
+    },
+    {
+      "id": 158,
+      "name": "Пляжные платья и туники",
+      "parentId": 33,
+      "sizeGroupId": 4,
+      "slug": "beach-dresses",
+      "synonyms": [],
+      "order": 4,
+      "path": "/womens/clothes/swimwear/beach-dresses"
+    },
+    {
+      "id": 159,
+      "name": "Раздельный купальники",
+      "parentId": 33,
+      "sizeGroupId": 4,
+      "slug": "two-piece-swimwear",
+      "synonyms": [],
+      "order": 6,
+      "path": "/womens/clothes/swimwear/two-piece-swimwear"
+    },
+    {
+      "id": 160,
+      "name": "Слитные купальники",
+      "parentId": 33,
+      "sizeGroupId": 4,
+      "slug": "one-piece-swimwear",
+      "synonyms": [],
+      "order": 8,
+      "path": "/womens/clothes/swimwear/one-piece-swimwear"
+    },
+    {
+      "id": 161,
+      "name": "Домашняя одежда",
+      "parentId": 35,
+      "sizeGroupId": 4,
+      "slug": "home-clothes",
+      "synonyms": [],
+      "order": 0,
+      "path": "/womens/clothes/home-clothes/home-clothes"
+    },
+    {
+      "id": 162,
+      "name": "Пижамы",
+      "parentId": 35,
+      "sizeGroupId": 4,
+      "slug": "pyjamas",
+      "synonyms": [],
+      "order": 2,
+      "path": "/womens/clothes/home-clothes/pyjamas"
+    },
+    {
+      "id": 163,
+      "name": "Ночнушки",
+      "parentId": 35,
+      "sizeGroupId": 4,
+      "slug": "nightgowns",
+      "synonyms": [],
+      "order": 4,
+      "path": "/womens/clothes/home-clothes/nightgowns"
+    },
+    {
+      "id": 164,
+      "name": "Халаты",
+      "parentId": 35,
+      "sizeGroupId": 4,
+      "slug": "bathrobes",
+      "synonyms": [],
+      "order": 6,
+      "path": "/womens/clothes/home-clothes/bathrobes"
+    },
+    {
+      "id": 165,
+      "name": "Пиджаки",
+      "parentId": 36,
+      "sizeGroupId": 4,
+      "slug": "blazers",
+      "synonyms": [],
+      "order": 0,
+      "path": "/womens/clothes/blazers-and-suits/blazers"
+    },
+    {
+      "id": 166,
+      "name": "Жилеты",
+      "parentId": 36,
+      "sizeGroupId": 4,
+      "slug": "vests",
+      "synonyms": [],
+      "order": 2,
+      "path": "/womens/clothes/blazers-and-suits/vests"
+    },
+    {
+      "id": 167,
+      "name": "Жакеты",
+      "parentId": 36,
+      "sizeGroupId": 4,
+      "slug": "jackets",
+      "synonyms": [],
+      "order": 4,
+      "path": "/womens/clothes/blazers-and-suits/jackets"
+    },
+    {
+      "id": 168,
+      "name": "Костюмы с шортами",
+      "parentId": 36,
+      "sizeGroupId": 4,
+      "slug": "shorts-suits",
+      "synonyms": [],
+      "order": 6,
+      "path": "/womens/clothes/blazers-and-suits/shorts-suits"
+    },
+    {
+      "id": 169,
+      "name": "Костюмы с брюками",
+      "parentId": 36,
+      "sizeGroupId": 4,
+      "slug": "pant-suits",
+      "synonyms": [],
+      "order": 8,
+      "path": "/womens/clothes/blazers-and-suits/pant-suits"
+    },
+    {
+      "id": 170,
+      "name": "Костюмы с юбкой",
+      "parentId": 36,
+      "sizeGroupId": 4,
+      "slug": "skirt-suits",
+      "synonyms": [],
+      "order": 10,
+      "path": "/womens/clothes/blazers-and-suits/skirt-suits"
+    },
+    {
+      "id": 171,
+      "name": "Верхняя одежда",
+      "parentId": 37,
+      "sizeGroupId": 4,
+      "slug": "outerwear",
+      "synonyms": [],
+      "order": 0,
+      "path": "/womens/clothes/sport/outerwear"
+    },
+    {
+      "id": 172,
+      "name": "Платья",
+      "parentId": 37,
+      "sizeGroupId": 4,
+      "slug": "dresses",
+      "synonyms": [],
+      "order": 2,
+      "path": "/womens/clothes/sport/dresses"
+    },
+    {
+      "id": 173,
+      "name": "Спортивные костюмы",
+      "parentId": 37,
+      "sizeGroupId": 4,
+      "slug": "sport-suits",
+      "synonyms": [],
+      "order": 4,
+      "path": "/womens/clothes/sport/sport-suits"
+    },
+    {
+      "id": 174,
+      "name": "Юбки",
+      "parentId": 37,
+      "sizeGroupId": 4,
+      "slug": "skirts",
+      "synonyms": [],
+      "order": 6,
+      "path": "/womens/clothes/sport/skirts"
+    },
+    {
+      "id": 175,
+      "name": "Футболки и майки",
+      "parentId": 37,
+      "sizeGroupId": 4,
+      "slug": "t-shirts-and-tanks",
+      "synonyms": [],
+      "order": 8,
+      "path": "/womens/clothes/sport/t-shirts-and-tanks"
+    },
+    {
+      "id": 176,
+      "name": "Штаны и лосины",
+      "parentId": 37,
+      "sizeGroupId": 4,
+      "slug": "pants-and-tights",
+      "synonyms": [],
+      "order": 10,
+      "path": "/womens/clothes/sport/pants-and-tights"
+    },
+    {
+      "id": 177,
+      "name": "Шорты",
+      "parentId": 37,
+      "sizeGroupId": 4,
+      "slug": "Shorts",
+      "synonyms": [],
+      "order": 12,
+      "path": "/womens/clothes/sport/Shorts"
+    },
+    {
+      "id": 178,
+      "name": "Нижнее белье",
+      "parentId": 37,
+      "sizeGroupId": 4,
+      "slug": "lingerie",
+      "synonyms": [],
+      "order": 14,
+      "path": "/womens/clothes/sport/lingerie"
+    },
+    {
+      "id": 179,
+      "name": "Кофты",
+      "parentId": 37,
+      "sizeGroupId": 4,
+      "slug": "kofti",
+      "synonyms": [],
+      "order": 16,
+      "path": "/womens/clothes/sport/kofti"
+    },
+    {
+      "id": 180,
+      "name": "Верхняя одежда",
+      "parentId": 38,
+      "sizeGroupId": 4,
+      "slug": "outerwear",
+      "synonyms": [],
+      "order": 0,
+      "path": "/womens/clothes/pregnancy-clothes/outerwear"
+    },
+    {
+      "id": 181,
+      "name": "Платья",
+      "parentId": 38,
+      "sizeGroupId": 4,
+      "slug": "dresses",
+      "synonyms": [],
+      "order": 2,
+      "path": "/womens/clothes/pregnancy-clothes/dresses"
+    },
+    {
+      "id": 182,
+      "name": "Сарафаны",
+      "parentId": 38,
+      "sizeGroupId": 4,
+      "slug": "sundresses",
+      "synonyms": [],
+      "order": 4,
+      "path": "/womens/clothes/pregnancy-clothes/sundresses"
+    },
+    {
+      "id": 183,
+      "name": "Футболки",
+      "parentId": 38,
+      "sizeGroupId": 4,
+      "slug": "t-shirts",
+      "synonyms": [],
+      "order": 6,
+      "path": "/womens/clothes/pregnancy-clothes/t-shirts"
+    },
+    {
+      "id": 184,
+      "name": "Джинсы",
+      "parentId": 38,
+      "sizeGroupId": 4,
+      "slug": "jeans",
+      "synonyms": [],
+      "order": 8,
+      "path": "/womens/clothes/pregnancy-clothes/jeans"
+    },
+    {
+      "id": 185,
+      "name": "Брюки",
+      "parentId": 38,
+      "sizeGroupId": 4,
+      "slug": "pants",
+      "synonyms": [],
+      "order": 10,
+      "path": "/womens/clothes/pregnancy-clothes/pants"
+    },
+    {
+      "id": 186,
+      "name": "Купальники",
+      "parentId": 38,
+      "sizeGroupId": 4,
+      "slug": "swimwear",
+      "synonyms": [],
+      "order": 12,
+      "path": "/womens/clothes/pregnancy-clothes/swimwear"
+    },
+    {
+      "id": 187,
+      "name": "Белье",
+      "parentId": 38,
+      "sizeGroupId": 4,
+      "slug": "lingerie",
+      "synonyms": [],
+      "order": 14,
+      "path": "/womens/clothes/pregnancy-clothes/lingerie"
+    },
+    {
+      "id": 188,
+      "name": "Другая одежда",
+      "parentId": 38,
+      "sizeGroupId": 4,
+      "slug": "other",
+      "synonyms": [],
+      "order": 16,
+      "path": "/womens/clothes/pregnancy-clothes/other"
+    },
+    {
+      "id": 189,
+      "name": "Клатчи",
+      "parentId": 55,
+      "sizeGroupId": null,
+      "slug": "clutches",
+      "synonyms": [],
+      "order": 0,
+      "path": "/womens/accessories/bags/clutches"
+    },
+    {
+      "id": 190,
+      "name": "С длинными ручками",
+      "parentId": 55,
+      "sizeGroupId": null,
+      "slug": "long-hands",
+      "synonyms": [],
+      "order": 2,
+      "path": "/womens/accessories/bags/long-hands"
+    },
+    {
+      "id": 191,
+      "name": "С короткими ручками",
+      "parentId": 55,
+      "sizeGroupId": null,
+      "slug": "short-hands",
+      "synonyms": [],
+      "order": 4,
+      "path": "/womens/accessories/bags/short-hands"
+    },
+    {
+      "id": 192,
+      "name": "Рюкзаки",
+      "parentId": 55,
+      "sizeGroupId": null,
+      "slug": "backpacks",
+      "synonyms": [],
+      "order": 6,
+      "path": "/womens/accessories/bags/backpacks"
+    },
+    {
+      "id": 193,
+      "name": "Дорожные чемоданы",
+      "parentId": 55,
+      "sizeGroupId": null,
+      "slug": "travel-bags",
+      "synonyms": [],
+      "order": 8,
+      "path": "/womens/accessories/bags/travel-bags"
+    },
+    {
+      "id": 194,
+      "name": "Кошельки",
+      "parentId": 55,
+      "sizeGroupId": null,
+      "slug": "wallets",
+      "synonyms": [],
+      "order": 10,
+      "path": "/womens/accessories/bags/wallets"
+    },
+    {
+      "id": 195,
+      "name": "Шапки",
+      "parentId": 57,
+      "sizeGroupId": null,
+      "slug": "hats",
+      "synonyms": [],
+      "order": 0,
+      "path": "/womens/accessories/hats/hats"
+    },
+    {
+      "id": 196,
+      "name": "Бейсболки и кепки",
+      "parentId": 57,
+      "sizeGroupId": null,
+      "slug": "baseball-caps",
+      "synonyms": [],
+      "order": 2,
+      "path": "/womens/accessories/hats/baseball-caps"
+    },
+    {
+      "id": 197,
+      "name": "Шляпы",
+      "parentId": 57,
+      "sizeGroupId": null,
+      "slug": "shlyapa",
+      "synonyms": [],
+      "order": 4,
+      "path": "/womens/accessories/hats/shlyapa"
+    },
+    {
+      "id": 198,
+      "name": "Панамы",
+      "parentId": 57,
+      "sizeGroupId": null,
+      "slug": "panamas",
+      "synonyms": [],
+      "order": 6,
+      "path": "/womens/accessories/hats/panamas"
+    },
+    {
+      "id": 199,
+      "name": "Повязки на голову",
+      "parentId": 57,
+      "sizeGroupId": null,
+      "slug": "headbands",
+      "synonyms": [],
+      "order": 8,
+      "path": "/womens/accessories/hats/headbands"
+    },
+    {
+      "id": 200,
+      "name": "Береты",
+      "parentId": 57,
+      "sizeGroupId": null,
+      "slug": "berets",
+      "synonyms": [],
+      "order": 10,
+      "path": "/womens/accessories/hats/berets"
+    },
+    {
+      "id": 201,
+      "name": "Банданы",
+      "parentId": 57,
+      "sizeGroupId": null,
+      "slug": "bandanas",
+      "synonyms": [],
+      "order": 12,
+      "path": "/womens/accessories/hats/bandanas"
+    },
+    {
+      "id": 202,
+      "name": "Подвески",
+      "parentId": 58,
+      "sizeGroupId": null,
+      "slug": "pendants",
+      "synonyms": [],
+      "order": 0,
+      "path": "/womens/accessories/jewellery-and-watches/pendants"
+    },
+    {
+      "id": 203,
+      "name": "Колье и ожерелья",
+      "parentId": 58,
+      "sizeGroupId": null,
+      "slug": "necklaces",
+      "synonyms": [],
+      "order": 2,
+      "path": "/womens/accessories/jewellery-and-watches/necklaces"
+    },
+    {
+      "id": 204,
+      "name": "Обручи",
+      "parentId": 58,
+      "sizeGroupId": null,
+      "slug": "hoops",
+      "synonyms": [],
+      "order": 4,
+      "path": "/womens/accessories/jewellery-and-watches/hoops"
+    },
+    {
+      "id": 205,
+      "name": "Чокеры",
+      "parentId": 58,
+      "sizeGroupId": null,
+      "slug": "chokers",
+      "synonyms": [],
+      "order": 6,
+      "path": "/womens/accessories/jewellery-and-watches/chokers"
+    },
+    {
+      "id": 206,
+      "name": "Заколки",
+      "parentId": 58,
+      "sizeGroupId": null,
+      "slug": "hairpins",
+      "synonyms": [],
+      "order": 8,
+      "path": "/womens/accessories/jewellery-and-watches/hairpins"
+    },
+    {
+      "id": 207,
+      "name": "Цепочки",
+      "parentId": 58,
+      "sizeGroupId": null,
+      "slug": "chains",
+      "synonyms": [],
+      "order": 10,
+      "path": "/womens/accessories/jewellery-and-watches/chains"
+    },
+    {
+      "id": 208,
+      "name": "Кулоны",
+      "parentId": 58,
+      "sizeGroupId": null,
+      "slug": "kulony",
+      "synonyms": [],
+      "order": 12,
+      "path": "/womens/accessories/jewellery-and-watches/kulony"
+    },
+    {
+      "id": 209,
+      "name": "Серьги",
+      "parentId": 58,
+      "sizeGroupId": null,
+      "slug": "earrings",
+      "synonyms": [],
+      "order": 14,
+      "path": "/womens/accessories/jewellery-and-watches/earrings"
+    },
+    {
+      "id": 210,
+      "name": "Кольца",
+      "parentId": 58,
+      "sizeGroupId": null,
+      "slug": "rings",
+      "synonyms": [],
+      "order": 16,
+      "path": "/womens/accessories/jewellery-and-watches/rings"
+    },
+    {
+      "id": 211,
+      "name": "Браслеты",
+      "parentId": 58,
+      "sizeGroupId": null,
+      "slug": "bracelets",
+      "synonyms": [],
+      "order": 18,
+      "path": "/womens/accessories/jewellery-and-watches/bracelets"
+    },
+    {
+      "id": 212,
+      "name": "Броши",
+      "parentId": 58,
+      "sizeGroupId": null,
+      "slug": "brooches",
+      "synonyms": [],
+      "order": 20,
+      "path": "/womens/accessories/jewellery-and-watches/brooches"
+    },
+    {
+      "id": 213,
+      "name": "Наборы",
+      "parentId": 58,
+      "sizeGroupId": null,
+      "slug": "sets",
+      "synonyms": [],
+      "order": 22,
+      "path": "/womens/accessories/jewellery-and-watches/sets"
+    },
+    {
+      "id": 214,
+      "name": "Часы",
+      "parentId": 58,
+      "sizeGroupId": null,
+      "slug": "watches",
+      "synonyms": [],
+      "order": 24,
+      "path": "/womens/accessories/jewellery-and-watches/watches"
+    },
+    {
+      "id": 215,
+      "name": "Другие украшения",
+      "parentId": 58,
+      "sizeGroupId": null,
+      "slug": "other",
+      "synonyms": [],
+      "order": 26,
+      "path": "/womens/accessories/jewellery-and-watches/other"
+    },
+    {
+      "id": 216,
+      "name": "Анораки",
+      "parentId": 65,
+      "sizeGroupId": 1,
+      "slug": "anoraks",
+      "synonyms": [],
+      "order": 0,
+      "path": "/mens/clothes/outerwear/anoraks"
+    },
+    {
+      "id": 217,
+      "name": "Бомберы",
+      "parentId": 65,
+      "sizeGroupId": 1,
+      "slug": "bomber-jackets",
+      "synonyms": [],
+      "order": 2,
+      "path": "/mens/clothes/outerwear/bomber-jackets"
+    },
+    {
+      "id": 218,
+      "name": "Джинсовые куртки",
+      "parentId": 65,
+      "sizeGroupId": 1,
+      "slug": "denim-jackets",
+      "synonyms": [],
+      "order": 4,
+      "path": "/mens/clothes/outerwear/denim-jackets"
+    },
+    {
+      "id": 219,
+      "name": "Кожаные куртки",
+      "parentId": 65,
+      "sizeGroupId": 1,
+      "slug": "leather-jackets",
+      "synonyms": [],
+      "order": 6,
+      "path": "/mens/clothes/outerwear/leather-jackets"
+    },
+    {
+      "id": 220,
+      "name": "Жилеты",
+      "parentId": 65,
+      "sizeGroupId": 1,
+      "slug": "vests",
+      "synonyms": [],
+      "order": 8,
+      "path": "/mens/clothes/outerwear/vests"
+    },
+    {
+      "id": 221,
+      "name": "Ветровки и легкие куртки",
+      "parentId": 65,
+      "sizeGroupId": 1,
+      "slug": "windbreaker",
+      "synonyms": [],
+      "order": 10,
+      "path": "/mens/clothes/outerwear/windbreaker"
+    },
+    {
+      "id": 222,
+      "name": "Пальто",
+      "parentId": 65,
+      "sizeGroupId": 1,
+      "slug": "coat",
+      "synonyms": [],
+      "order": 12,
+      "path": "/mens/clothes/outerwear/coat"
+    },
+    {
+      "id": 223,
+      "name": "Парки",
+      "parentId": 65,
+      "sizeGroupId": 1,
+      "slug": "parkas",
+      "synonyms": [],
+      "order": 14,
+      "path": "/mens/clothes/outerwear/parkas"
+    },
+    {
+      "id": 224,
+      "name": "Плащи",
+      "parentId": 65,
+      "sizeGroupId": 1,
+      "slug": "raincoats",
+      "synonyms": [],
+      "order": 16,
+      "path": "/mens/clothes/outerwear/raincoats"
+    },
+    {
+      "id": 225,
+      "name": "Пуховики",
+      "parentId": 65,
+      "sizeGroupId": 1,
+      "slug": "puffer-jackets",
+      "synonyms": [],
+      "order": 18,
+      "path": "/mens/clothes/outerwear/puffer-jackets"
+    },
+    {
+      "id": 226,
+      "name": "Зимние куртки",
+      "parentId": 65,
+      "sizeGroupId": 1,
+      "slug": "snowsuits",
+      "synonyms": [],
+      "order": 20,
+      "path": "/mens/clothes/outerwear/snowsuits"
+    },
+    {
+      "id": 227,
+      "name": "Шубы и дубленки",
+      "parentId": 65,
+      "sizeGroupId": 1,
+      "slug": "fur-coats",
+      "synonyms": [
+        "шубы",
+        "дубленки"
+      ],
+      "order": 22,
+      "path": "/mens/clothes/outerwear/fur-coats"
+    },
+    {
+      "id": 228,
+      "name": "Футболки",
+      "parentId": 67,
+      "sizeGroupId": 1,
+      "slug": "t-shirts",
+      "synonyms": [],
+      "order": 0,
+      "path": "/mens/clothes/t-shirts-and-tanks/t-shirts"
+    },
+    {
+      "id": 229,
+      "name": "Майки",
+      "parentId": 67,
+      "sizeGroupId": 1,
+      "slug": "tanks",
+      "synonyms": [],
+      "order": 2,
+      "path": "/mens/clothes/t-shirts-and-tanks/tanks"
+    },
+    {
+      "id": 230,
+      "name": "Поло",
+      "parentId": 67,
+      "sizeGroupId": 1,
+      "slug": "Polo",
+      "synonyms": [],
+      "order": 4,
+      "path": "/mens/clothes/t-shirts-and-tanks/Polo"
+    },
+    {
+      "id": 231,
+      "name": "Джинсы",
+      "parentId": 68,
+      "sizeGroupId": 2,
+      "slug": "jeans",
+      "synonyms": [],
+      "order": 0,
+      "path": "/mens/clothes/pants/jeans"
+    },
+    {
+      "id": 232,
+      "name": "Классические брюки",
+      "parentId": 68,
+      "sizeGroupId": 2,
+      "slug": "classic-pants",
+      "synonyms": [],
+      "order": 2,
+      "path": "/mens/clothes/pants/classic-pants"
+    },
+    {
+      "id": 233,
+      "name": "Повседневные брюки",
+      "parentId": 68,
+      "sizeGroupId": 2,
+      "slug": "casual-pants",
+      "synonyms": [],
+      "order": 4,
+      "path": "/mens/clothes/pants/casual-pants"
+    },
+    {
+      "id": 234,
+      "name": "Шорты",
+      "parentId": 69,
+      "sizeGroupId": 2,
+      "slug": "casual-shorts",
+      "synonyms": [],
+      "order": 0,
+      "path": "/mens/clothes/shorts/casual-shorts"
+    },
+    {
+      "id": 235,
+      "name": "Бриджи",
+      "parentId": 69,
+      "sizeGroupId": 2,
+      "slug": "bridges",
+      "synonyms": [],
+      "order": 2,
+      "path": "/mens/clothes/shorts/bridges"
+    },
+    {
+      "id": 236,
+      "name": "Джемперы",
+      "parentId": 70,
+      "sizeGroupId": 1,
+      "slug": "jumpers",
+      "synonyms": [],
+      "order": 0,
+      "path": "/mens/clothes/kofti-and-sweaters/jumpers"
+    },
+    {
+      "id": 237,
+      "name": "Свитеры",
+      "parentId": 70,
+      "sizeGroupId": 1,
+      "slug": "sweaters",
+      "synonyms": [],
+      "order": 2,
+      "path": "/mens/clothes/kofti-and-sweaters/sweaters"
+    },
+    {
+      "id": 238,
+      "name": "Кардиганы",
+      "parentId": 70,
+      "sizeGroupId": 1,
+      "slug": "cardigans",
+      "synonyms": [],
+      "order": 4,
+      "path": "/mens/clothes/kofti-and-sweaters/cardigans"
+    },
+    {
+      "id": 239,
+      "name": "Водолазки",
+      "parentId": 70,
+      "sizeGroupId": 1,
+      "slug": "turtlenecks",
+      "synonyms": [],
+      "order": 6,
+      "path": "/mens/clothes/kofti-and-sweaters/turtlenecks"
+    },
+    {
+      "id": 240,
+      "name": "Свитшоты",
+      "parentId": 70,
+      "sizeGroupId": 1,
+      "slug": "sweatshirts",
+      "synonyms": [],
+      "order": 8,
+      "path": "/mens/clothes/kofti-and-sweaters/sweatshirts"
+    },
+    {
+      "id": 241,
+      "name": "Худи",
+      "parentId": 70,
+      "sizeGroupId": 1,
+      "slug": "hoodie",
+      "synonyms": [],
+      "order": 10,
+      "path": "/mens/clothes/kofti-and-sweaters/hoodie"
+    },
+    {
+      "id": 242,
+      "name": "Пуловеры",
+      "parentId": 70,
+      "sizeGroupId": 1,
+      "slug": "pullovers",
+      "synonyms": [],
+      "order": 12,
+      "path": "/mens/clothes/kofti-and-sweaters/pullovers"
+    },
+    {
+      "id": 243,
+      "name": "Толстовки",
+      "parentId": 70,
+      "sizeGroupId": 1,
+      "slug": "tolstovki",
+      "synonyms": [],
+      "order": 14,
+      "path": "/mens/clothes/kofti-and-sweaters/tolstovki"
+    },
+    {
+      "id": 244,
+      "name": "Лонгсливы",
+      "parentId": 70,
+      "sizeGroupId": 1,
+      "slug": "longsleeves",
+      "synonyms": [],
+      "order": 16,
+      "path": "/mens/clothes/kofti-and-sweaters/longsleeves"
+    },
+    {
+      "id": 245,
+      "name": "Комплекты",
+      "parentId": 71,
+      "sizeGroupId": 1,
+      "slug": "sets",
+      "synonyms": [],
+      "order": 0,
+      "path": "/mens/clothes/lingerie/sets"
+    },
+    {
+      "id": 246,
+      "name": "Трусы",
+      "parentId": 71,
+      "sizeGroupId": 1,
+      "slug": "underwear",
+      "synonyms": [],
+      "order": 2,
+      "path": "/mens/clothes/lingerie/underwear"
+    },
+    {
+      "id": 247,
+      "name": "Носки",
+      "parentId": 71,
+      "sizeGroupId": 3,
+      "slug": "socks",
+      "synonyms": [],
+      "order": 4,
+      "path": "/mens/clothes/lingerie/socks"
+    },
+    {
+      "id": 248,
+      "name": "Домашняя одежда",
+      "parentId": 74,
+      "sizeGroupId": 1,
+      "slug": "home-clothes",
+      "synonyms": [],
+      "order": 0,
+      "path": "/mens/clothes/home-clothes/home-clothes"
+    },
+    {
+      "id": 249,
+      "name": "Пижамы",
+      "parentId": 74,
+      "sizeGroupId": 1,
+      "slug": "pyjamas",
+      "synonyms": [],
+      "order": 2,
+      "path": "/mens/clothes/home-clothes/pyjamas"
+    },
+    {
+      "id": 250,
+      "name": "Ночнушки",
+      "parentId": 74,
+      "sizeGroupId": 1,
+      "slug": "nightgowns",
+      "synonyms": [],
+      "order": 4,
+      "path": "/mens/clothes/home-clothes/nightgowns"
+    },
+    {
+      "id": 251,
+      "name": "Халаты",
+      "parentId": 74,
+      "sizeGroupId": 1,
+      "slug": "bathrobes",
+      "synonyms": [],
+      "order": 6,
+      "path": "/mens/clothes/home-clothes/bathrobes"
+    },
+    {
+      "id": 252,
+      "name": "Пиджаки",
+      "parentId": 75,
+      "sizeGroupId": 1,
+      "slug": "blazers",
+      "synonyms": [],
+      "order": 0,
+      "path": "/mens/clothes/blazers-and-suits/blazers"
+    },
+    {
+      "id": 253,
+      "name": "Жилеты",
+      "parentId": 75,
+      "sizeGroupId": 1,
+      "slug": "vests",
+      "synonyms": [],
+      "order": 2,
+      "path": "/mens/clothes/blazers-and-suits/vests"
+    },
+    {
+      "id": 254,
+      "name": "Костюмы",
+      "parentId": 75,
+      "sizeGroupId": 1,
+      "slug": "suits",
+      "synonyms": [],
+      "order": 4,
+      "path": "/mens/clothes/blazers-and-suits/suits"
+    },
+    {
+      "id": 255,
+      "name": "Верхняя одежда",
+      "parentId": 76,
+      "sizeGroupId": 1,
+      "slug": "outerwear",
+      "synonyms": [],
+      "order": 0,
+      "path": "/mens/clothes/sport/outerwear"
+    },
+    {
+      "id": 256,
+      "name": "Спортивные костюмы",
+      "parentId": 76,
+      "sizeGroupId": 1,
+      "slug": "sport-suits",
+      "synonyms": [],
+      "order": 2,
+      "path": "/mens/clothes/sport/sport-suits"
+    },
+    {
+      "id": 257,
+      "name": "Футболки и майки",
+      "parentId": 76,
+      "sizeGroupId": 1,
+      "slug": "t-shirts-and-tanks",
+      "synonyms": [],
+      "order": 4,
+      "path": "/mens/clothes/sport/t-shirts-and-tanks"
+    },
+    {
+      "id": 258,
+      "name": "Штаны",
+      "parentId": 76,
+      "sizeGroupId": 1,
+      "slug": "pants-and-tights",
+      "synonyms": [],
+      "order": 6,
+      "path": "/mens/clothes/sport/pants-and-tights"
+    },
+    {
+      "id": 259,
+      "name": "Шорты",
+      "parentId": 76,
+      "sizeGroupId": 1,
+      "slug": "Shorts",
+      "synonyms": [],
+      "order": 8,
+      "path": "/mens/clothes/sport/Shorts"
+    },
+    {
+      "id": 260,
+      "name": "Нижнее белье",
+      "parentId": 76,
+      "sizeGroupId": 1,
+      "slug": "lingerie",
+      "synonyms": [],
+      "order": 10,
+      "path": "/mens/clothes/sport/lingerie"
+    },
+    {
+      "id": 261,
+      "name": "Кофты",
+      "parentId": 76,
+      "sizeGroupId": 1,
+      "slug": "kofti",
+      "synonyms": [],
+      "order": 12,
+      "path": "/mens/clothes/sport/kofti"
+    },
+    {
+      "id": 262,
+      "name": "Сумки",
+      "parentId": 87,
+      "sizeGroupId": null,
+      "slug": "bags",
+      "synonyms": [],
+      "order": 0,
+      "path": "/mens/accessories/bags -and-backpacks/bags"
+    },
+    {
+      "id": 263,
+      "name": "Рюкзаки",
+      "parentId": 87,
+      "sizeGroupId": null,
+      "slug": "backpacks",
+      "synonyms": [],
+      "order": 2,
+      "path": "/mens/accessories/bags -and-backpacks/backpacks"
+    },
+    {
+      "id": 264,
+      "name": "Спортивные сумки",
+      "parentId": 87,
+      "sizeGroupId": null,
+      "slug": "training-bags",
+      "synonyms": [],
+      "order": 4,
+      "path": "/mens/accessories/bags -and-backpacks/training-bags"
+    },
+    {
+      "id": 265,
+      "name": "Портфели",
+      "parentId": 87,
+      "sizeGroupId": null,
+      "slug": "portfolio",
+      "synonyms": [],
+      "order": 6,
+      "path": "/mens/accessories/bags -and-backpacks/portfolio"
+    },
+    {
+      "id": 266,
+      "name": "Барсетки",
+      "parentId": 87,
+      "sizeGroupId": null,
+      "slug": "messenger-bags",
+      "synonyms": [],
+      "order": 8,
+      "path": "/mens/accessories/bags -and-backpacks/messenger-bags"
+    },
+    {
+      "id": 267,
+      "name": "Дорожные",
+      "parentId": 87,
+      "sizeGroupId": null,
+      "slug": "travel-bags",
+      "synonyms": [],
+      "order": 10,
+      "path": "/mens/accessories/bags -and-backpacks/travel-bags"
+    },
+    {
+      "id": 268,
+      "name": "Чемоданы",
+      "parentId": 87,
+      "sizeGroupId": null,
+      "slug": "suitcases",
+      "synonyms": [],
+      "order": 12,
+      "path": "/mens/accessories/bags -and-backpacks/suitcases"
+    },
+    {
+      "id": 269,
+      "name": "Кошельки",
+      "parentId": 87,
+      "sizeGroupId": null,
+      "slug": "wallets",
+      "synonyms": [],
+      "order": 14,
+      "path": "/mens/accessories/bags -and-backpacks/wallets"
+    },
+    {
+      "id": 270,
+      "name": "Шапки",
+      "parentId": 89,
+      "sizeGroupId": null,
+      "slug": "hats",
+      "synonyms": [],
+      "order": 0,
+      "path": "/mens/accessories/hats/hats"
+    },
+    {
+      "id": 271,
+      "name": "Бейсболки",
+      "parentId": 89,
+      "sizeGroupId": null,
+      "slug": "baseball-caps",
+      "synonyms": [],
+      "order": 2,
+      "path": "/mens/accessories/hats/baseball-caps"
+    },
+    {
+      "id": 272,
+      "name": "Кепки",
+      "parentId": 89,
+      "sizeGroupId": null,
+      "slug": "caps",
+      "synonyms": [],
+      "order": 4,
+      "path": "/mens/accessories/hats/caps"
+    },
+    {
+      "id": 273,
+      "name": "Шляпы",
+      "parentId": 89,
+      "sizeGroupId": null,
+      "slug": "shlyapi",
+      "synonyms": [],
+      "order": 6,
+      "path": "/mens/accessories/hats/shlyapi"
+    },
+    {
+      "id": 274,
+      "name": "Панамы",
+      "parentId": 89,
+      "sizeGroupId": null,
+      "slug": "panamas",
+      "synonyms": [],
+      "order": 8,
+      "path": "/mens/accessories/hats/panamas"
+    },
+    {
+      "id": 275,
+      "name": "Береты",
+      "parentId": 89,
+      "sizeGroupId": null,
+      "slug": "berets",
+      "synonyms": [],
+      "order": 10,
+      "path": "/mens/accessories/hats/berets"
+    },
+    {
+      "id": 276,
+      "name": "Банданы",
+      "parentId": 89,
+      "sizeGroupId": null,
+      "slug": "bandanas",
+      "synonyms": [],
+      "order": 12,
+      "path": "/mens/accessories/hats/bandanas"
+    },
+    {
+      "id": 277,
+      "name": "Цепочки",
+      "parentId": 90,
+      "sizeGroupId": null,
+      "slug": "chains",
+      "synonyms": [],
+      "order": 0,
+      "path": "/mens/accessories/jewellery/chains"
+    },
+    {
+      "id": 278,
+      "name": "Серьги",
+      "parentId": 90,
+      "sizeGroupId": null,
+      "slug": "earrings",
+      "synonyms": [],
+      "order": 2,
+      "path": "/mens/accessories/jewellery/earrings"
+    },
+    {
+      "id": 279,
+      "name": "Кольца и перстни",
+      "parentId": 90,
+      "sizeGroupId": null,
+      "slug": "rings",
+      "synonyms": [],
+      "order": 4,
+      "path": "/mens/accessories/jewellery/rings"
+    },
+    {
+      "id": 280,
+      "name": "Браслеты",
+      "parentId": 90,
+      "sizeGroupId": null,
+      "slug": "bracelets",
+      "synonyms": [],
+      "order": 6,
+      "path": "/mens/accessories/jewellery/bracelets"
+    },
+    {
+      "id": 281,
+      "name": "Запонки",
+      "parentId": 90,
+      "sizeGroupId": null,
+      "slug": "cufflinks",
+      "synonyms": [],
+      "order": 8,
+      "path": "/mens/accessories/jewellery/cufflinks"
+    },
+    {
+      "id": 282,
+      "name": "Другие украшения",
+      "parentId": 90,
+      "sizeGroupId": null,
+      "slug": "other",
+      "synonyms": [],
+      "order": 10,
+      "path": "/mens/accessories/jewellery/other"
+    },
+    {
+      "id": 283,
+      "name": "Верхняя одежда",
+      "parentId": 97,
+      "sizeGroupId": 8,
+      "slug": "outerwear",
+      "synonyms": [],
+      "order": 0,
+      "path": "/kids/girls/clothes/outerwear"
+    },
+    {
+      "id": 284,
+      "name": "Блузы и Рубашки",
+      "parentId": 97,
+      "sizeGroupId": 8,
+      "slug": "blouses-and-shirts",
+      "synonyms": [],
+      "order": 2,
+      "path": "/kids/girls/clothes/blouses-and-shirts"
+    },
+    {
+      "id": 285,
+      "name": "Майки и футболки",
+      "parentId": 97,
+      "sizeGroupId": 8,
+      "slug": "t-shirts-and-tanks",
+      "synonyms": [],
+      "order": 4,
+      "path": "/kids/girls/clothes/t-shirts-and-tanks"
+    },
+    {
+      "id": 286,
+      "name": "Брюки, джинсы и лосины",
+      "parentId": 97,
+      "sizeGroupId": 8,
+      "slug": "pants",
+      "synonyms": [],
+      "order": 6,
+      "path": "/kids/girls/clothes/pants"
+    },
+    {
+      "id": 287,
+      "name": "Платья и сарафаны",
+      "parentId": 97,
+      "sizeGroupId": 8,
+      "slug": "dresses",
+      "synonyms": [],
+      "order": 8,
+      "path": "/kids/girls/clothes/dresses"
+    },
+    {
+      "id": 288,
+      "name": "Юбки",
+      "parentId": 97,
+      "sizeGroupId": 8,
+      "slug": "skirts",
+      "synonyms": [],
+      "order": 10,
+      "path": "/kids/girls/clothes/skirts"
+    },
+    {
+      "id": 289,
+      "name": "Шорты",
+      "parentId": 97,
+      "sizeGroupId": 8,
+      "slug": "shorts",
+      "synonyms": [],
+      "order": 12,
+      "path": "/kids/girls/clothes/shorts"
+    },
+    {
+      "id": 290,
+      "name": "Кофты и свитера",
+      "parentId": 97,
+      "sizeGroupId": 8,
+      "slug": "kofti-and-sweaters",
+      "synonyms": [],
+      "order": 14,
+      "path": "/kids/girls/clothes/kofti-and-sweaters"
+    },
+    {
+      "id": 291,
+      "name": "Нижнее белье",
+      "parentId": 97,
+      "sizeGroupId": null,
+      "slug": "lingerie",
+      "synonyms": [],
+      "order": 16,
+      "path": "/kids/girls/clothes/lingerie"
+    },
+    {
+      "id": 292,
+      "name": "Купальники",
+      "parentId": 97,
+      "sizeGroupId": 8,
+      "slug": "swimwear",
+      "synonyms": [],
+      "order": 18,
+      "path": "/kids/girls/clothes/swimwear"
+    },
+    {
+      "id": 293,
+      "name": "Комбинезоны",
+      "parentId": 97,
+      "sizeGroupId": 8,
+      "slug": "overalls",
+      "synonyms": [],
+      "order": 20,
+      "path": "/kids/girls/clothes/overalls"
+    },
+    {
+      "id": 294,
+      "name": "Одежда для дома",
+      "parentId": 97,
+      "sizeGroupId": 8,
+      "slug": "home-clothes",
+      "synonyms": [],
+      "order": 22,
+      "path": "/kids/girls/clothes/home-clothes"
+    },
+    {
+      "id": 295,
+      "name": "Костюмы",
+      "parentId": 97,
+      "sizeGroupId": 8,
+      "slug": "suits",
+      "synonyms": [],
+      "order": 24,
+      "path": "/kids/girls/clothes/suits"
+    },
+    {
+      "id": 296,
+      "name": "Спортивная одежда",
+      "parentId": 97,
+      "sizeGroupId": 8,
+      "slug": "sport",
+      "synonyms": [],
+      "order": 26,
+      "path": "/kids/girls/clothes/sport"
+    },
+    {
+      "id": 297,
+      "name": "Босоножки и шлепанцы",
+      "parentId": 98,
+      "sizeGroupId": 9,
+      "slug": "sandals",
+      "synonyms": [],
+      "order": 0,
+      "path": "/kids/girls/shoes/sandals"
+    },
+    {
+      "id": 298,
+      "name": "Сапоги и ботинки",
+      "parentId": 98,
+      "sizeGroupId": 9,
+      "slug": "boots",
+      "synonyms": [],
+      "order": 2,
+      "path": "/kids/girls/shoes/boots"
+    },
+    {
+      "id": 299,
+      "name": "Кроссовки и кеды",
+      "parentId": 98,
+      "sizeGroupId": 9,
+      "slug": "trainers",
+      "synonyms": [],
+      "order": 4,
+      "path": "/kids/girls/shoes/trainers"
+    },
+    {
+      "id": 300,
+      "name": "Туфли",
+      "parentId": 98,
+      "sizeGroupId": 9,
+      "slug": "low-shoes",
+      "synonyms": [],
+      "order": 6,
+      "path": "/kids/girls/shoes/low-shoes"
+    },
+    {
+      "id": 301,
+      "name": "Другая обувь",
+      "parentId": 98,
+      "sizeGroupId": 9,
+      "slug": "other",
+      "synonyms": [],
+      "order": 8,
+      "path": "/kids/girls/shoes/other"
+    },
+    {
+      "id": 302,
+      "name": "Сумки и рюкзаки",
+      "parentId": 99,
+      "sizeGroupId": null,
+      "slug": "bags -and-backpacks",
+      "synonyms": [],
+      "order": 0,
+      "path": "/kids/girls/accessories/bags -and-backpacks"
+    },
+    {
+      "id": 303,
+      "name": "Очки",
+      "parentId": 99,
+      "sizeGroupId": null,
+      "slug": "glasses",
+      "synonyms": [],
+      "order": 2,
+      "path": "/kids/girls/accessories/glasses"
+    },
+    {
+      "id": 304,
+      "name": "Головные уборы",
+      "parentId": 99,
+      "sizeGroupId": null,
+      "slug": "hats",
+      "synonyms": [],
+      "order": 4,
+      "path": "/kids/girls/accessories/hats"
+    },
+    {
+      "id": 305,
+      "name": "Украшения",
+      "parentId": 99,
+      "sizeGroupId": null,
+      "slug": "jewellery",
+      "synonyms": [],
+      "order": 6,
+      "path": "/kids/girls/accessories/jewellery"
+    },
+    {
+      "id": 306,
+      "name": "Ремни",
+      "parentId": 99,
+      "sizeGroupId": null,
+      "slug": "belts",
+      "synonyms": [],
+      "order": 8,
+      "path": "/kids/girls/accessories/belts"
+    },
+    {
+      "id": 307,
+      "name": "Часы",
+      "parentId": 99,
+      "sizeGroupId": null,
+      "slug": "watches",
+      "synonyms": [],
+      "order": 10,
+      "path": "/kids/girls/accessories/watches"
+    },
+    {
+      "id": 308,
+      "name": "Перчатки",
+      "parentId": 99,
+      "sizeGroupId": null,
+      "slug": "gloves",
+      "synonyms": [],
+      "order": 12,
+      "path": "/kids/girls/accessories/gloves"
+    },
+    {
+      "id": 309,
+      "name": "Другие аксессуары",
+      "parentId": 99,
+      "sizeGroupId": null,
+      "slug": "other",
+      "synonyms": [],
+      "order": 14,
+      "path": "/kids/girls/accessories/other"
+    },
+    {
+      "id": 310,
+      "name": "Верхняя одежда",
+      "parentId": 100,
+      "sizeGroupId": 8,
+      "slug": "outerwear",
+      "synonyms": [],
+      "order": 0,
+      "path": "/kids/boys/clothes/outerwear"
+    },
+    {
+      "id": 311,
+      "name": "Рубашки",
+      "parentId": 100,
+      "sizeGroupId": 8,
+      "slug": "shirts",
+      "synonyms": [],
+      "order": 2,
+      "path": "/kids/boys/clothes/shirts"
+    },
+    {
+      "id": 312,
+      "name": "Майки и футболки",
+      "parentId": 100,
+      "sizeGroupId": 8,
+      "slug": "t-shirts-and-tanks",
+      "synonyms": [],
+      "order": 4,
+      "path": "/kids/boys/clothes/t-shirts-and-tanks"
+    },
+    {
+      "id": 313,
+      "name": "Брюки, джинсы и лосины",
+      "parentId": 100,
+      "sizeGroupId": 8,
+      "slug": "pants",
+      "synonyms": [],
+      "order": 6,
+      "path": "/kids/boys/clothes/pants"
+    },
+    {
+      "id": 314,
+      "name": "Шорты",
+      "parentId": 100,
+      "sizeGroupId": 8,
+      "slug": "shorts",
+      "synonyms": [],
+      "order": 8,
+      "path": "/kids/boys/clothes/shorts"
+    },
+    {
+      "id": 315,
+      "name": "Кофты и свитера",
+      "parentId": 100,
+      "sizeGroupId": 8,
+      "slug": "kofti-and-sweaters",
+      "synonyms": [],
+      "order": 10,
+      "path": "/kids/boys/clothes/kofti-and-sweaters"
+    },
+    {
+      "id": 316,
+      "name": "Нижнее белье",
+      "parentId": 100,
+      "sizeGroupId": 8,
+      "slug": "lingerie",
+      "synonyms": [],
+      "order": 12,
+      "path": "/kids/boys/clothes/lingerie"
+    },
+    {
+      "id": 317,
+      "name": "Купальники",
+      "parentId": 100,
+      "sizeGroupId": 8,
+      "slug": "swimwear",
+      "synonyms": [],
+      "order": 14,
+      "path": "/kids/boys/clothes/swimwear"
+    },
+    {
+      "id": 318,
+      "name": "Комбинезоны",
+      "parentId": 100,
+      "sizeGroupId": 8,
+      "slug": "overalls",
+      "synonyms": [],
+      "order": 16,
+      "path": "/kids/boys/clothes/overalls"
+    },
+    {
+      "id": 319,
+      "name": "Одежда для дома",
+      "parentId": 100,
+      "sizeGroupId": 8,
+      "slug": "home-clothes",
+      "synonyms": [],
+      "order": 18,
+      "path": "/kids/boys/clothes/home-clothes"
+    },
+    {
+      "id": 320,
+      "name": "Костюмы",
+      "parentId": 100,
+      "sizeGroupId": 8,
+      "slug": "suits",
+      "synonyms": [],
+      "order": 20,
+      "path": "/kids/boys/clothes/suits"
+    },
+    {
+      "id": 321,
+      "name": "Спортивная одежда",
+      "parentId": 100,
+      "sizeGroupId": 8,
+      "slug": "sport",
+      "synonyms": [],
+      "order": 22,
+      "path": "/kids/boys/clothes/sport"
+    },
+    {
+      "id": 322,
+      "name": "Босоножки и шлепанцы",
+      "parentId": 101,
+      "sizeGroupId": 9,
+      "slug": "sandals",
+      "synonyms": [],
+      "order": 0,
+      "path": "/kids/boys/shoes/sandals"
+    },
+    {
+      "id": 323,
+      "name": "Сапоги и ботинки",
+      "parentId": 101,
+      "sizeGroupId": 9,
+      "slug": "boots",
+      "synonyms": [],
+      "order": 2,
+      "path": "/kids/boys/shoes/boots"
+    },
+    {
+      "id": 324,
+      "name": "Кроссовки и кеды",
+      "parentId": 101,
+      "sizeGroupId": 9,
+      "slug": "trainers",
+      "synonyms": [],
+      "order": 4,
+      "path": "/kids/boys/shoes/trainers"
+    },
+    {
+      "id": 325,
+      "name": "Туфли",
+      "parentId": 101,
+      "sizeGroupId": 9,
+      "slug": "low-shoes",
+      "synonyms": [],
+      "order": 6,
+      "path": "/kids/boys/shoes/low-shoes"
+    },
+    {
+      "id": 326,
+      "name": "Другая обувь",
+      "parentId": 101,
+      "sizeGroupId": 9,
+      "slug": "other",
+      "synonyms": [],
+      "order": 8,
+      "path": "/kids/boys/shoes/other"
+    },
+    {
+      "id": 327,
+      "name": "Сумки и рюкзаки",
+      "parentId": 102,
+      "sizeGroupId": null,
+      "slug": "bags -and-backpacks",
+      "synonyms": [],
+      "order": 0,
+      "path": "/kids/boys/accessories/bags -and-backpacks"
+    },
+    {
+      "id": 328,
+      "name": "Очки",
+      "parentId": 102,
+      "sizeGroupId": null,
+      "slug": "glasses",
+      "synonyms": [],
+      "order": 2,
+      "path": "/kids/boys/accessories/glasses"
+    },
+    {
+      "id": 329,
+      "name": "Головные уборы",
+      "parentId": 102,
+      "sizeGroupId": null,
+      "slug": "hats",
+      "synonyms": [],
+      "order": 4,
+      "path": "/kids/boys/accessories/hats"
+    },
+    {
+      "id": 330,
+      "name": "Украшения",
+      "parentId": 102,
+      "sizeGroupId": null,
+      "slug": "jewellery",
+      "synonyms": [],
+      "order": 6,
+      "path": "/kids/boys/accessories/jewellery"
+    },
+    {
+      "id": 331,
+      "name": "Ремни",
+      "parentId": 102,
+      "sizeGroupId": null,
+      "slug": "belts",
+      "synonyms": [],
+      "order": 8,
+      "path": "/kids/boys/accessories/belts"
+    },
+    {
+      "id": 332,
+      "name": "Часы",
+      "parentId": 102,
+      "sizeGroupId": null,
+      "slug": "watches",
+      "synonyms": [],
+      "order": 10,
+      "path": "/kids/boys/accessories/watches"
+    },
+    {
+      "id": 333,
+      "name": "Перчатки",
+      "parentId": 102,
+      "sizeGroupId": null,
+      "slug": "gloves",
+      "synonyms": [],
+      "order": 12,
+      "path": "/kids/boys/accessories/gloves"
+    },
+    {
+      "id": 334,
+      "name": "Другие аксессуары",
+      "parentId": 102,
+      "sizeGroupId": null,
+      "slug": "other",
+      "synonyms": [],
+      "order": 14,
+      "path": "/kids/boys/accessories/other"
+    },
+    {
+      "id": 335,
+      "name": "Костюмы и комплекты",
+      "parentId": 103,
+      "sizeGroupId": 10,
+      "slug": "suits-and-sets",
+      "synonyms": [],
+      "order": 0,
+      "path": "/kids/infants/clothes/suits-and-sets"
+    },
+    {
+      "id": 336,
+      "name": "Боди, человечки, песочники",
+      "parentId": 103,
+      "sizeGroupId": 10,
+      "slug": "body",
+      "synonyms": [],
+      "order": 2,
+      "path": "/kids/infants/clothes/body"
+    },
+    {
+      "id": 337,
+      "name": "Ползунки, штаны, шорты",
+      "parentId": 103,
+      "sizeGroupId": 10,
+      "slug": "pants-and-shorts",
+      "synonyms": [],
+      "order": 4,
+      "path": "/kids/infants/clothes/pants-and-shorts"
+    },
+    {
+      "id": 338,
+      "name": "Распашонки и кофты",
+      "parentId": 103,
+      "sizeGroupId": 10,
+      "slug": "kofti",
+      "synonyms": [],
+      "order": 6,
+      "path": "/kids/infants/clothes/kofti"
+    },
+    {
+      "id": 339,
+      "name": "Платья, сарафаны, юбки",
+      "parentId": 103,
+      "sizeGroupId": 10,
+      "slug": "dresses-and-skirts",
+      "synonyms": [],
+      "order": 8,
+      "path": "/kids/infants/clothes/dresses-and-skirts"
+    },
+    {
+      "id": 340,
+      "name": "Вверхняя одежда",
+      "parentId": 103,
+      "sizeGroupId": 10,
+      "slug": "outerwear",
+      "synonyms": [],
+      "order": 10,
+      "path": "/kids/infants/clothes/outerwear"
+    },
+    {
+      "id": 341,
+      "name": "Футболки и майки",
+      "parentId": 103,
+      "sizeGroupId": 10,
+      "slug": "t-shirts-and-tanks",
+      "synonyms": [],
+      "order": 12,
+      "path": "/kids/infants/clothes/t-shirts-and-tanks"
+    },
+    {
+      "id": 342,
+      "name": "Другая одежда",
+      "parentId": 103,
+      "sizeGroupId": null,
+      "slug": "other",
+      "synonyms": [],
+      "order": 14,
+      "path": "/kids/infants/clothes/other"
+    },
+    {
+      "id": 343,
+      "name": "Плащи",
+      "parentId": 113,
+      "sizeGroupId": 4,
+      "slug": "raincoats",
+      "synonyms": [],
+      "order": 0,
+      "path": "/womens/clothes/outerwear/trench-coats-raincoats/raincoats"
+    },
+    {
+      "id": 344,
+      "name": "Тренчи",
+      "parentId": 113,
+      "sizeGroupId": 4,
+      "slug": "trench-coats",
+      "synonyms": [],
+      "order": 2,
+      "path": "/womens/clothes/outerwear/trench-coats-raincoats/trench-coats"
+    },
+    {
+      "id": 345,
+      "name": "Ветровки",
+      "parentId": 171,
+      "sizeGroupId": 4,
+      "slug": "Windbreakers",
+      "synonyms": [],
+      "order": 0,
+      "path": "/womens/clothes/sport/outerwear/Windbreakers"
+    },
+    {
+      "id": 346,
+      "name": "Дождевики",
+      "parentId": 171,
+      "sizeGroupId": 4,
+      "slug": "rain-jackets",
+      "synonyms": [],
+      "order": 2,
+      "path": "/womens/clothes/sport/outerwear/rain-jackets"
+    },
+    {
+      "id": 347,
+      "name": "Жилеты",
+      "parentId": 171,
+      "sizeGroupId": 4,
+      "slug": "vests",
+      "synonyms": [],
+      "order": 4,
+      "path": "/womens/clothes/sport/outerwear/vests"
+    },
+    {
+      "id": 348,
+      "name": "Зимние комбинезоны и костюмы",
+      "parentId": 171,
+      "sizeGroupId": 4,
+      "slug": "snowwear",
+      "synonyms": [],
+      "order": 6,
+      "path": "/womens/clothes/sport/outerwear/snowwear"
+    },
+    {
+      "id": 349,
+      "name": "Футболки",
+      "parentId": 175,
+      "sizeGroupId": 4,
+      "slug": "t-shirts",
+      "synonyms": [],
+      "order": 0,
+      "path": "/womens/clothes/sport/t-shirts-and-tanks/t-shirts"
+    },
+    {
+      "id": 350,
+      "name": "Майки",
+      "parentId": 175,
+      "sizeGroupId": 4,
+      "slug": "tanks",
+      "synonyms": [],
+      "order": 2,
+      "path": "/womens/clothes/sport/t-shirts-and-tanks/tanks"
+    },
+    {
+      "id": 351,
+      "name": "Топы",
+      "parentId": 175,
+      "sizeGroupId": 4,
+      "slug": "tops",
+      "synonyms": [],
+      "order": 4,
+      "path": "/womens/clothes/sport/t-shirts-and-tanks/tops"
+    },
+    {
+      "id": 352,
+      "name": "Штаны",
+      "parentId": 176,
+      "sizeGroupId": 4,
+      "slug": "pants",
+      "synonyms": [],
+      "order": 0,
+      "path": "/womens/clothes/sport/pants-and-tights/pants"
+    },
+    {
+      "id": 353,
+      "name": "Лосины и леггинсы",
+      "parentId": 176,
+      "sizeGroupId": 4,
+      "slug": "tights",
+      "synonyms": [],
+      "order": 2,
+      "path": "/womens/clothes/sport/pants-and-tights/tights"
+    },
+    {
+      "id": 354,
+      "name": "Бюстальтеры",
+      "parentId": 178,
+      "sizeGroupId": 7,
+      "slug": "bras",
+      "synonyms": [],
+      "order": 0,
+      "path": "/womens/clothes/sport/lingerie/bras"
+    },
+    {
+      "id": 355,
+      "name": "Комплекты",
+      "parentId": 178,
+      "sizeGroupId": 4,
+      "slug": "sets",
+      "synonyms": [],
+      "order": 2,
+      "path": "/womens/clothes/sport/lingerie/sets"
+    },
+    {
+      "id": 356,
+      "name": "Трусы",
+      "parentId": 178,
+      "sizeGroupId": 4,
+      "slug": "underwear",
+      "synonyms": [],
+      "order": 4,
+      "path": "/womens/clothes/sport/lingerie/underwear"
+    },
+    {
+      "id": 357,
+      "name": "Носки",
+      "parentId": 178,
+      "sizeGroupId": 6,
+      "slug": "socks",
+      "synonyms": [],
+      "order": 6,
+      "path": "/womens/clothes/sport/lingerie/socks"
+    },
+    {
+      "id": 358,
+      "name": "Термобелье",
+      "parentId": 178,
+      "sizeGroupId": 4,
+      "slug": "thermal-wear",
+      "synonyms": [],
+      "order": 8,
+      "path": "/womens/clothes/sport/lingerie/thermal-wear"
+    },
+    {
+      "id": 359,
+      "name": "Ветровки",
+      "parentId": 255,
+      "sizeGroupId": 1,
+      "slug": "Windbreakers",
+      "synonyms": [],
+      "order": 0,
+      "path": "/mens/clothes/sport/outerwear/Windbreakers"
+    },
+    {
+      "id": 360,
+      "name": "Дождевики",
+      "parentId": 255,
+      "sizeGroupId": 1,
+      "slug": "rain-jackets",
+      "synonyms": [],
+      "order": 2,
+      "path": "/mens/clothes/sport/outerwear/rain-jackets"
+    },
+    {
+      "id": 361,
+      "name": "Жилеты",
+      "parentId": 255,
+      "sizeGroupId": 1,
+      "slug": "vests",
+      "synonyms": [],
+      "order": 4,
+      "path": "/mens/clothes/sport/outerwear/vests"
+    },
+    {
+      "id": 362,
+      "name": "Зимние комбинезоны и костюмы",
+      "parentId": 255,
+      "sizeGroupId": 1,
+      "slug": "snowwear",
+      "synonyms": [],
+      "order": 6,
+      "path": "/mens/clothes/sport/outerwear/snowwear"
+    },
+    {
+      "id": 363,
+      "name": "Футболки",
+      "parentId": 257,
+      "sizeGroupId": 1,
+      "slug": "t-shirts",
+      "synonyms": [],
+      "order": 0,
+      "path": "/mens/clothes/sport/t-shirts-and-tanks/t-shirts"
+    },
+    {
+      "id": 364,
+      "name": "Майки",
+      "parentId": 257,
+      "sizeGroupId": 1,
+      "slug": "tanks",
+      "synonyms": [],
+      "order": 2,
+      "path": "/mens/clothes/sport/t-shirts-and-tanks/tanks"
+    },
+    {
+      "id": 365,
+      "name": "Комплекты",
+      "parentId": 260,
+      "sizeGroupId": 1,
+      "slug": "sets",
+      "synonyms": [],
+      "order": 0,
+      "path": "/mens/clothes/sport/lingerie/sets"
+    },
+    {
+      "id": 366,
+      "name": "Трусы",
+      "parentId": 260,
+      "sizeGroupId": 1,
+      "slug": "underwear",
+      "synonyms": [],
+      "order": 2,
+      "path": "/mens/clothes/sport/lingerie/underwear"
+    },
+    {
+      "id": 367,
+      "name": "Носки",
+      "parentId": 260,
+      "sizeGroupId": 3,
+      "slug": "socks",
+      "synonyms": [],
+      "order": 4,
+      "path": "/mens/clothes/sport/lingerie/socks"
+    },
+    {
+      "id": 368,
+      "name": "Термобелье",
+      "parentId": 260,
+      "sizeGroupId": 1,
+      "slug": "thermal-wear",
+      "synonyms": [],
+      "order": 6,
+      "path": "/mens/clothes/sport/lingerie/thermal-wear"
+    },
+    {
+      "id": 369,
+      "name": "Куртки",
+      "parentId": 283,
+      "sizeGroupId": 8,
+      "slug": "coats",
+      "synonyms": [],
+      "order": 0,
+      "path": "/kids/girls/clothes/outerwear/coats"
+    },
+    {
+      "id": 370,
+      "name": "Жилеты",
+      "parentId": 283,
+      "sizeGroupId": 8,
+      "slug": "vests",
+      "synonyms": [],
+      "order": 2,
+      "path": "/kids/girls/clothes/outerwear/vests"
+    },
+    {
+      "id": 371,
+      "name": "Пальто",
+      "parentId": 283,
+      "sizeGroupId": 8,
+      "slug": "coat",
+      "synonyms": [],
+      "order": 4,
+      "path": "/kids/girls/clothes/outerwear/coat"
+    },
+    {
+      "id": 372,
+      "name": "Парки",
+      "parentId": 283,
+      "sizeGroupId": 8,
+      "slug": "parkas",
+      "synonyms": [],
+      "order": 6,
+      "path": "/kids/girls/clothes/outerwear/parkas"
+    },
+    {
+      "id": 373,
+      "name": "Плащи",
+      "parentId": 283,
+      "sizeGroupId": 8,
+      "slug": "raincoats",
+      "synonyms": [],
+      "order": 8,
+      "path": "/kids/girls/clothes/outerwear/raincoats"
+    },
+    {
+      "id": 374,
+      "name": "Пуховики",
+      "parentId": 283,
+      "sizeGroupId": 8,
+      "slug": "puffer-jackets",
+      "synonyms": [],
+      "order": 10,
+      "path": "/kids/girls/clothes/outerwear/puffer-jackets"
+    },
+    {
+      "id": 375,
+      "name": "Комбинезоны",
+      "parentId": 283,
+      "sizeGroupId": 8,
+      "slug": "snowsuits",
+      "synonyms": [],
+      "order": 12,
+      "path": "/kids/girls/clothes/outerwear/snowsuits"
+    },
+    {
+      "id": 376,
+      "name": "Шубы и дубленки",
+      "parentId": 283,
+      "sizeGroupId": 8,
+      "slug": "fur-coats",
+      "synonyms": [
+        "шубы",
+        "дубленки"
+      ],
+      "order": 14,
+      "path": "/kids/girls/clothes/outerwear/fur-coats"
+    },
+    {
+      "id": 377,
+      "name": "Комплекты",
+      "parentId": 291,
+      "sizeGroupId": 8,
+      "slug": "sets",
+      "synonyms": [],
+      "order": 0,
+      "path": "/kids/girls/clothes/lingerie/sets"
+    },
+    {
+      "id": 378,
+      "name": "Трусы",
+      "parentId": 291,
+      "sizeGroupId": 8,
+      "slug": "underwear",
+      "synonyms": [],
+      "order": 2,
+      "path": "/kids/girls/clothes/lingerie/underwear"
+    },
+    {
+      "id": 379,
+      "name": "Носки",
+      "parentId": 291,
+      "sizeGroupId": 9,
+      "slug": "socks",
+      "synonyms": [],
+      "order": 4,
+      "path": "/kids/girls/clothes/lingerie/socks"
+    },
+    {
+      "id": 380,
+      "name": "Домашняя одежда",
+      "parentId": 294,
+      "sizeGroupId": 8,
+      "slug": "home-clothes",
+      "synonyms": [],
+      "order": 0,
+      "path": "/kids/girls/clothes/home-clothes/home-clothes"
+    },
+    {
+      "id": 381,
+      "name": "Пижамы",
+      "parentId": 294,
+      "sizeGroupId": 8,
+      "slug": "pyjamas",
+      "synonyms": [],
+      "order": 2,
+      "path": "/kids/girls/clothes/home-clothes/pyjamas"
+    },
+    {
+      "id": 382,
+      "name": "Ночнушки",
+      "parentId": 294,
+      "sizeGroupId": 8,
+      "slug": "nightgowns",
+      "synonyms": [],
+      "order": 4,
+      "path": "/kids/girls/clothes/home-clothes/nightgowns"
+    },
+    {
+      "id": 383,
+      "name": "Халаты",
+      "parentId": 294,
+      "sizeGroupId": 8,
+      "slug": "bathrobes",
+      "synonyms": [],
+      "order": 6,
+      "path": "/kids/girls/clothes/home-clothes/bathrobes"
+    },
+    {
+      "id": 384,
+      "name": "Верхняя одежда",
+      "parentId": 296,
+      "sizeGroupId": 8,
+      "slug": "outerwear",
+      "synonyms": [],
+      "order": 0,
+      "path": "/kids/girls/clothes/sport/outerwear"
+    },
+    {
+      "id": 385,
+      "name": "Спортивные костюмы",
+      "parentId": 296,
+      "sizeGroupId": 8,
+      "slug": "sport-suits",
+      "synonyms": [],
+      "order": 2,
+      "path": "/kids/girls/clothes/sport/sport-suits"
+    },
+    {
+      "id": 386,
+      "name": "Футболки и майки",
+      "parentId": 296,
+      "sizeGroupId": 8,
+      "slug": "t-shirts-and-tanks",
+      "synonyms": [],
+      "order": 4,
+      "path": "/kids/girls/clothes/sport/t-shirts-and-tanks"
+    },
+    {
+      "id": 387,
+      "name": "Штаны",
+      "parentId": 296,
+      "sizeGroupId": 8,
+      "slug": "pants-and-tights",
+      "synonyms": [],
+      "order": 6,
+      "path": "/kids/girls/clothes/sport/pants-and-tights"
+    },
+    {
+      "id": 388,
+      "name": "Шорты",
+      "parentId": 296,
+      "sizeGroupId": 8,
+      "slug": "Shorts",
+      "synonyms": [],
+      "order": 8,
+      "path": "/kids/girls/clothes/sport/Shorts"
+    },
+    {
+      "id": 389,
+      "name": "Нижнее белье",
+      "parentId": 296,
+      "sizeGroupId": 8,
+      "slug": "lingerie",
+      "synonyms": [],
+      "order": 10,
+      "path": "/kids/girls/clothes/sport/lingerie"
+    },
+    {
+      "id": 390,
+      "name": "Кофты",
+      "parentId": 296,
+      "sizeGroupId": 8,
+      "slug": "kofti",
+      "synonyms": [],
+      "order": 12,
+      "path": "/kids/girls/clothes/sport/kofti"
+    },
+    {
+      "id": 391,
+      "name": "Куртки",
+      "parentId": 310,
+      "sizeGroupId": 8,
+      "slug": "coats",
+      "synonyms": [],
+      "order": 0,
+      "path": "/kids/boys/clothes/outerwear/coats"
+    },
+    {
+      "id": 392,
+      "name": "Жилеты",
+      "parentId": 310,
+      "sizeGroupId": 8,
+      "slug": "vests",
+      "synonyms": [],
+      "order": 2,
+      "path": "/kids/boys/clothes/outerwear/vests"
+    },
+    {
+      "id": 393,
+      "name": "Пальто",
+      "parentId": 310,
+      "sizeGroupId": 8,
+      "slug": "coat",
+      "synonyms": [],
+      "order": 4,
+      "path": "/kids/boys/clothes/outerwear/coat"
+    },
+    {
+      "id": 394,
+      "name": "Парки",
+      "parentId": 310,
+      "sizeGroupId": 8,
+      "slug": "parkas",
+      "synonyms": [],
+      "order": 6,
+      "path": "/kids/boys/clothes/outerwear/parkas"
+    },
+    {
+      "id": 395,
+      "name": "Плащи",
+      "parentId": 310,
+      "sizeGroupId": 8,
+      "slug": "raincoats",
+      "synonyms": [],
+      "order": 8,
+      "path": "/kids/boys/clothes/outerwear/raincoats"
+    },
+    {
+      "id": 396,
+      "name": "Пуховики",
+      "parentId": 310,
+      "sizeGroupId": 8,
+      "slug": "puffer-jackets",
+      "synonyms": [],
+      "order": 10,
+      "path": "/kids/boys/clothes/outerwear/puffer-jackets"
+    },
+    {
+      "id": 397,
+      "name": "Комбинезоны",
+      "parentId": 310,
+      "sizeGroupId": 8,
+      "slug": "snowsuits",
+      "synonyms": [],
+      "order": 12,
+      "path": "/kids/boys/clothes/outerwear/snowsuits"
+    },
+    {
+      "id": 398,
+      "name": "Шубы и дубленки",
+      "parentId": 310,
+      "sizeGroupId": 8,
+      "slug": "fur-coats",
+      "synonyms": [
+        "шубы",
+        "дубленки"
+      ],
+      "order": 14,
+      "path": "/kids/boys/clothes/outerwear/fur-coats"
+    },
+    {
+      "id": 399,
+      "name": "Комплекты",
+      "parentId": 316,
+      "sizeGroupId": 8,
+      "slug": "sets",
+      "synonyms": [],
+      "order": 0,
+      "path": "/kids/boys/clothes/lingerie/sets"
+    },
+    {
+      "id": 400,
+      "name": "Трусы",
+      "parentId": 316,
+      "sizeGroupId": 8,
+      "slug": "underwear",
+      "synonyms": [],
+      "order": 2,
+      "path": "/kids/boys/clothes/lingerie/underwear"
+    },
+    {
+      "id": 401,
+      "name": "Носки",
+      "parentId": 316,
+      "sizeGroupId": 9,
+      "slug": "socks",
+      "synonyms": [],
+      "order": 4,
+      "path": "/kids/boys/clothes/lingerie/socks"
+    },
+    {
+      "id": 402,
+      "name": "Домашняя одежда",
+      "parentId": 319,
+      "sizeGroupId": 8,
+      "slug": "home-clothes",
+      "synonyms": [],
+      "order": 0,
+      "path": "/kids/boys/clothes/home-clothes/home-clothes"
+    },
+    {
+      "id": 403,
+      "name": "Пижамы",
+      "parentId": 319,
+      "sizeGroupId": 8,
+      "slug": "pyjamas",
+      "synonyms": [],
+      "order": 2,
+      "path": "/kids/boys/clothes/home-clothes/pyjamas"
+    },
+    {
+      "id": 404,
+      "name": "Ночнушки",
+      "parentId": 319,
+      "sizeGroupId": 8,
+      "slug": "nightgowns",
+      "synonyms": [],
+      "order": 4,
+      "path": "/kids/boys/clothes/home-clothes/nightgowns"
+    },
+    {
+      "id": 405,
+      "name": "Халаты",
+      "parentId": 319,
+      "sizeGroupId": 8,
+      "slug": "bathrobes",
+      "synonyms": [],
+      "order": 6,
+      "path": "/kids/boys/clothes/home-clothes/bathrobes"
+    },
+    {
+      "id": 406,
+      "name": "Верхняя одежда",
+      "parentId": 321,
+      "sizeGroupId": 8,
+      "slug": "outerwear",
+      "synonyms": [],
+      "order": 0,
+      "path": "/kids/boys/clothes/sport/outerwear"
+    },
+    {
+      "id": 407,
+      "name": "Спортивные костюмы",
+      "parentId": 321,
+      "sizeGroupId": 8,
+      "slug": "sport-suits",
+      "synonyms": [],
+      "order": 2,
+      "path": "/kids/boys/clothes/sport/sport-suits"
+    },
+    {
+      "id": 408,
+      "name": "Футболки и майки",
+      "parentId": 321,
+      "sizeGroupId": 8,
+      "slug": "t-shirts-and-tanks",
+      "synonyms": [],
+      "order": 4,
+      "path": "/kids/boys/clothes/sport/t-shirts-and-tanks"
+    },
+    {
+      "id": 409,
+      "name": "Штаны",
+      "parentId": 321,
+      "sizeGroupId": 8,
+      "slug": "pants-and-tights",
+      "synonyms": [],
+      "order": 6,
+      "path": "/kids/boys/clothes/sport/pants-and-tights"
+    },
+    {
+      "id": 410,
+      "name": "Шорты",
+      "parentId": 321,
+      "sizeGroupId": 8,
+      "slug": "Shorts",
+      "synonyms": [],
+      "order": 8,
+      "path": "/kids/boys/clothes/sport/Shorts"
+    },
+    {
+      "id": 411,
+      "name": "Нижнее белье",
+      "parentId": 321,
+      "sizeGroupId": 8,
+      "slug": "lingerie",
+      "synonyms": [],
+      "order": 10,
+      "path": "/kids/boys/clothes/sport/lingerie"
+    },
+    {
+      "id": 412,
+      "name": "Кофты",
+      "parentId": 321,
+      "sizeGroupId": 8,
+      "slug": "kofti",
+      "synonyms": [],
+      "order": 12,
+      "path": "/kids/boys/clothes/sport/kofti"
+    },
+    {
+      "id": 413,
+      "name": "Куртки",
+      "parentId": 384,
+      "sizeGroupId": 8,
+      "slug": "coats",
+      "synonyms": [],
+      "order": 0,
+      "path": "/kids/girls/clothes/sport/outerwear/coats"
+    },
+    {
+      "id": 414,
+      "name": "Ветровки",
+      "parentId": 384,
+      "sizeGroupId": 8,
+      "slug": "Windbreakers",
+      "synonyms": [],
+      "order": 2,
+      "path": "/kids/girls/clothes/sport/outerwear/Windbreakers"
+    },
+    {
+      "id": 415,
+      "name": "Дождевики",
+      "parentId": 384,
+      "sizeGroupId": 8,
+      "slug": "rain-jackets",
+      "synonyms": [],
+      "order": 4,
+      "path": "/kids/girls/clothes/sport/outerwear/rain-jackets"
+    },
+    {
+      "id": 416,
+      "name": "Жилеты",
+      "parentId": 384,
+      "sizeGroupId": 8,
+      "slug": "vests",
+      "synonyms": [],
+      "order": 6,
+      "path": "/kids/girls/clothes/sport/outerwear/vests"
+    },
+    {
+      "id": 417,
+      "name": "Зимние комбинезоны и костюмы",
+      "parentId": 384,
+      "sizeGroupId": 8,
+      "slug": "snowwear",
+      "synonyms": [],
+      "order": 8,
+      "path": "/kids/girls/clothes/sport/outerwear/snowwear"
+    },
+    {
+      "id": 418,
+      "name": "Футболки",
+      "parentId": 386,
+      "sizeGroupId": 8,
+      "slug": "t-shirts",
+      "synonyms": [],
+      "order": 0,
+      "path": "/kids/girls/clothes/sport/t-shirts-and-tanks/t-shirts"
+    },
+    {
+      "id": 419,
+      "name": "Майки",
+      "parentId": 386,
+      "sizeGroupId": 8,
+      "slug": "tanks",
+      "synonyms": [],
+      "order": 2,
+      "path": "/kids/girls/clothes/sport/t-shirts-and-tanks/tanks"
+    },
+    {
+      "id": 420,
+      "name": "Комплекты",
+      "parentId": 389,
+      "sizeGroupId": 8,
+      "slug": "sets",
+      "synonyms": [],
+      "order": 0,
+      "path": "/kids/girls/clothes/sport/lingerie/sets"
+    },
+    {
+      "id": 421,
+      "name": "Трусы",
+      "parentId": 389,
+      "sizeGroupId": 8,
+      "slug": "underwear",
+      "synonyms": [],
+      "order": 2,
+      "path": "/kids/girls/clothes/sport/lingerie/underwear"
+    },
+    {
+      "id": 422,
+      "name": "Носки",
+      "parentId": 389,
+      "sizeGroupId": 9,
+      "slug": "socks",
+      "synonyms": [],
+      "order": 4,
+      "path": "/kids/girls/clothes/sport/lingerie/socks"
+    },
+    {
+      "id": 423,
+      "name": "Термобелье",
+      "parentId": 389,
+      "sizeGroupId": 8,
+      "slug": "thermal-wear",
+      "synonyms": [],
+      "order": 6,
+      "path": "/kids/girls/clothes/sport/lingerie/thermal-wear"
+    },
+    {
+      "id": 424,
+      "name": "Куртки",
+      "parentId": 406,
+      "sizeGroupId": 8,
+      "slug": "coats",
+      "synonyms": [],
+      "order": 0,
+      "path": "/kids/boys/clothes/sport/outerwear/coats"
+    },
+    {
+      "id": 425,
+      "name": "Ветровки",
+      "parentId": 406,
+      "sizeGroupId": 8,
+      "slug": "Windbreakers",
+      "synonyms": [],
+      "order": 2,
+      "path": "/kids/boys/clothes/sport/outerwear/Windbreakers"
+    },
+    {
+      "id": 426,
+      "name": "Дождевики",
+      "parentId": 406,
+      "sizeGroupId": 8,
+      "slug": "rain-jackets",
+      "synonyms": [],
+      "order": 4,
+      "path": "/kids/boys/clothes/sport/outerwear/rain-jackets"
+    },
+    {
+      "id": 427,
+      "name": "Жилеты",
+      "parentId": 406,
+      "sizeGroupId": 8,
+      "slug": "vests",
+      "synonyms": [],
+      "order": 6,
+      "path": "/kids/boys/clothes/sport/outerwear/vests"
+    },
+    {
+      "id": 428,
+      "name": "Зимние комбинезоны и костюмы",
+      "parentId": 406,
+      "sizeGroupId": 8,
+      "slug": "snowwear",
+      "synonyms": [],
+      "order": 8,
+      "path": "/kids/boys/clothes/sport/outerwear/snowwear"
+    },
+    {
+      "id": 429,
+      "name": "Футболки",
+      "parentId": 408,
+      "sizeGroupId": 8,
+      "slug": "t-shirts",
+      "synonyms": [],
+      "order": 0,
+      "path": "/kids/boys/clothes/sport/t-shirts-and-tanks/t-shirts"
+    },
+    {
+      "id": 430,
+      "name": "Майки",
+      "parentId": 408,
+      "sizeGroupId": 8,
+      "slug": "tanks",
+      "synonyms": [],
+      "order": 2,
+      "path": "/kids/boys/clothes/sport/t-shirts-and-tanks/tanks"
+    },
+    {
+      "id": 431,
+      "name": "Комплекты",
+      "parentId": 411,
+      "sizeGroupId": 8,
+      "slug": "sets",
+      "synonyms": [],
+      "order": 0,
+      "path": "/kids/boys/clothes/sport/lingerie/sets"
+    },
+    {
+      "id": 432,
+      "name": "Трусы",
+      "parentId": 411,
+      "sizeGroupId": 8,
+      "slug": "underwear",
+      "synonyms": [],
+      "order": 2,
+      "path": "/kids/boys/clothes/sport/lingerie/underwear"
+    },
+    {
+      "id": 433,
+      "name": "Носки",
+      "parentId": 411,
+      "sizeGroupId": 9,
+      "slug": "socks",
+      "synonyms": [],
+      "order": 4,
+      "path": "/kids/boys/clothes/sport/lingerie/socks"
+    },
+    {
+      "id": 434,
+      "name": "Термобелье",
+      "parentId": 411,
+      "sizeGroupId": 8,
+      "slug": "thermal-wear",
+      "synonyms": [],
+      "order": 6,
+      "path": "/kids/boys/clothes/sport/lingerie/thermal-wear"
+    }
+  ]
