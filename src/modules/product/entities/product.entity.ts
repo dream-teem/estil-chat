@@ -1,9 +1,12 @@
 import { BaseEntity } from '@/common/base.entity';
 import { TableName } from '@/common/interfaces/table';
+import { CityEntity } from '@/modules/cities/city.entity';
 import { UserEntity } from '@/modules/user';
 import { Column, Entity, Check, ManyToOne, JoinColumn } from 'typeorm';
 import { Product, ProductCurrency, ProductImage } from '../interfaces/product.interface';
+import { ProductBrandEntity } from './product-brand.entity';
 import { ProductCategoryEntity } from './product-category.entity';
+import { ProductConditionEntity } from './product-condition.entity';
 
 @Entity(TableName.PRODUCT)
 @Check('"price" >= 0')
@@ -64,4 +67,25 @@ export class ProductEntity extends BaseEntity implements Product {
   })
   @JoinColumn({ name: 'categoryId' })
   category?: ProductCategoryEntity;
+
+  @ManyToOne(() => ProductBrandEntity, {
+    onDelete: 'CASCADE',
+    onUpdate: 'NO ACTION',
+  })
+  @JoinColumn({ name: 'brandId' })
+  brand?: ProductBrandEntity;
+
+  @ManyToOne(() => ProductConditionEntity, {
+    onDelete: 'CASCADE',
+    onUpdate: 'NO ACTION',
+  })
+  @JoinColumn({ name: 'conditionId' })
+  condition?: ProductConditionEntity;
+
+  @ManyToOne(() => CityEntity, {
+    onDelete: 'CASCADE',
+    onUpdate: 'NO ACTION',
+  })
+  @JoinColumn({ name: 'cityId' })
+  city?: CityEntity;
 }

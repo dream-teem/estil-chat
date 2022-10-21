@@ -30,6 +30,7 @@ export class ProductCategoryEntity extends BaseEntity implements ProductCategory
   @ManyToOne(() => ProductCategoryEntity, {
     onDelete: 'CASCADE',
     onUpdate: 'NO ACTION',
+    deferrable: 'INITIALLY DEFERRED',
   })
   @JoinColumn({ name: 'parentId' })
   parent?: ProductCategoryEntity;
@@ -40,5 +41,5 @@ export class ProductCategoryEntity extends BaseEntity implements ProductCategory
     deferrable: 'INITIALLY DEFERRED',
   })
   @JoinColumn({ name: 'sizeGroupId' })
-  product?: SizeGroupEntity;
+  sizeGroup?: SizeGroupEntity;
 }
