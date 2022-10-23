@@ -1,5 +1,5 @@
 import { BaseEntity } from '@/common/base.entity';
-import { TableName } from '@/common/interfaces/table';
+import { TableName } from '@/common/enums/table';
 import { CityEntity } from '@/modules/cities/city.entity';
 import { UserEntity } from '@/modules/user';
 import { Column, Entity, Check, ManyToOne, JoinColumn } from 'typeorm';

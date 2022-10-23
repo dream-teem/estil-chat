@@ -1,4 +1,4 @@
-import { TableName } from '@/common/interfaces/table';
+import { TableName } from '@/common/enums/table';
 import { Check, Column, Entity,  JoinColumn,  ManyToOne,  PrimaryColumn } from 'typeorm';
 import type { ProductVariant } from '../interfaces/product-size.interface';
 import { ProductEntity } from './product.entity';

@@ -1,5 +1,5 @@
 import { BaseSchema } from '@/common/base.schema';
-import { SchemaName } from '@/common/interfaces/schema';
+import { SchemaName } from '@/common/enums/schema';
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import type { Document } from 'mongoose';
 import mongoose from 'mongoose';

@@ -1,4 +1,4 @@
-import { TableName } from '@/common/interfaces/table';
+import { TableName } from '@/common/enums/table';
 import {  Entity, JoinColumn, ManyToOne, PrimaryColumn } from 'typeorm';
 import type { ProductColor } from '../interfaces/product-color.interface';
 import { ColorEntity } from './color.entity';

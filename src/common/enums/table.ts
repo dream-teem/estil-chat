@@ -13,4 +13,5 @@ export enum TableName {
   FOLLOWING = 'following',
   PRODUCT_LIKE = 'product_like',
   PRODUCT_RATING = 'product_rating',
+  VERIFICATION = 'verification',
 }

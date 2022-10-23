@@ -1,4 +1,4 @@
-import { TableName } from '@/common/interfaces/table';
+import { TableName } from '@/common/enums/table';
 import { CityEntity } from '@/modules/cities/city.entity';
 import { ColorEntity } from '@/modules/product/entities/color.entity';
 import { ProductBrandEntity } from '@/modules/product/entities/product-brand.entity';

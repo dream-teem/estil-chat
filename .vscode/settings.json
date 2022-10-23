@@ -12,5 +12,17 @@
         "editor.codeActionsOnSave": {
             "source.fixAll.eslint": true
         }
-    }
+    },
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "estil-old",
+            "database": "depop",
+            "username": "postgres",
+            "password": ""
+        }
+    ]
 }

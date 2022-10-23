@@ -1,10 +1,11 @@
+import type {
+  CacheStoreFactory,
+  MiddlewareConsumer,
+  NestModule } from '@nestjs/common';
 import {
   BadRequestException,
   CacheModule,
-  CacheStoreFactory,
-  MiddlewareConsumer,
   Module,
-  NestModule,
   ValidationPipe,
 } from '@nestjs/common';
 import { ConfigModule, ConfigService } from '@nestjs/config';
@@ -27,6 +28,7 @@ import { ProductDraftModule } from './modules/product-draft/product-draft.module
 import { ProductLikeModule } from './modules/product-like/product-like.module';
 import { ProductRatingModule } from './modules/product-rating/product-rating.module';
 import { ProductModule } from './modules/product/product.module';
+import { VerificationModule } from './modules/verification/verification.module';
 
 @Module({
   imports: [
@@ -73,6 +75,7 @@ import { ProductModule } from './modules/product/product.module';
     // Service Modules
     CommonModule, // Global
     AuthModule,
+    VerificationModule,
     ChatModule,
     ProductModule,
     ProductDraftModule,

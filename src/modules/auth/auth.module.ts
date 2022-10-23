@@ -5,6 +5,7 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 import { ConfigService } from '@/common';
 import { UserEntity, UserModule } from '@/modules/user';
 
+import { VerificationModule } from '../verification/verification.module';
 import { AuthController } from './auth.controller';
 import { AuthService } from './auth.service';
 import { JwtVerifyStrategy, JwtStrategy, LocalStrategy } from './strategies';
@@ -12,6 +13,7 @@ import { JwtVerifyStrategy, JwtStrategy, LocalStrategy } from './strategies';
 @Module({
   imports: [
     UserModule,
+    VerificationModule,
     TypeOrmModule.forFeature([UserEntity]),
     JwtModule.registerAsync({
       useFactory: (config: ConfigService) => ({

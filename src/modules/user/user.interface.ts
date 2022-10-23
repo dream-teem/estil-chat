@@ -1,4 +1,4 @@
-export type UserPictureType = 75 | 150 | 480;
+export type UserPictureType = 75 | 150 | 428;
 export type UserPictureThumbnails = Record<UserPictureType, string>;
 
 export interface UserPicture {

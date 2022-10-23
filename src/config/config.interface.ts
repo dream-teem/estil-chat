@@ -29,6 +29,11 @@ export type AppConfig = {
   mongodb: {
     url: string;
   };
+  mobizon: {
+    url: string;
+    key: string;
+    disabled: boolean;
+  };
 };
 
 export enum AppEnv {
@@ -54,4 +59,7 @@ export type AppEnvVars = {
   JWT_REFRESH_SECRET: string;
   THROTTLE_TTL: string;
   THROTTLE_LIMIT: string;
+  MOBIZON_API_URL: string;
+  MOBIZON_API_KEY: string;
+  MOBIZON_DISABLED: string;
 };

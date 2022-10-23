@@ -1,5 +1,5 @@
 import type { Db } from 'mongodb';
-import { SchemaName } from '../../common/interfaces/schema';
+import { SchemaName } from '../../common/enums/schema';
 
 export = {
   async up(db: Db) {

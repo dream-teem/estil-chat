@@ -1,5 +1,5 @@
 import { BaseEntityStatic } from '@/common/base.entity';
-import { TableName } from '@/common/interfaces/table';
+import { TableName } from '@/common/enums/table';
 import { Column, Entity, Index } from 'typeorm';
 import type { SizeGroup } from '../interfaces/product-size.interface';
 

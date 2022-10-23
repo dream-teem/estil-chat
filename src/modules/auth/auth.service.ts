@@ -1,36 +1,62 @@
-import { BadRequestException, Injectable } from '@nestjs/common';
+import { BadRequestException, ConflictException, Injectable } from '@nestjs/common';
 import { JwtService } from '@nestjs/jwt';
 import { InjectRepository } from '@nestjs/typeorm';
 import * as bcrypt from 'bcrypt';
 import type { Response } from 'express';
+import _ from 'lodash';
 import moment from 'moment';
 import type { Repository } from 'typeorm';
 
-import { ConfigService } from '@/common';
+import { ConfigService, UtilService } from '@/common';
 import { UserEntity, UserService } from '@/modules/user';
 
+import { VerificationService } from '../verification/verification.service';
 import type { JwtPayload, JwtSign, Payload } from './auth.interface';
-import type { SignupDto } from './dto';
+import type { SendVerificationRequestDto } from './dto/send-verification.request.dto';
+import type { SendVerificationResponseDto } from './dto/send-verification.response.dto';
+import type { SignupRequestDto } from './dto/signup.request.dto';
 
 @Injectable()
 export class AuthService {
   constructor(
-    private jwt: JwtService,
-    private user: UserService,
-    private config: ConfigService,
+    private readonly jwt: JwtService,
+    private readonly user: UserService,
+    private readonly config: ConfigService,
+    private readonly verification: VerificationService,
+    private readonly utils: UtilService,
     @InjectRepository(UserEntity) private userRepository: Repository<UserEntity>,
   ) {}
 
-  public async signup(dto: SignupDto): Promise<UserEntity> {
-    const exists = await this.userRepository.findOne({ where: { username: dto.username } });
-    if (exists) throw new BadRequestException('Username already exists');
+  public async signup({ verificationId, ...data }: SignupRequestDto): Promise<UserEntity> {
+    const verification = await this.verification.getVerificationById(verificationId);
 
-    const user = this.userRepository.create(dto);
+    if (!verification?.isVerified) throw new BadRequestException('Аккаунт не верифицирован');
+
+    const userPhone = _.pick(verification, ['phone', 'countryCode']);
+
+    const exists = await this.userRepository.findOne({
+      where: [{ username: data.username }, { email: data.email }, userPhone],
+    });
+    if (exists) throw new ConflictException('Username already exists');
+
+    const user = this.userRepository.create({ ...data, ...userPhone });
     user.password = await this.hashPassword(user.password);
 
     await this.userRepository.save(user);
 
     return user;
+  }
+
+  public async sendVerification(data: SendVerificationRequestDto): Promise<SendVerificationResponseDto> {
+    const phone = this.utils.parsePhoneNumber(data.phone, data.countryCode);
+
+    const user = await this.userRepository.findOne({ where: { phone: phone.national, countryCode: phone.countryCode } });
+
+    if (user) {
+      throw new ConflictException('Данный телефон уже привязан к другому аккаунту');
+    }
+
+    return this.verification.sendVerification(phone);
   }
 
   public async validateUser(username: string, password: string): Promise<Omit<UserEntity, 'password'> | null> {

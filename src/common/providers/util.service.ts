@@ -1,32 +1,17 @@
 import { Injectable } from '@nestjs/common';
+import { CountryCode, parsePhoneNumber } from 'libphonenumber-js';
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-type TemplateParameter = any[];
+import type { ParsedPhoneNumber } from '../interfaces/phone';
 
 @Injectable()
 export class UtilService {
-  public template<T>(templateData: TemplateStringsArray, param: T[], delimiter: string = '\n'): string {
-    let output = '';
-    for (let i = 0; i < param.length; i += 1) {
-      // eslint-disable-next-line @typescript-eslint/restrict-plus-operands
-      output += templateData[i] + param[i];
-    }
-    output += templateData[param.length];
+  public parsePhoneNumber(phone: string, countryCode: string): ParsedPhoneNumber {
+    const phoneNumber = parsePhoneNumber(phone, <CountryCode>countryCode);
 
-    const lines: string[] = output.split(/(?:\r\n|\n|\r)/);
-
-    return lines.map((text: string) => text.replace(/^\s+/gm, '')).join(delimiter).trim();
-  }
-
-  public pre(templateData: TemplateStringsArray, ...param: TemplateParameter): string {
-    return this.template(templateData, param, '\n');
-  }
-
-  public line(templateData: TemplateStringsArray, ...param: TemplateParameter): string {
-    return this.template(templateData, param, ' ');
-  }
-
-  public isKeyOfSchema<T>(key: unknown, schema: T): key is keyof T {
-    return (typeof key === 'string') && key in schema;
+    return {
+      countryCode,
+      national: phoneNumber.nationalNumber,
+      international: phoneNumber.number,
+    };
   }
 }

@@ -25,4 +25,9 @@ export const config: AppConfig = {
   mongodb: {
     url: process.env.MONGO_DB_URL,
   },
+  mobizon: {
+    url: process.env.MOBIZON_API_URL,
+    key: process.env.MOBIZON_API_KEY,
+    disabled: JSON.parse(process.env.MOBIZON_DISABLED),
+  },
 };

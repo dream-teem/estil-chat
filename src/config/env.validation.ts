@@ -1,6 +1,6 @@
 /* eslint-disable */
 import { plainToInstance } from 'class-transformer';
-import { IsEnum, IsNotEmpty, IsNumberString, IsString, validateSync } from 'class-validator';
+import { IsBooleanString, IsEnum, IsNotEmpty, IsNumberString, IsString, validateSync } from 'class-validator';
 import { AppEnv, AppEnvVars } from './config.interface';
 
 class EnvironmentVariables implements AppEnvVars {
@@ -59,6 +59,18 @@ class EnvironmentVariables implements AppEnvVars {
   @IsNumberString()
   @IsNotEmpty()
   THROTTLE_TTL!: string;
+
+  @IsString()
+  @IsNotEmpty()
+  MOBIZON_API_URL!: string;
+
+  @IsString()
+  @IsNotEmpty()
+  MOBIZON_API_KEY!: string;
+
+  @IsBooleanString()
+  @IsNotEmpty()
+  MOBIZON_DISABLED!: string;
 }
 
 export function validateEnv(config: Record<string, unknown>) {
