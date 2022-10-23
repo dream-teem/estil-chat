@@ -17,7 +17,7 @@ const brandFixture: ProductBrandEntity[] = require('../fixtures/brand.json');
 const colorFixture: ColorEntity[] = require('../fixtures/color.json');
 const cityFixture: CityEntity[] = require('../fixtures/city.json');
 
-export class seed1666333135979 implements MigrationInterface {
+export class seed1666529679198 implements MigrationInterface {
   public async up(queryRunner: QueryRunner): Promise<void> {
     await queryRunner.manager.insert(SizeGroupEntity, sizeGroupFixture);
 

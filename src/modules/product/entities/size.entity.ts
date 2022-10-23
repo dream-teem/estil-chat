@@ -13,7 +13,7 @@ export class SizeEntity extends BaseEntityStatic implements Size {
   title!: string;
 
   @Index()
-  @Column('varchar')
+  @Column('int')
   order!: number;
 
   @ManyToOne(() => SizeGroupEntity, {

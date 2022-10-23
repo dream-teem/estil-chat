@@ -12,7 +12,7 @@ export class ColorEntity extends BaseEntityStatic implements Color {
   hex!: string;
 
   @Index()
-  @Column('varchar')
+  @Column('int')
   order!: number;
 
   @Column('varchar', { unique: true })

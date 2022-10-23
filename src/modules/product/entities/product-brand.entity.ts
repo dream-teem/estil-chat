@@ -12,6 +12,6 @@ export class ProductBrandEntity extends BaseEntityStatic implements ProductBrand
   slug!: string;
 
   @Index()
-  @Column('varchar')
+  @Column('int')
   order!: number;
 }

@@ -12,6 +12,6 @@ export class SizeGroupEntity extends BaseEntityStatic implements SizeGroup {
   title!: string;
 
   @Index()
-  @Column('varchar')
+  @Column('int')
   order!: number;
 }

@@ -15,6 +15,6 @@ export class ProductConditionEntity extends BaseEntityStatic implements ProductC
   explanation!: string;
 
   @Index()
-  @Column('varchar')
+  @Column('int')
   order!: number;
 }

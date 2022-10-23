@@ -27,7 +27,7 @@ export class ProductCategoryEntity extends BaseEntityStatic implements ProductCa
   synonyms!: string[];
 
   @Index()
-  @Column('varchar')
+  @Column('int')
   order!: number;
 
   @ManyToOne(() => ProductCategoryEntity, {
