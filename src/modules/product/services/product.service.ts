@@ -1,6 +1,5 @@
-import { BadRequestException, Injectable } from '@nestjs/common';
+import { Injectable, NotFoundException } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
-import _ from 'lodash';
 import slugify from 'slugify';
 import { EntityManager, Repository } from 'typeorm';
 
@@ -56,7 +55,7 @@ export class ProductService {
     });
 
     if (!exists) {
-      throw new BadRequestException('Продукт не существует');
+      throw new NotFoundException('Продукт не существует');
     }
   }
 
