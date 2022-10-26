@@ -12,6 +12,7 @@ import { CategoryTreeResponseDto } from '../dto/category-tree.response.dto';
 import { ColorResponseDto } from '../dto/color.response.dto';
 import { ConditionResponseDto } from '../dto/condition.response.dto';
 import { CreateProductRequestDto } from '../dto/create-product.request.dto';
+import { ProductResponseDto } from '../dto/product.response.dto';
 import type { SizeGroupResponseDto } from '../dto/size-group.response.dto';
 import { BrandService } from '../services/brand.service';
 import { CategoryService } from '../services/category.service';
@@ -71,6 +72,13 @@ export class ProductController {
   @Get('attributes/brands')
   public async getBrands(): Promise<BrandResponseDto[]> {
     return this.brand.getBrands();
+  }
+
+  @UseAuth()
+  @ApiResponse({ type: [ProductResponseDto] })
+  @Get('byUser')
+  public async getProductByUserId(@ReqUser() user: Payload): Promise<ProductResponseDto[]> {
+    return this.product.getProductByUserId(user.userId);
   }
 
   @UseAuth()

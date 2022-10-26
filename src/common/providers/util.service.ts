@@ -14,4 +14,15 @@ export class UtilService {
       international: phoneNumber.number,
     };
   }
+
+  public normalizeNumber(value: string | number): number {
+    let number;
+    if (typeof value === 'string') {
+      number = parseFloat(value);
+    } else {
+      number = value;
+    }
+
+    return Math.round(number * 100) / 100;
+  }
 }

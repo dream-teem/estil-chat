@@ -28,6 +28,7 @@ import { ProductDraftModule } from './modules/product-draft/product-draft.module
 import { ProductLikeModule } from './modules/product-like/product-like.module';
 import { ProductRatingModule } from './modules/product-rating/product-rating.module';
 import { ProductModule } from './modules/product/product.module';
+import { PurchaseModule } from './modules/purchase/purchase.module';
 import { VerificationModule } from './modules/verification/verification.module';
 
 @Module({
@@ -83,6 +84,7 @@ import { VerificationModule } from './modules/verification/verification.module';
     FollowingModule,
     ProductRatingModule,
     CityModule,
+    PurchaseModule,
     // Module Router
     // https://docs.nestjs.com/recipes/router-module
     RouterModule.register([]),

@@ -13,6 +13,7 @@ export interface User {
   phone: string;
   countryCode: string;
   password: string;
+  balance: number;
   name: string | null;
   description: string | null;
   cityId: number | null;

@@ -14,4 +14,8 @@ export enum TableName {
   PRODUCT_LIKE = 'product_like',
   PRODUCT_RATING = 'product_rating',
   VERIFICATION = 'verification',
+  PURCHASE = 'purchase',
+  USER = 'user',
+  ADDRESS = 'address',
+  PAYMENT_METHOD = 'payment_method',
 }
