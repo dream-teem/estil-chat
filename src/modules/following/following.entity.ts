@@ -1,9 +1,10 @@
 import { TableName } from '@/common/enums/table';
-import { Entity, JoinColumn, ManyToOne, PrimaryColumn } from 'typeorm';
+import { Check, Entity, JoinColumn, ManyToOne, PrimaryColumn } from 'typeorm';
 import { UserEntity } from '../user';
 import type { Following } from './following.interface';
 
 @Entity(TableName.FOLLOWING)
+@Check('"followerId" <> "userId"')
 export class FollowingEntity implements Following {
   @PrimaryColumn('int')
   userId!: number;
