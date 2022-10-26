@@ -1,7 +1,9 @@
 import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm/dist/typeorm.module';
 
+import { CityController } from './city.controller';
 import { CityEntity } from './city.entity';
+import { CityService } from './city.service';
 
 @Module({
   imports: [
@@ -9,7 +11,8 @@ import { CityEntity } from './city.entity';
       CityEntity,
     ]),
   ],
-  providers: [],
+  controllers: [CityController],
+  providers: [CityService],
   exports: [],
 })
 export class CityModule {}
