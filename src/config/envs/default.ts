@@ -30,4 +30,10 @@ export const config: AppConfig = {
     key: process.env.MOBIZON_API_KEY,
     disabled: JSON.parse(process.env.MOBIZON_DISABLED),
   },
+  paybox: {
+    url: process.env.PAYBOX_URL,
+    projectId: process.env.PAYBOX_PROJECT_ID,
+    paymentSecret: process.env.PAYBOX_PAYMENT_SECRET,
+    payoutSecret: process.env.PAYBOX_PAYOUT_SECRET,
+  },
 };

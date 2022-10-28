@@ -27,14 +27,16 @@ export class ProductService {
     return this.productRepository.find({ where: { userId } });
   }
 
-  public async createProduct(user: Payload, { sizes, colors, ...dto }: CreateProductRequestDto): Promise<void> {
-    await this.productRepository.manager.transaction(async (em: EntityManager) => {
+  public async createProduct(user: Payload, { sizes, colors, ...dto }: CreateProductRequestDto): Promise<ProductResponseDto> {
+    return this.productRepository.manager.transaction(async (em: EntityManager) => {
       const slug = this.generateProductSlug(user.username, dto.description);
       const product = await em.save(ProductEntity, Object.assign(dto, { userId: user.userId, slug }));
 
       await this.size.upsertProductSizes(product.id, sizes, em);
 
       await this.color.upsertProductColors(product.id, colors, em);
+
+      return product;
     });
   }
 

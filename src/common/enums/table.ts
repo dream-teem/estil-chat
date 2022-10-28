@@ -18,4 +18,6 @@ export enum TableName {
   USER = 'user',
   ADDRESS = 'address',
   PAYMENT_METHOD = 'payment_method',
+  PAYBOX_CHARGE = 'paybox_charge',
+  PAYBOX_EVENT = 'paybox_event',
 }

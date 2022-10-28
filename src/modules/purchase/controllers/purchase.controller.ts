@@ -5,9 +5,10 @@ import { ReqUser } from '@/common';
 import { UseAuth } from '@/common/decorators/auth.decorator';
 import type { Payload } from '@/modules/auth';
 
+import { CreatePurchaseResponseDto } from '../dto/create-purchase.response.dto';
 import { PurchaseProductRequestDto } from '../dto/purchase-product.request.dto';
 import { PurchaseResponseDto } from '../dto/purchase.response.dto';
-import { PurchaseService } from '../purchase.service';
+import { PurchaseService } from '../services/purchase.service';
 
 @Controller('purchase')
 export class PurchaseController {
@@ -23,8 +24,9 @@ export class PurchaseController {
   }
 
   @UseAuth()
+  @ApiResponse({ type: CreatePurchaseResponseDto })
   @Post('')
-  public async purchaseProduct(@Body() dto: PurchaseProductRequestDto, @ReqUser() user: Payload): Promise<void> {
+  public async purchaseProduct(@Body() dto: PurchaseProductRequestDto, @ReqUser() user: Payload): Promise<CreatePurchaseResponseDto> {
     return this.purchase.purchaseProduct(user, dto);
   }
 }

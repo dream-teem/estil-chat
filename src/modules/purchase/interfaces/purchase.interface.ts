@@ -1,29 +1,31 @@
 import type { BaseEntity } from '@/common/base.entity';
 
-export enum PurchaseStatus {
-  COMPLETED = 'completed',
-  IN_PROGRESS = 'in_progress',
+export enum PaymentStatus {
+  PAID = 'paid',
+  PENDING = 'pending',
+  REJECTED = 'rejected',
+  REFUNDED = 'refunded',
 }
 
-export enum DeliveryStatus {
-  SHIPPED = 'shipped',
-  DELIVERED = 'delivered',
+export enum OrderStatus {
+  COMPLETED = 'completed',
   PENDING = 'pending',
+  PROCESSING = 'processing',
+  CANCELED = 'canceled',
 }
 
 export interface Purchase extends BaseEntity {
   productId: number;
   userId: number;
-  addressId: number | null;
   productSizeId: number | null;
   price: number;
-  deliveryPrice: number;
+  serviceFee: number;
   quantity: number;
-  status: PurchaseStatus;
-  deliveryStatus: DeliveryStatus | null;
-  trackingNumber: string | null;
-  shippedAt: Date | null;
-  deliveredAt: Date | null;
+  paymentStatus: PaymentStatus;
+  orderStatus: OrderStatus;
+
+  shippingPrice: number;
+  shippingId: number | null;
 }
 
 export interface PurchaseVariantInfoRO {

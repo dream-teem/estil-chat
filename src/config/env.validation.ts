@@ -71,6 +71,22 @@ class EnvironmentVariables implements AppEnvVars {
   @IsBooleanString()
   @IsNotEmpty()
   MOBIZON_DISABLED!: string;
+
+  @IsString()
+  @IsNotEmpty()
+  PAYBOX_URL!: string;
+
+  @IsNumberString()
+  @IsNotEmpty()
+  PAYBOX_PROJECT_ID!: string;
+
+  @IsString()
+  @IsNotEmpty()
+  PAYBOX_PAYMENT_SECRET!: string;
+
+  @IsString()
+  @IsNotEmpty()
+  PAYBOX_PAYOUT_SECRET!: string;
 }
 
 export function validateEnv(config: Record<string, unknown>) {
@@ -78,9 +94,9 @@ export function validateEnv(config: Record<string, unknown>) {
   const errors = validateSync(validatedConfig, { skipMissingProperties: false });
 
   if (errors.length > 0) {
-    // red font color for error message 
+    // red font color for error message
     // https://stackoverflow.com/questions/9781218/how-to-change-node-jss-console-font-color
-    console.error('\x1b[31m%s\x1b[0m', errors.toString())
+    console.error('\x1b[31m%s\x1b[0m', errors.toString());
     throw new Error('Env vars missing');
   }
   return validatedConfig;

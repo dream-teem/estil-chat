@@ -34,6 +34,13 @@ export type AppConfig = {
     key: string;
     disabled: boolean;
   };
+  paybox: {
+    url: string;
+    projectId: string;
+    paymentSecret: string;
+    payoutSecret: string;
+
+  };
 };
 
 export enum AppEnv {
@@ -62,4 +69,8 @@ export type AppEnvVars = {
   MOBIZON_API_URL: string;
   MOBIZON_API_KEY: string;
   MOBIZON_DISABLED: string;
+  PAYBOX_URL: string;
+  PAYBOX_PROJECT_ID: string;
+  PAYBOX_PAYMENT_SECRET: string;
+  PAYBOX_PAYOUT_SECRET: string;
 };

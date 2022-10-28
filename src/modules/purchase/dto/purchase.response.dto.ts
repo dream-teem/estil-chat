@@ -1,5 +1,5 @@
 import { ApiProperty } from '@nestjs/swagger';
-import type { DeliveryStatus, Purchase, PurchaseStatus } from '../interfaces/purchase.interface';
+import type {  Purchase, PaymentStatus, OrderStatus } from '../interfaces/purchase.interface';
 
 export class PurchaseResponseDto implements Purchase {
   @ApiProperty()
@@ -12,34 +12,28 @@ export class PurchaseResponseDto implements Purchase {
   userId!: number;
 
   @ApiProperty()
-  addressId!: number | null;
-
-  @ApiProperty()
   productSizeId!: number | null;
 
   @ApiProperty()
   price!: number;
 
   @ApiProperty()
-  deliveryPrice!: number;
+  serviceFee!: number;
 
   @ApiProperty()
   quantity!: number;
 
   @ApiProperty()
-  status!: PurchaseStatus;
+  paymentStatus!: PaymentStatus;
+  
+  @ApiProperty()
+  orderStatus!: OrderStatus;
 
   @ApiProperty()
-  deliveryStatus!: DeliveryStatus | null;
-
+  shippingPrice!: number;
+  
   @ApiProperty()
-  trackingNumber!: string | null;
-
-  @ApiProperty()
-  shippedAt!: Date | null;
-
-  @ApiProperty()
-  deliveredAt!: Date | null;
+  shippingId!: number | null;
 
   @ApiProperty()
   createdAt!: string;

@@ -82,8 +82,9 @@ export class ProductController {
   }
 
   @UseAuth()
+  @ApiResponse({ type: ProductResponseDto })
   @Post('')
-  public async createProduct(@Body() dto: CreateProductRequestDto, @ReqUser() user: Payload): Promise<void> {
+  public async createProduct(@Body() dto: CreateProductRequestDto, @ReqUser() user: Payload): Promise<ProductResponseDto> {
     return this.product.createProduct(user, dto);
   }
 
