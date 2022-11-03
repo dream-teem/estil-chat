@@ -2,7 +2,6 @@ import { HttpService } from '@nestjs/axios';
 import { Injectable } from '@nestjs/common';
 import { SentryService } from '@ntegral/nestjs-sentry';
 import type { AxiosResponse } from 'axios';
-import bcrypt from 'bcrypt';
 import FormData from 'form-data';
 
 import { ConfigService } from '@/common/providers/config.service';
@@ -13,8 +12,10 @@ import {
   PayboxRequestCommonParams,
   PayboxParams,
   PayboxInitPaymentResponse,
+  PayboxRevokePaymentParams,
+  PayboxRevokePaymentResponse,
 } from '../interfaces/paybox.interface';
-import { makePayboxSignature } from '../utils/paybox';
+import { makeParamsWithSignature } from '../utils/paybox';
 
 @Injectable()
 export class PayboxService {
@@ -31,7 +32,14 @@ export class PayboxService {
   }
 
   public async initPayment(data: PayboxInitPaymentParams): Promise<PayboxInitPaymentResponse> {
-    const formData = await this.prepareData(PayboxScriptName.INIT_PAYMENT, data, this.PAYBOX_PAYMENT_SECRET);
+    const formData = await this.prepareData(
+      PayboxScriptName.INIT_PAYMENT,
+      {
+        ...data,
+        pg_description: this.PAYBOX_PAYMENT_DESCRIPTION,
+      },
+      this.PAYBOX_PAYMENT_SECRET,
+    );
 
     return this.httpService.axiosRef
       .post<PayboxInitPaymentResponse>('/init_payment.php', formData, {
@@ -44,31 +52,39 @@ export class PayboxService {
       .then((res: AxiosResponse<PayboxInitPaymentResponse>) => res.data);
   }
 
-  public async prepareData(scriptName: string, data: Omit<PayboxParams, 'pg_sig'>, secret: string): Promise<FormData> {
+  public async revokePayment(data: PayboxRevokePaymentParams): Promise<PayboxRevokePaymentResponse> {
+    const formData = await this.prepareData(PayboxScriptName.REVOKE, data, this.PAYBOX_PAYMENT_SECRET);
+
+    return this.httpService.axiosRef
+      .post<PayboxRevokePaymentResponse>('/revoke.php', formData, {
+      headers: formData.getHeaders(),
+    })
+      .catch((err: unknown) => {
+        this.sentry.instance().captureException(`Error revoking payment ${data.pg_payment_id}: ${err}`);
+        throw err;
+      })
+      .then((res: AxiosResponse<PayboxRevokePaymentResponse>) => res.data);
+  }
+
+  public async prepareData(scriptName: string, data: Record<string, any>, secret: string): Promise<FormData> {
     const formData = new FormData();
 
-    const defaultParams = await this.getDefaultParams();
+    const defaultParams = this.getDefaultParams();
 
     const params: PayboxParams = { ...defaultParams, ...data };
 
-    params.pg_sig = makePayboxSignature(scriptName, params, secret);
+    const paramsWithSig = await makeParamsWithSignature(scriptName, params, secret);
 
-    Object.entries(params).forEach(([key, value]: [string, string | number]) => {
+    Object.entries(paramsWithSig).forEach(([key, value]: [string, string | number]) => {
       formData.append(key, value);
     });
 
     return formData;
   }
 
-  private async getDefaultParams(): Promise<PayboxRequestCommonParams> {
+  private getDefaultParams(): PayboxRequestCommonParams {
     return {
-      pg_description: this.PAYBOX_PAYMENT_DESCRIPTION,
-      pg_salt: await this.generateRandomSalt(),
       pg_merchant_id: this.PAYBOX_PROJECT_ID,
     };
-  }
-
-  private async generateRandomSalt(): Promise<string> {
-    return bcrypt.genSalt();
   }
 }

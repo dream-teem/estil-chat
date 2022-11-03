@@ -2,7 +2,7 @@ import { BaseEntity } from '@/common/base.entity';
 import { TableName } from '@/common/enums/table';
 import { Column, Entity, JoinColumn, ManyToOne, Unique } from 'typeorm';
 import { ProductEntity } from '../product/entities/product.entity';
-import { UserEntity } from '../user';
+import { UserEntity } from '@/modules/user/user.entity';
 import type { ProductRating } from './product-rating.interface';
 
 @Entity(TableName.PRODUCT_RATING)

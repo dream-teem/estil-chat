@@ -3,7 +3,7 @@ import { InjectModel } from '@nestjs/mongoose';
 import { ObjectId } from 'mongodb';
 import { FilterQuery, Model } from 'mongoose';
 
-import type { PaginationQueryDto } from '@/common/dto/pagination.dto';
+import type { PaginationQueryDto } from '@/common/dto/pagination.query.dto';
 
 import type { ChatMemberDto, CreateChatRequestDto } from './dto/create-chat.request.dto';
 import type { SendChatMessageWSRequestDto } from './dto/send-chat-message.wsrequest.dto';
@@ -25,13 +25,13 @@ export class ChatService {
       .exec();
   }
 
-  public async getChatMessages(chatId: string, { limit, page }: PaginationQueryDto): Promise<Chat | null> {
+  public async getChatMessages(chatId: string, { limit, offset }: PaginationQueryDto): Promise<Chat | null> {
     return this.chatModel
       .aggregate<Chat>([
       { $match: { _id: new ObjectId(chatId) } },
       { $unwind: '$messages' },
       { $sort: { 'messages.timestamp': -1 } },
-      { $skip: (page - 1) * limit },
+      { $skip: offset },
       { $limit: limit },
       { $group: { _id: '$_id', messages: { $push: '$messages' } } },
     ])

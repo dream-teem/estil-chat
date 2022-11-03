@@ -1,7 +1,7 @@
 import { BaseEntity } from '@/common/base.entity';
 import { TableName } from '@/common/enums/table';
 import { CityEntity } from '@/modules/cities/city.entity';
-import { UserEntity } from '@/modules/user';
+import { UserEntity } from '@/modules/user/user.entity';
 import { Column, Entity, Check, ManyToOne, JoinColumn } from 'typeorm';
 import { Product, ProductCurrency, ProductImage } from '../interfaces/product.interface';
 import { ProductBrandEntity } from './product-brand.entity';

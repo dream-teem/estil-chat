@@ -12,7 +12,10 @@ export function middleware(app: INestApplication): INestApplication {
   //   contentSecurityPolicy: isProduction ? undefined : false,
   //   crossOriginEmbedderPolicy: isProduction ? undefined : false,
   // }));
-  // app.enableCors();
+  app.enableCors({
+    origin: true,
+    credentials: true,
+  });
   app.use(cookieParser());
 
   return app;

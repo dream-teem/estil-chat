@@ -1,4 +1,4 @@
-import type { UserPicture } from '@/modules/user';
+import type { UserPicture } from '@/modules/user/user.interface';
 import { ApiProperty } from '@nestjs/swagger';
 
 export class FollowUserResponseDto {

@@ -5,7 +5,7 @@ export class PaginationQueryDto {
   @IsNumber()
   @Transform(({ value }) => parseInt(value, 10))
   @IsOptional()
-  page: number = 1;
+  offset: number = 0;
 
   @IsNumber()
   @Max(100)
@@ -13,3 +13,4 @@ export class PaginationQueryDto {
   @IsOptional()
   limit: number = 25;
 }
+

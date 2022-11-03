@@ -23,10 +23,6 @@ export class ProductService {
     return this.productRepository.findOne({ where: { slug } });
   }
 
-  public async getProductByUserId(userId: number): Promise<ProductResponseDto[]> {
-    return this.productRepository.find({ where: { userId } });
-  }
-
   public async createProduct(user: Payload, { sizes, colors, ...dto }: CreateProductRequestDto): Promise<ProductResponseDto> {
     return this.productRepository.manager.transaction(async (em: EntityManager) => {
       const slug = this.generateProductSlug(user.username, dto.description);

@@ -1,7 +1,7 @@
 import { TableName } from '@/common/enums/table';
 import { Entity, JoinColumn, ManyToOne, PrimaryColumn } from 'typeorm';
-import { ProductEntity } from '../product/entities/product.entity';
-import { UserEntity } from '../user';
+import { ProductEntity } from '@/modules/product/entities/product.entity';
+import { UserEntity } from '@/modules/user/user.entity';
 import type { ProductLike } from './product-like.interface';
 
 @Entity(TableName.PRODUCT_LIKE)

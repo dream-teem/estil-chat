@@ -1,4 +1,4 @@
-import type { User } from '@/modules/user';
+import type { User } from '@/modules/user/user.interface';
 
 export interface JwtSign {
   access_token: string;

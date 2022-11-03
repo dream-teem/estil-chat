@@ -20,7 +20,7 @@ import type { RedisClientOptions } from 'redis';
 
 import { CommonModule, LoggerMiddleware } from './common';
 import { configuration, validateEnv } from './config';
-import { AuthModule } from './modules';
+import { AuthModule } from './modules/auth/auth.module';
 import { ChatModule } from './modules/chat/chat.module';
 import { CityModule } from './modules/cities/city.module';
 import { FollowingModule } from './modules/following/following.module';
@@ -29,6 +29,7 @@ import { ProductLikeModule } from './modules/product-like/product-like.module';
 import { ProductRatingModule } from './modules/product-rating/product-rating.module';
 import { ProductModule } from './modules/product/product.module';
 import { PurchaseModule } from './modules/purchase/purchase.module';
+import { UserModule } from './modules/user/user.module';
 import { VerificationModule } from './modules/verification/verification.module';
 
 @Module({
@@ -76,6 +77,7 @@ import { VerificationModule } from './modules/verification/verification.module';
     // Service Modules
     CommonModule, // Global
     AuthModule,
+    UserModule,
     VerificationModule,
     ChatModule,
     ProductModule,

@@ -8,7 +8,8 @@ import moment from 'moment';
 import type { Repository } from 'typeorm';
 
 import { ConfigService, UtilService } from '@/common';
-import { UserEntity, UserService } from '@/modules/user';
+import { UserService } from '@/modules/user/services/user.service';
+import { UserEntity } from '@/modules/user/user.entity';
 
 import { VerificationService } from '../verification/verification.service';
 import type { JwtPayload, JwtSign, Payload } from './auth.interface';
@@ -101,6 +102,15 @@ export class AuthService {
       secure: this.config.get('auth.cookieSecure'),
       expires: moment().add(1, 'year').toDate(),
     });
+    res.cookie(
+      'user_id',
+      user.userId,
+      {
+        httpOnly: true,
+        secure: this.config.get('auth.cookieSecure'),
+        expires: moment().add(1, 'year').toDate(),
+      },
+    );
   }
 
   public jwtVerify(token: string): JwtPayload {
@@ -110,6 +120,7 @@ export class AuthService {
   public removeAuthCookie(res: Response): void {
     res.cookie('access_token', '', { maxAge: 0 });
     res.cookie('refresh_token', '', { maxAge: 0 });
+    res.cookie('user_id', '', { maxAge: 0 });
   }
 
   private getRefreshToken(sub: number): string {

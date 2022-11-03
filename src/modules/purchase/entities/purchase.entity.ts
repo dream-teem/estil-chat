@@ -2,7 +2,7 @@ import { BaseEntity } from '@/common/base.entity';
 import { TableName } from '@/common/enums/table';
 import { ProductEntity } from '@/modules/product/entities/product.entity';
 import { SizeEntity } from '@/modules/product/entities/size.entity';
-import { UserEntity } from '@/modules/user';
+import { UserEntity } from '@/modules/user/user.entity';
 import { Check, Column, Entity, JoinColumn, ManyToOne } from 'typeorm';
 import {  PaymentStatus, Purchase, OrderStatus } from '../interfaces/purchase.interface';
 

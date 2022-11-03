@@ -6,6 +6,7 @@ import { TableName } from '@/common/enums/table';
 import { UtilService } from '@/common/providers/util.service';
 import type { Payload } from '@/modules/auth/auth.interface';
 import { ProductEntity } from '@/modules/product/entities/product.entity';
+import { ProductStockService } from '@/modules/product/services/product-stock.service';
 
 import type { CreatePurchaseResponseDto } from '../dto/create-purchase.response.dto';
 import type { PayboxResultRequestDto } from '../dto/paybox-result.request.dto';
@@ -25,6 +26,7 @@ export class PurchaseService {
   constructor(
     @InjectRepository(PurchaseEntity) private purchaseRepository: Repository<PurchaseEntity>,
     private readonly payboxCharge: PayboxChargeService,
+    private readonly productStock: ProductStockService,
     private readonly utils: UtilService,
   ) {}
 
@@ -62,7 +64,9 @@ export class PurchaseService {
           return Promise.reject(new BadRequestException('Продукт не найден или закончился'));
         }
 
-        const { total: recountedTotal, serviceFee } = this.recountTotal([{ price: product.price, quantity }]);
+        const purchaseProduct = { productId: product.id, quantity, sizeId, price: product.price };
+
+        const { total: recountedTotal, serviceFee } = this.recountTotal(purchaseProduct);
 
         if (recountedTotal !== total) {
           return Promise.reject(new BadRequestException('Некоторые продукты закончились или же поменялись в цене'));
@@ -83,7 +87,7 @@ export class PurchaseService {
           pg_user_id: String(purchase.userId),
         });
 
-        await this.decrementQuantity(em, [{ productId: product.id, price: product.price, quantity, sizeId }]);
+        await this.productStock.registerProductPurchase([purchaseProduct], em);
 
         return { chargeUrl };
       },
@@ -126,61 +130,34 @@ export class PurchaseService {
 
     const purchase = <Purchase>result.raw[0];
 
-    await this.incrementQuantity(em, [
-      { productId: purchase.productId, sizeId: purchase.productSizeId, price: purchase.price, quantity: purchase.quantity },
-    ]);
+    const purchaseProduct = {
+      productId: purchase.productId,
+      sizeId: purchase.productSizeId,
+      price: purchase.price,
+      quantity: purchase.quantity,
+    };
+
+    await this.productStock.revertProductPurchase([purchaseProduct], em);
   }
 
-  private recountTotal(products: Pick<PurchaseItem, 'price' | 'quantity'>[]): Record<'total' | 'serviceFee', number> {
-    const itemTotal = products.reduce(
-      (total: number, product: Pick<PurchaseItem, 'price' | 'quantity'>) => (
-        total + this.utils.normalizeNumber(product.price) * product.quantity
-      ),
-      0,
-    );
+  public async checkPurchaseAllowed(purchaseId: number, em?: EntityManager): Promise<boolean> {
+    const manager = em || this.purchaseRepository.manager;
+
+    const count = await manager
+      .getRepository(PurchaseEntity)
+      .createQueryBuilder('p')
+      .where('id=:purchaseId', { purchaseId })
+      .andWhere('"orderStatus" = :orderStatus', { orderStatus: OrderStatus.PENDING })
+      .getCount();
+
+    return count > 0;
+  }
+
+  private recountTotal(product: PurchaseItem): Record<'total' | 'serviceFee', number> {
+    const itemTotal = this.utils.normalizeNumber(product.price) * product.quantity;
 
     const serviceFee = itemTotal * this.SERVICE_FEE;
 
     return { total: itemTotal + serviceFee, serviceFee };
-  }
-
-  private async decrementQuantity(em: EntityManager, products: PurchaseItem[]): Promise<void> {
-    const values = products.map((item: PurchaseItem) => `(${item.productId}, ${item.quantity}, ${item.sizeId || 'null'})`).join(', ');
-
-    await em.getRepository(ProductEntity).query(`
-        WITH values ("productId", "quantity", "sizeId") AS (VALUES ${values}),
-        decrement_variants as (
-            UPDATE ${TableName.PRODUCT_VARIANT} as pv SET quantity = pv.quantity - c.quantity
-            FROM (
-                SELECT "productId", "quantity", "sizeId" FROM values WHERE "sizeId" IS NOT NULL
-            ) as c("productId", "quantity", "sizeId")
-            WHERE c."productId" = pv."productId" AND c."sizeId"::int = pv."sizeId"
-        )
-        UPDATE ${TableName.PRODUCT} as p SET quantity = p.quantity - c.quantity
-            FROM (
-                SELECT "productId", "quantity", "sizeId" FROM values WHERE "sizeId" IS NULL
-            ) as c("productId", "quantity", "sizeId")
-            WHERE c."productId" = p.id
-    `);
-  }
-
-  private async incrementQuantity(em: EntityManager, products: PurchaseItem[]): Promise<void> {
-    const values = products.map((item: PurchaseItem) => `(${item.productId}, ${item.quantity}, ${item.sizeId || 'null'})`).join(', ');
-
-    await em.getRepository(ProductEntity).query(`
-        WITH values ("productId", "quantity", "sizeId") AS (VALUES ${values}),
-        increment_variants as (
-            UPDATE ${TableName.PRODUCT_VARIANT} as pv SET quantity = pv.quantity + c.quantity
-            FROM (
-                SELECT "productId", "quantity", "sizeId" FROM values WHERE "sizeId" IS NOT NULL
-            ) as c("productId", "quantity", "sizeId")
-            WHERE c."productId" = pv."productId" AND c."sizeId"::int = pv."sizeId"
-        )
-        UPDATE ${TableName.PRODUCT} as p SET quantity = p.quantity + c.quantity
-            FROM (
-                SELECT "productId", "quantity", "sizeId" FROM values WHERE "sizeId" IS NULL
-            ) as c("productId", "quantity", "sizeId")
-            WHERE c."productId" = p.id
-    `);
   }
 }

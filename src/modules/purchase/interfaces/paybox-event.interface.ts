@@ -1,12 +1,9 @@
 import type { BaseEntity } from '@/common/base.entity';
 
-export enum PayboxEventType {
-  CHARGE = 'charge',
-  REFUND = 'refund',
-  PAYOUT = 'payout',
-}
+import type { PayboxWebhookType } from './paybox-webhook.interface';
+
 export interface PayboxEvent extends BaseEntity {
-  type: PayboxEventType;
+  type: PayboxWebhookType;
   purchaseId: number;
   payboxId: string;
   data: string;

@@ -1,6 +1,6 @@
 import { TableName } from '@/common/enums/table';
 import { Check, Entity, JoinColumn, ManyToOne, PrimaryColumn } from 'typeorm';
-import { UserEntity } from '../user';
+import { UserEntity } from '@/modules/user/user.entity';
 import type { Following } from './following.interface';
 
 @Entity(TableName.FOLLOWING)

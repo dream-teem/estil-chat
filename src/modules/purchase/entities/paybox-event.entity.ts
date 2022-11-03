@@ -1,7 +1,8 @@
 import { BaseEntity } from '@/common/base.entity';
 import { TableName } from '@/common/enums/table';
 import { Column, Entity, JoinColumn, ManyToOne, Unique } from 'typeorm';
-import { PayboxEvent, PayboxEventType } from '../interfaces/paybox-event.interface';
+import type { PayboxEvent } from '../interfaces/paybox-event.interface';
+import { PayboxWebhookType } from '../interfaces/paybox-webhook.interface';
 import { PurchaseEntity } from './purchase.entity';
 
 @Entity(TableName.PAYBOX_EVENT)
@@ -13,8 +14,8 @@ export class PayboxEventEntity extends BaseEntity implements PayboxEvent {
   @Column('text')
   data!: string;
 
-  @Column('enum', { enum: PayboxEventType })
-  type!: PayboxEventType;
+  @Column('enum', { enum: PayboxWebhookType })
+  type!: PayboxWebhookType;
 
   @Column('int')
   purchaseId!: number;

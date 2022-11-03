@@ -1,11 +1,10 @@
 export interface PayboxRequestCommonParams {
   pg_merchant_id: string;
-  pg_description: string;
-  pg_salt: string;
 }
 
 export enum PayboxScriptName {
   INIT_PAYMENT = 'init_payment.php',
+  REVOKE = 'revoke.php',
 }
 
 export interface PayboxParams {
@@ -42,11 +41,18 @@ export interface PayboxParams {
   pg_payment_route?: string;
 }
 
+export type PayboxResponseStatus = 'ok' | 'error';
+
 export interface PayboxInitPaymentParams {
   pg_order_id: string;
   pg_amount: string;
   pg_user_id?: string;
   pg_payment_route?: string;
+}
+
+export interface PayboxRevokePaymentParams {
+  pg_payment_id: string;
+  pg_refund_amount: string;
 }
 
 export interface PayboxInitPaymentResponse {
@@ -55,5 +61,25 @@ export interface PayboxInitPaymentResponse {
   pg_redirect_url_type: string;
   pg_salt: string;
   pg_sig: string;
-  pg_status: 'ok' | 'error';
+  pg_status: PayboxResponseStatus;
 }
+
+export interface PayboxRevokePaymentResponse {
+  pg_status: PayboxResponseStatus;
+  pg_error_code: string;
+  pg_error_description: string;
+  pg_salt: string;
+  pg_sig: string;
+}
+
+export interface PayboxWebhookResponse {
+  pg_status: 'ok' | 'rejected';
+  pg_description: string;
+  pg_sig: string;
+  pg_salt: string;
+}
+
+export type PayboxParamsWithSignature<T = any> = T & {
+  pg_sig: string;
+  pg_salt: string;
+};

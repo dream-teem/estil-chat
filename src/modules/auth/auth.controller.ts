@@ -3,7 +3,7 @@ import { ApiResponse } from '@nestjs/swagger';
 import type { Request, Response } from 'express';
 
 import { ReqUser } from '@/common';
-import type { UserEntity } from '@/modules/user';
+import type { UserEntity } from '@/modules/user/user.entity';
 
 import { AuthService, Payload, JwtAuthGuard, JwtVerifyGuard, LocalAuthGuard, JwtSign } from '.';
 import { VerificationService } from '../verification/verification.service';
@@ -24,12 +24,12 @@ export class AuthController {
   public async signup(
     @Body() signupDto: SignupRequestDto,
       @Res({ passthrough: true }) res: Response,
-  ): Promise<Pick<UserEntity, 'username'>> {
+  ): Promise<Pick<UserEntity, 'username' | 'id'>> {
     const user = await this.auth.signup(signupDto);
 
     this.auth.setAuthCookie(res, { userId: user.id, username: user.username, role: user.role });
 
-    return { username: user.username };
+    return { username: user.username, id: user.id };
   }
 
   /**
@@ -39,10 +39,10 @@ export class AuthController {
    */
   @Post('login')
   @UseGuards(LocalAuthGuard)
-  public login(@ReqUser() user: UserEntity, @Res({ passthrough: true }) res: Response): Pick<UserEntity, 'username'> {
+  public login(@ReqUser() user: UserEntity, @Res({ passthrough: true }) res: Response): Pick<UserEntity, 'username' | 'id'> {
     this.auth.setAuthCookie(res, { userId: user.id, username: user.username, role: user.role });
 
-    return { username: user.username };
+    return { username: user.username, id: user.id };
   }
 
   @Get('logout')

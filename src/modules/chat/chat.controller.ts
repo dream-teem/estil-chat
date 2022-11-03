@@ -8,7 +8,7 @@ import {
   ApiTags,
 } from '@nestjs/swagger';
 
-import { PaginationQueryDto } from '@/common/dto/pagination.dto';
+import { PaginationQueryDto } from '@/common/dto/pagination.query.dto';
 
 import { ChatService } from './chat.service';
 import { CreateChatRequestDto } from './dto/create-chat.request.dto';
