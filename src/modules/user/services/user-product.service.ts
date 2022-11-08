@@ -18,6 +18,8 @@ export class UserProductService {
     viewerId: number | null,
     { limit, offset, isLiked, isSelling, isSold }: UserProductsQueryDto,
   ): Promise<PaginatedResponseDto> {
+    const isUserProducts = !isLiked;
+
     const soldQuery = `
       AND p."userId" = $1
       AND p."isSold" = TRUE
@@ -36,6 +38,7 @@ export class UserProductService {
     const whereQuery = `
       ${isLiked ? likedJoinQuery : ''}
       WHERE p."isDeleted" = FALSE
+      ${isUserProducts ? 'AND p."userId" = $1' : ''}
       ${isSold ? soldQuery : ''}
       ${isSelling ? sellingQuery : ''}
     `;

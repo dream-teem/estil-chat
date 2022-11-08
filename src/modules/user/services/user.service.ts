@@ -2,15 +2,23 @@ import { Injectable, NotFoundException } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
 
+import { ThumbnailService } from '@/common';
 import { TableName } from '@/common/enums/table';
 
+import type { UpdateUserRequestDto } from '../dto/update-user.request.dto';
 import type { UserProfileResponseDto } from '../dto/user-profile.response.dto';
 import type { UserResponseDto } from '../dto/user.response.dto';
+import { USER_PICTURE_THUMBNAILS } from '../user.constant';
 import { UserEntity } from '../user.entity';
+import type { UserPicture, UserPictureSizeAll } from '../user.interface';
 
 @Injectable()
 export class UserService {
-  constructor(@InjectRepository(UserEntity) private userRepository: Repository<UserEntity>) {}
+  private S3_PRODUCT_IMAGE_DIR: string = 'users';
+  constructor(
+    @InjectRepository(UserEntity) private userRepository: Repository<UserEntity>,
+    private readonly thumbnail: ThumbnailService,
+  ) {}
 
   public async findByUsername(username: string): Promise<UserEntity | null> {
     return this.userRepository.findOne({ where: { username } });
@@ -42,6 +50,18 @@ export class UserService {
     }
 
     return user;
+  }
+
+  public async updateUser(userId: number, dto: UpdateUserRequestDto): Promise<void> {
+    await this.userRepository.update({ id: userId }, dto);
+  }
+
+  public async uploadProfileImage(userId: number, image: Buffer): Promise<UserPicture> {
+    const dir = `${this.S3_PRODUCT_IMAGE_DIR}/${userId}`;
+    return this.thumbnail.saveImageThumbnails<UserPictureSizeAll>(image, {
+      dir,
+      thumbnailSizes: USER_PICTURE_THUMBNAILS,
+    });
   }
 
   private async getUserProfileByUsernameQuery(username: string, viewerId?: number): Promise<UserProfileResponseDto | null> {

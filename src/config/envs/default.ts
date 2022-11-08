@@ -36,4 +36,9 @@ export const config: AppConfig = {
     paymentSecret: process.env.PAYBOX_PAYMENT_SECRET,
     payoutSecret: process.env.PAYBOX_PAYOUT_SECRET,
   },
+  s3: {
+    accessKey: process.env.AWS_S3_ACCESS_KEY,
+    secretKey: process.env.AWS_S3_SECRET_KEY,
+    bucketName: process.env.AWS_S3_BUCKET_NAME,
+  },
 };

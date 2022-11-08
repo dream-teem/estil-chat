@@ -1,0 +1,1 @@
+export const PRODUCT_IMAGE_THUMBNAILS = <const>[150, 310, 428, 624, 1280];

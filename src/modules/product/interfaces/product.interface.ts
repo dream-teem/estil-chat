@@ -1,12 +1,16 @@
 import type { BaseEntity } from '@/common/base.entity';
 
+import type { PRODUCT_IMAGE_THUMBNAILS } from '../constants/product.constant';
+
 export enum ProductCurrency {
   KZT = 'KZT',
   USD = 'USD',
   RUB = 'RUB',
 }
 
-export type ProductThumbnailType = 150 | 310 | 428 | 624 | 1280;
+export type ProductThumbnailAll = typeof PRODUCT_IMAGE_THUMBNAILS;
+export type ProductThumbnailType = ProductThumbnailAll[number];
+
 export type ProductThumbnails = Record<ProductThumbnailType, string>;
 
 export interface ProductImage {

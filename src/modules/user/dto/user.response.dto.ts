@@ -1,31 +1,5 @@
 import { ApiProperty } from '@nestjs/swagger';
-import {  Type } from 'class-transformer';
-import {  IsNotEmpty, IsOptional, IsString, ValidateNested } from 'class-validator';
-import type {  UserPicture, UserPictureThumbnails, UserRole } from '../user.interface';
-
-export class UserPictureThumbnailsDto implements UserPictureThumbnails {
-  @IsString()
-  @IsNotEmpty()
-  75!: string;
-
-  @IsString()
-  @IsNotEmpty()
-  150!: string;
-
-  @IsString()
-  @IsNotEmpty()
-  428!: string;
-}
-
-export class UserPictureDto implements UserPicture {
-  @IsString()
-  original!: string;
-
-  @IsOptional()
-  @ValidateNested()
-  @Type(() => UserPictureThumbnailsDto)
-  thumbnails!: UserPictureThumbnails;
-}
+import type { UserPicture, UserRole } from '../user.interface';
 
 export class UserResponseDto {
   @ApiProperty()
@@ -52,8 +26,8 @@ export class UserResponseDto {
   @ApiProperty()
   cityId!: number | null;
   
-  @ApiProperty()
-  picture!: UserPictureDto | null;
+  @ApiProperty({type: 'object'})
+  picture!: UserPicture | null;
   
   @ApiProperty()
   lastLoggedIn!: Date;

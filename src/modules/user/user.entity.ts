@@ -39,7 +39,7 @@ export class UserEntity extends BaseEntity implements User {
   @Column('int', { nullable: true })
   cityId!: number | null;
 
-  @Column('varchar', { nullable: true })
+  @Column('jsonb', { nullable: true })
   picture!: UserPicture | null;
 
   @Column('timestamptz', { default: () => 'CURRENT_TIMESTAMP' })

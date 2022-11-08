@@ -15,6 +15,7 @@ import { BrandService } from './services/brand.service';
 import { CategoryService } from './services/category.service';
 import { ColorService } from './services/color.service';
 import { ConditionService } from './services/condition.service';
+import { ProductImageService } from './services/product-image.service';
 import { ProductStockService } from './services/product-stock.service';
 import { ProductService } from './services/product.service';
 import { SizeService } from './services/size.service';
@@ -34,7 +35,16 @@ import { SizeService } from './services/size.service';
     ]),
   ],
   controllers: [ProductController],
-  providers: [CategoryService, SizeService, ProductStockService, ColorService, ConditionService, BrandService, ProductService],
+  providers: [
+    CategoryService,
+    SizeService,
+    ProductStockService,
+    ColorService,
+    ConditionService,
+    BrandService,
+    ProductService,
+    ProductImageService,
+  ],
   exports: [ProductStockService, ProductService],
 })
 export class ProductModule {}

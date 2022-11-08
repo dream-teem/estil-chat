@@ -1,5 +1,9 @@
-export type UserPictureType = 75 | 150 | 428;
-export type UserPictureThumbnails = Record<UserPictureType, string>;
+import type { USER_PICTURE_THUMBNAILS } from './user.constant';
+
+export type UserPictureSizeAll = typeof USER_PICTURE_THUMBNAILS;
+export type UserPictureSize = UserPictureSizeAll[number];
+
+export type UserPictureThumbnails = Record<UserPictureSize, string>;
 
 export interface UserPicture {
   original: string;

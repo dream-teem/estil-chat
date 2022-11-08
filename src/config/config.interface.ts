@@ -39,7 +39,11 @@ export type AppConfig = {
     projectId: string;
     paymentSecret: string;
     payoutSecret: string;
-
+  };
+  s3: {
+    accessKey: string;
+    secretKey: string;
+    bucketName: string;
   };
 };
 
@@ -73,4 +77,7 @@ export type AppEnvVars = {
   PAYBOX_PROJECT_ID: string;
   PAYBOX_PAYMENT_SECRET: string;
   PAYBOX_PAYOUT_SECRET: string;
+  AWS_S3_ACCESS_KEY: string;
+  AWS_S3_SECRET_KEY: string;
+  AWS_S3_BUCKET_NAME: string;
 };
