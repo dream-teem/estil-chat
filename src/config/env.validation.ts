@@ -99,6 +99,14 @@ class EnvironmentVariables implements AppEnvVars {
   @IsString()
   @IsNotEmpty()
   AWS_S3_BUCKET_NAME!: string;
+  
+  @IsString()
+  @IsNotEmpty()
+  ELASTIC_SEARCH_NODE!: string;
+
+  @IsString()
+  @IsNotEmpty()
+  ELASTICSEARCH_PRODUCT_INDEX!: string;
 }
 
 export function validateEnv(config: Record<string, unknown>) {

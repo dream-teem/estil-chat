@@ -10,5 +10,85 @@ services:
     volumes:
       - mongodb_data:/data/db
 
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:8.2.0
+    container_name: estil-elasticsearch
+    environment:
+      - xpack.security.enabled=false
+      - discovery.type=single-node
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+      nofile:
+        soft: 65536
+        hard: 65536
+    cap_add:
+      - IPC_LOCK
+    volumes:
+      - elasticsearch:/usr/share/elasticsearch/data
+    ports:
+      - 9200:9200
+      - 9300:9300
+
+  kibana:
+    container_name: estil-kibana
+    image: docker.elastic.co/kibana/kibana:8.2.0
+    environment:
+      - ELASTICSEARCH_HOSTS=http://elasticsearch:9200
+    ports:
+      - 5601:5601
+    depends_on:
+      - elasticsearch
+
+  logstash:
+    image: docker.elastic.co/logstash/logstash:8.2.0
+    restart: unless-stopped
+    # environment:
+    #   - LOGSTASH_JDBC_URL=jdbc:postgresql://postgres:5432/postgres
+    #   - LOGSTASH_JDBC_DRIVER=org.postgresql.Driver
+    #   - LOGSTASH_JDBC_DRIVER_JAR_LOCATION=/usr/share/logstash/logstash-core/lib/jars/postgresql.jar
+    #   - LOGSTASH_JDBC_USERNAME=depop
+    #   - LOGSTASH_JDBC_PASSWORD=change-in-production
+    #   - LOGSTASH_ELASTICSEARCH_HOST=http://elasticsearch:9200
+    #   - LOGSTASH_JDBC_QUERY_DIR=/usr/share/logstash/config/queries
+    #   - PIPELINE_WORKERS=4
+    env_file:
+      - .env
+    volumes:
+      - ./config/logstash/jdbc/logstash.yml:/usr/share/logstash/config/logstash.yml
+      - ./config/logstash/jdbc/pipelines.yml:/usr/share/logstash/config/pipelines.yml
+      - ./config/logstash/jdbc/pipeline/:/usr/share/logstash/pipeline/
+      - ./config/logstash/jdbc/drivers/postgresql-42.3.6.jar:/usr/share/logstash/logstash-core/lib/jars/postgres.jar
+      - ./config/logstash/jdbc/queries/:/usr/share/logstash/config/queries/
+      - ./config/logstash/jdbc/templates/:/usr/share/logstash/config/templates/
+    ports:
+      - 9600:9600
+      - 5044:5044
+    depends_on:
+      - elasticsearch
+      - kibana
+
+  postgres:
+    image: postgres:13
+    ports:
+      - 9002:5432
+    volumes:
+      - postgres:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_USER=estil
+      - POSTGRES_PASSWORD=change-in-production
+      - POSTGRES_DB=estil
+  
+  redis:
+    image: redis:alpine
+    ports:
+      - 6379:6379
+    volumes:
+      - redis_data:/data
 volumes:
   mongodb_data:
+  elasticsearch:
+    driver: local
+  redis_data:
+  postgres:

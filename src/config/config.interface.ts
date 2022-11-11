@@ -45,6 +45,9 @@ export type AppConfig = {
     secretKey: string;
     bucketName: string;
   };
+  elastic: {
+    node: string;
+  };
 };
 
 export enum AppEnv {
@@ -80,4 +83,6 @@ export type AppEnvVars = {
   AWS_S3_ACCESS_KEY: string;
   AWS_S3_SECRET_KEY: string;
   AWS_S3_BUCKET_NAME: string;
+  ELASTIC_SEARCH_NODE: string;
+  ELASTICSEARCH_PRODUCT_INDEX: string;
 };

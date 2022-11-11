@@ -1,0 +1,159 @@
+{
+  "index_patterns": ["products*"],
+  "priority": 0,
+  "template": {
+    "settings": {
+      "analysis": {
+        "normalizer": {
+          "keyword_lowercase": {
+            "type": "custom",
+            "char_filter": [],
+            "filter": ["lowercase"]
+          }
+        }
+      }
+    },
+    "mappings": {
+      "properties": {
+        "user": {
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "username": {
+              "type": "keyword",
+              "normalizer": "keyword_lowercase"
+            }
+          }
+        },
+        "city": {
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "keyword",
+              "normalizer": "keyword_lowercase"
+            },
+            "slug": {
+              "type": "keyword",
+              "index": false
+            }
+          }
+        },
+        "brand": {
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "text"
+            }
+          }
+        },
+        "categories": {
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "keyword",
+              "normalizer": "keyword_lowercase"
+            },
+            "path": {
+              "type": "keyword",
+              "normalizer": "keyword_lowercase"
+            },
+            "keywords": {
+              "type": "keyword",
+              "normalizer": "keyword_lowercase"
+            }
+          }
+        },
+        "variants": {
+          "properties": {
+            "sizeId": {
+              "type": "integer"
+            },
+            "title": {
+              "type": "keyword",
+              "normalizer": "keyword_lowercase"
+            },
+            "quantity": {
+              "type": "integer",
+              "index": false
+            }
+          }
+        },
+        "condition": {
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "title": {
+              "type": "keyword",
+              "index": false
+            }
+          }
+        },
+        "colors": {
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "hex": {
+              "type": "keyword",
+              "index": false
+            },
+            "title": {
+              "type": "keyword",
+              "normalizer": "keyword_lowercase"
+            },
+            "code": {
+              "type": "keyword",
+              "normalizer": "keyword_lowercase"
+            }
+          }
+        },
+        "images": {
+          "properties": {
+            "id": {
+              "type": "integer",
+              "index": false
+            },
+            "original": {
+              "type": "keyword",
+              "index": false
+            },
+            "thumbnails": {
+              "type": "object",
+              "enabled": false
+            }
+          }
+        },
+        "price": {
+          "type": "double"
+        },
+        "currency": {
+          "type": "keyword",
+          "index": false
+        },
+        "isSold": {
+          "type": "boolean"
+        },
+        "isDeleted": {
+          "type": "boolean"
+        },
+        "slug": {
+          "type": "keyword",
+          "normalizer": "keyword_lowercase"
+        },
+        "description": {
+          "type": "text"
+        },
+        "createdAt": { "type": "date" },
+        "updatedAt": { "type": "date" }
+      }
+    }
+  }
+}

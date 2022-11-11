@@ -23,6 +23,16 @@
             "database": "depop",
             "username": "postgres",
             "password": ""
+        },
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "estil",
+            "database": "estil",
+            "username": "postgres",
+            "password": ""
         }
     ]
 }

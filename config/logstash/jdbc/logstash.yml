@@ -1,0 +1,3 @@
+dead_letter_queue.enable: true
+dead_letter_queue.max_bytes: 1024mb
+pipeline.workers: 4

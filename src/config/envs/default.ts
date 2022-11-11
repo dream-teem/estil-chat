@@ -41,4 +41,7 @@ export const config: AppConfig = {
     secretKey: process.env.AWS_S3_SECRET_KEY,
     bucketName: process.env.AWS_S3_BUCKET_NAME,
   },
+  elastic: {
+    node: process.env.ELASTIC_SEARCH_NODE,
+  },
 };
